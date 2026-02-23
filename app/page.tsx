@@ -61,26 +61,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══ METRICS BAR ═══ */}
-      <section className="border-t border-b border-dwl-border">
-        <div className="px-8 md:px-[8%] lg:px-[12%] py-5">
-          <div className="flex flex-wrap gap-x-16 gap-y-3">
-            {[
-              { value: SEARCH_INDEX.length + '+', label: 'Intelligence Modules' },
-              { value: '12', label: 'Countries' },
-              { value: '30+', label: 'Satellite Maps' },
-              { value: '8,500+', label: 'Darija Lexicon' },
-              { value: '88', label: 'Textile Records' },
-            ].map((m, i) => (
-              <div key={i} className="flex items-baseline gap-2">
-                <span className="font-serif text-[28px] italic text-dwl-black leading-none">{m.value}</span>
-                <span className="text-[10px] text-dwl-muted uppercase tracking-[0.1em]">{m.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ═══ THREE PILLARS ═══ */}
       <section className="border-b border-dwl-border">
         <div className="px-8 md:px-[8%] lg:px-[12%] py-24 md:py-32">
