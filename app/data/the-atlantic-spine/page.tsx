@@ -35,9 +35,10 @@ export default function TheAtlanticSpine() {
   useEffect(() => {
     if (!mapContainer.current || !MAPBOX_TOKEN || mapRef.current) return
 
-    const initMap = async () => {
-      const mapboxgl = (await import('mapbox-gl')).default
-      await import('mapbox-gl/dist/mapbox-gl.css')
+    const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = 'https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css'; document.head.appendChild(link)
+    const script = document.createElement('script'); script.src = 'https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'
+    script.onload = () => {
+      const mapboxgl = (window as any).mapboxgl; if (!mapboxgl) return
       mapboxgl.accessToken = MAPBOX_TOKEN
 
       const map = new mapboxgl.Map({
@@ -150,8 +151,8 @@ export default function TheAtlanticSpine() {
         mapContainer.current?.appendChild(legend)
       })
     }
+    document.head.appendChild(script)
 
-    initMap()
     return () => { mapRef.current?.remove(); mapRef.current = null }
   }, [])
 
