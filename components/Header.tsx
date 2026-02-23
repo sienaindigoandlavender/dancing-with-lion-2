@@ -40,6 +40,9 @@ export default function Header() {
               <Link href="/about" className="meta-text hover:text-dwl-black transition-colors">
                 About
               </Link>
+              <Link href="/contact" className="meta-text hover:text-dwl-black transition-colors">
+                Contact
+              </Link>
               {/* Search icon */}
               <button
                 onClick={() => setSearchOpen(true)}
@@ -88,6 +91,9 @@ export default function Header() {
               </Link>
               <Link href="/about" onClick={() => setMenuOpen(false)} className="meta-text">
                 About
+              </Link>
+              <Link href="/contact" onClick={() => setMenuOpen(false)} className="meta-text">
+                Contact
               </Link>
             </nav>
           </div>

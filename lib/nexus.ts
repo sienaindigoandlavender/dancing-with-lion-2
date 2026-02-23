@@ -152,7 +152,7 @@ export function resolveLegalVariables(
 
   return content
     .replace(/\{\{site_name\}\}/g, siteConfig.site_name || 'Dancing with Lions')
-    .replace(/\{\{site_url\}\}/g, siteConfig.site_url || 'https://dancingwithlions.com')
+    .replace(/\{\{site_url\}\}/g, siteConfig.site_url || 'https://dancingwiththelions.com')
     .replace(/\{\{legal_entity\}\}/g, siteConfig.legal_entity || 'Dancing with Lions')
-    .replace(/\{\{contact_email\}\}/g, siteConfig.contact_email || 'legal@dancingwithlions.com')
+    .replace(/\{\{contact_email\}\}/g, siteConfig.contact_email || 'legal@dancingwiththelions.com')
 }

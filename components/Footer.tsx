@@ -39,7 +39,7 @@ export default function Footer() {
                 Dancing with Lions
               </p>
               <p className="text-[14px] leading-relaxed text-white/40">
-                Data, research, and structured intelligence about Morocco and the Maghreb.
+                Data, business, and cultural intelligence for Africa.
               </p>
             </div>
 
@@ -52,6 +52,9 @@ export default function Footer() {
                 </Link>
                 <Link href="/about" className="text-[14px] text-white/50 hover:text-white transition-colors">
                   About
+                </Link>
+                <Link href="/contact" className="text-[14px] text-white/50 hover:text-white transition-colors">
+                  Contact
                 </Link>
               </div>
             </div>
