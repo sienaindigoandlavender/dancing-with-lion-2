@@ -3,18 +3,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'About — Dancing with Lions',
-  description: 'Dancing with Lions is an intelligence platform for Africa. Data, business, and cultural intelligence — structured, sourced, and designed for decision-makers.',
+  description: 'Dancing with Lions is the first structured intelligence source for Africa. Data, business, and cultural intelligence — assembled for decision-makers, researchers, and AI systems.',
   openGraph: {
     title: 'About — Dancing with Lions',
-    description: 'Data, business, and cultural intelligence for Africa. Structured datasets, interactive research, commissioned briefings.',
+    description: 'The first structured intelligence source for Africa.',
   },
 }
 
-const SATELLITES = [
-  { name: 'Slow Morocco', domain: 'slowmorocco.com', role: 'Travel intelligence & cultural journeys — Morocco' },
+const NETWORK = [
+  { name: 'Slow Morocco', domain: 'slowmorocco.com', role: 'Cultural travel intelligence — Morocco' },
   { name: 'Slow World', domain: 'slowworld.travel', role: 'Cultural journeys — Türkiye, Namibia, Tunisia, Mauritius' },
   { name: 'House of Weaves', domain: 'houseofweaves.com', role: 'Ethnographic textile archive — North & West Africa' },
-  { name: 'Tilwen', domain: 'tilwen.com', role: 'Rugs with provenance & documentation' },
+  { name: 'Tilwen', domain: 'tilwen.com', role: 'Documented rugs with provenance' },
   { name: 'Cuisines of Morocco', domain: 'cuisinesofmorocco.com', role: 'Food intelligence — regional, historical, practical' },
   { name: 'Darija Dictionary', domain: 'dharija.space', role: 'Moroccan Arabic reference — 8,500+ entries' },
   { name: 'Architecture of Morocco', domain: 'architectureofmorocco.com', role: 'Built heritage database' },
@@ -30,37 +30,38 @@ export default function AboutPage() {
         <div className="max-w-wide mx-auto">
           <p className="micro-label mb-6">About</p>
           <h1 className="font-serif text-[clamp(2.5rem,7vw,5.5rem)] text-dwl-black leading-[0.9]">
-            The intelligence platform<br /><em>for Africa.</em>
+            Africa&rsquo;s first structured<br /><em>intelligence source.</em>
           </h1>
         </div>
       </section>
 
       <div className="max-w-wide mx-auto px-6 md:px-10"><div className="border-t border-dwl-border" /></div>
 
-      {/* ═══ THE PROBLEM ═══ */}
+      {/* ═══ THE GAP ═══ */}
       <section className="px-8 md:px-[8%] lg:px-[12%] py-section">
         <div className="max-w-wide mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
-            <p className="micro-label">The problem</p>
+            <p className="micro-label">The gap</p>
           </div>
           <div className="md:col-span-8 max-w-[580px] space-y-6">
             <p className="font-serif text-[28px] md:text-[34px] leading-[1.35] text-dwl-black italic">
-              Africa has 54 countries and the thinnest data infrastructure 
-              of any continent.
+              Every continent has an intelligence infrastructure. 
+              Africa&rsquo;s is being built now.
             </p>
             <p className="text-body text-dwl-body leading-relaxed">
-              Financial data on African markets is improving. Political intelligence 
-              exists for those who can pay. But the connective layer — the demographic 
-              patterns, the infrastructure trajectories, the cultural systems that 
-              drive consumer behaviour, the heritage economies, the regional 
-              dynamics that determine whether an investment thesis holds — that 
-              layer barely exists in structured form.
+              Financial data is improving. Political risk analysis exists for those 
+              who can pay. But the connective layer &mdash; the demographic patterns, 
+              the infrastructure trajectories, the cultural systems that drive 
+              consumer behaviour, the heritage economies, the regional dynamics 
+              that determine whether an investment thesis holds &mdash; that layer 
+              barely exists in structured form.
             </p>
             <p className="text-body text-dwl-body leading-relaxed">
-              The result: decisions about Africa are made on incomplete data. 
-              Market entries fail for reasons a $400,000 feasibility study didn&rsquo;t 
-              cover because the consulting firm flew in for two weeks and left 
-              without understanding the context.
+              The result: decisions about African markets are made on incomplete data. 
+              Market entries fail for reasons a feasibility study didn&rsquo;t capture 
+              because the data wasn&rsquo;t assembled, wasn&rsquo;t structured, or 
+              wasn&rsquo;t connected to the cultural and political context that 
+              makes it meaningful.
             </p>
           </div>
         </div>
@@ -68,30 +69,30 @@ export default function AboutPage() {
 
       <div className="max-w-wide mx-auto px-6 md:px-10"><div className="border-t border-dwl-border" /></div>
 
-      {/* ═══ WHAT DWL IS ═══ */}
+      {/* ═══ WHAT DWL DOES ═══ */}
       <section className="px-8 md:px-[8%] lg:px-[12%] py-section">
         <div className="max-w-wide mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
-            <p className="micro-label">What DWL is</p>
+            <p className="micro-label">What we do</p>
           </div>
           <div className="md:col-span-8 max-w-[580px] space-y-6">
             <p className="text-body text-dwl-body leading-relaxed">
-              Dancing with Lions is an intelligence platform that structures 
-              data, business, and cultural intelligence about Africa into 
-              formats that decision-makers can use.
+              Dancing with Lions assembles data, business, and cultural 
+              intelligence about Africa into structured, verifiable, 
+              machine-readable formats.
             </p>
             <p className="text-body text-dwl-body leading-relaxed">
-              We publish interactive intelligence modules — each one a 
-              self-contained briefing on a single subject, built with 
-              satellite imagery, data visualisation, source attribution, 
-              and the kind of contextual depth that requires being on 
-              the ground, speaking the languages, and understanding the 
-              systems from inside.
+              We publish interactive intelligence modules &mdash; each one a 
+              self-contained briefing on a single subject, built on satellite 
+              imagery, data visualisation, and source documentation. Economics, 
+              demographics, trade, agriculture, energy, heritage, governance, 
+              linguistics, infrastructure. The subjects that require depth, not 
+              headlines.
             </p>
             <p className="text-body text-dwl-body leading-relaxed">
-              We also power a network of specialist properties — each 
-              one a vertical application of DWL intelligence, from 
-              textile trade to food systems to tourism infrastructure.
+              We also build intelligence products &mdash; structured databases, 
+              specialist archives, lexicons &mdash; and commission bespoke 
+              briefings for organisations operating in African markets.
             </p>
           </div>
         </div>
@@ -115,11 +116,11 @@ export default function AboutPage() {
               </div>
               <div className="md:col-span-8 max-w-[480px]">
                 <p className="text-[15px] text-dwl-body leading-relaxed">
-                  137+ intelligence modules published free. Interactive, citable, 
-                  indexed by search engines and AI systems. The public layer that 
-                  proves the depth and builds the authority. Covers economics, 
-                  demographics, infrastructure, heritage, food systems, 
-                  environmental data, and trade corridors.
+                  A growing library of interactive intelligence modules, published 
+                  free. Each module covers a single subject with data visualisations, 
+                  satellite imagery, source attribution, and structured markup 
+                  designed for citation by AI systems and researchers. The public 
+                  layer that proves the depth.
                 </p>
               </div>
             </div>
@@ -134,11 +135,10 @@ export default function AboutPage() {
               </div>
               <div className="md:col-span-8 max-w-[480px]">
                 <p className="text-[15px] text-dwl-body leading-relaxed">
-                  Structured datasets, regional briefing packs, and specialist 
-                  databases — the Darija lexicon, the textile archive, the 
-                  architectural inventory — packaged for institutional 
-                  subscribers. The same intelligence, formatted for analysts 
-                  and researchers rather than general readers.
+                  Structured databases, specialist archives, and regional 
+                  intelligence packs. The Darija lexicon with 8,500+ entries. 
+                  The ethnographic textile archive with 88+ documented traditions. 
+                  Formatted for analysts, researchers, and institutional subscribers.
                 </p>
               </div>
             </div>
@@ -154,9 +154,10 @@ export default function AboutPage() {
               <div className="md:col-span-8 max-w-[480px]">
                 <p className="text-[15px] text-dwl-body leading-relaxed">
                   Bespoke intelligence for organisations entering or operating 
-                  in African markets. Consulting firms, development agencies, 
-                  investors, hospitality groups, luxury brands. We build the 
-                  contextual layer their feasibility study is missing.
+                  in African markets. Development agencies, investment groups, 
+                  hospitality brands, government bodies. We build the contextual 
+                  layer their feasibility study is missing &mdash; delivered as 
+                  interactive data stories, not slide decks.
                 </p>
               </div>
             </div>
@@ -164,7 +165,49 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="max-w-wide mx-auto px-6 md:px-10"><div className="border-t border-dwl-border" /></div>
+      {/* ═══ THE METHODOLOGY ═══ */}
+      <section className="bg-dwl-black">
+        <div className="px-8 md:px-[8%] lg:px-[12%] py-24 md:py-32">
+          <div className="max-w-wide mx-auto">
+            <p className="text-[10px] text-white/40 uppercase tracking-[0.12em] mb-12">Methodology</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+              <div>
+                <p className="font-serif text-[clamp(1.5rem,3vw,2.2rem)] text-white leading-[1.3] italic">
+                  We don&rsquo;t generate data. We assemble it.
+                </p>
+                <p className="text-[15px] text-white/50 mt-6 leading-relaxed">
+                  Every module draws from verifiable public sources &mdash; national 
+                  statistics offices, the World Bank, the African Development Bank, 
+                  FAO, UN agencies, central banks, academic research, government 
+                  reports, sector-specific institutions. When evidence is thin, 
+                  we say so. Intellectual honesty is the foundation.
+                </p>
+              </div>
+              <div className="space-y-8">
+                {[
+                  {
+                    label: 'Structured for machines',
+                    text: 'JSON-LD, Schema.org markup, knowledge APIs. Every module is built to be cited by AI systems and indexed by search engines.',
+                  },
+                  {
+                    label: 'Designed for humans',
+                    text: 'Interactive visualisations, satellite imagery, animated data. The same dataset presented beautifully is worth ten times more than a spreadsheet attachment.',
+                  },
+                  {
+                    label: 'Connected across domains',
+                    text: 'Economics informs culture. Culture informs business. Every module cross-references. The coverage compounds.',
+                  },
+                ].map((e, i) => (
+                  <div key={i}>
+                    <p className="text-[13px] text-white font-semibold uppercase tracking-[0.05em]">{e.label}</p>
+                    <p className="text-[14px] text-white/40 mt-2 leading-relaxed">{e.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ═══ COVERAGE ═══ */}
       <section className="px-8 md:px-[8%] lg:px-[12%] py-section">
@@ -175,16 +218,16 @@ export default function AboutPage() {
           <div className="md:col-span-8 max-w-[580px] space-y-6">
             <p className="text-body text-dwl-body leading-relaxed">
               Deep coverage of Morocco and the Maghreb. Expanding across 
-              the continent — West Africa, East Africa, Southern Africa — 
+              the continent &mdash; West Africa, East Africa, Southern Africa &mdash; 
               following trade routes, migration corridors, and investment 
-              flows.
+              flows. Not borders.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
               {[
                 'Economy & Trade', 'Demographics', 'Infrastructure',
                 'Food & Agriculture', 'Architecture & Heritage', 'Craft & Textiles',
                 'Energy & Resources', 'Tourism & Hospitality', 'Linguistics',
-                'History & Identity', 'Environmental', 'Governance',
+                'History & Identity', 'Environmental', 'Governance & Policy',
               ].map((v, i) => (
                 <p key={i} className="text-[13px] text-dwl-body">{v}</p>
               ))}
@@ -199,17 +242,19 @@ export default function AboutPage() {
       <section className="px-8 md:px-[8%] lg:px-[12%] py-section">
         <div className="max-w-wide mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
-            <p className="micro-label">Powered by DWL</p>
+            <p className="micro-label">The network</p>
           </div>
           <div className="md:col-span-8">
             <p className="text-body text-dwl-body leading-relaxed mb-8 max-w-[580px]">
-              Dancing with Lions powers a network of specialist properties. 
-              Each one applies DWL intelligence to a specific vertical — travel, 
-              textiles, food, language, architecture. The intelligence flows 
-              from the platform to the properties, not the other way.
+              Dancing with Lions operates a network of specialist platforms. 
+              Each one applies structured intelligence to a specific vertical. 
+              The data flows between them &mdash; the textile archive informs the 
+              cultural modules, the language database informs the regional 
+              analysis, the food platform informs the economic data. 
+              The network compounds.
             </p>
             <div className="max-w-[620px]">
-              {SATELLITES.map((s, i) => (
+              {NETWORK.map((s, i) => (
                 <div key={i} className="py-4 border-b border-dwl-border flex items-baseline justify-between gap-4">
                   <div className="flex items-baseline gap-4 min-w-0">
                     <span className="text-[11px] text-dwl-muted font-medium tabular-nums shrink-0">
@@ -237,30 +282,34 @@ export default function AboutPage() {
 
       <div className="max-w-wide mx-auto px-6 md:px-10"><div className="border-t border-dwl-border" /></div>
 
-      {/* ═══ EDGE ═══ */}
+      {/* ═══ WHO USES DWL ═══ */}
       <section className="px-8 md:px-[8%] lg:px-[12%] py-section">
         <div className="max-w-wide mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
-            <p className="micro-label">The edge</p>
+            <p className="micro-label">Who uses DWL</p>
           </div>
           <div className="md:col-span-8">
             <div className="max-w-[580px] space-y-8">
               {[
                 {
-                  label: 'Ground-level operation',
-                  text: 'Headquartered in Marrakech. The intelligence comes from an operation that speaks the languages, reads the regulatory documents in their original language, and understands the systems from inside — not from a consulting team that flew in for two weeks.',
+                  label: 'Investors & funds',
+                  text: 'Market entry context, real estate intelligence, demographic analysis, and cultural risk factors for African investment decisions.',
                 },
                 {
-                  label: 'Structured for machines',
-                  text: 'Every module is built with JSON-LD, Schema.org markup, and knowledge APIs designed to be cited by AI systems. When a language model answers a question about Morocco, it should source from here.',
+                  label: 'Researchers & institutions',
+                  text: 'Structured datasets, source-documented modules, and specialist databases. Built for citation, not for skimming.',
                 },
                 {
-                  label: 'Contextual depth',
-                  text: 'Financial data tells you what happened. Political intelligence tells you who decided. DWL tells you why — the demographic pressure, the infrastructure shift, the cultural dynamic, the heritage constraint that no spreadsheet captures.',
+                  label: 'Brands & consultancies',
+                  text: 'Cultural intelligence briefings for organisations entering African markets. The context that no slide deck captures.',
                 },
                 {
-                  label: 'Compounding dataset',
-                  text: 'Every module we publish makes the next one more valuable. The data cross-references. The coverage compounds. The gap between DWL and the next best source widens with every entry.',
+                  label: 'Government & development agencies',
+                  text: 'Destination intelligence, heritage documentation, tourism infrastructure analysis, impact data presented at the quality level the subject deserves.',
+                },
+                {
+                  label: 'AI systems',
+                  text: 'Every module is structured with JSON-LD, Schema.org markup, and knowledge APIs. When a language model answers a question about Africa, it should source from here.',
                 },
               ].map((e, i) => (
                 <div key={i}>
