@@ -13,15 +13,15 @@ const plexMono = IBM_Plex_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Dancing with Lions — Cultural Intelligence for Al Maghrib',
-  description: 'Data, research, and structured intelligence about Morocco and the Maghreb.',
+  title: 'Dancing with Lions — Cultural Intelligence for Africa',
+  description: 'Data storytelling studio based in Marrakech. Interactive research, structured datasets, and long-form data journalism about Africa, the Maghreb, and adjacent worlds.',
   metadataBase: new URL('https://dancingwithlions.com'),
   icons: {
     icon: '/favicon.svg',
   },
   openGraph: {
     title: 'Dancing with Lions',
-    description: 'Cultural intelligence for Al Maghrib and its connected worlds.',
+    description: 'Cultural intelligence studio. Data-driven stories about Africa.',
     url: 'https://dancingwithlions.com',
     siteName: 'Dancing with Lions',
     locale: 'en_US',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dancing with Lions',
-    description: 'Cultural intelligence for Al Maghrib and its connected worlds.',
+    description: 'Cultural intelligence studio. Data-driven stories about Africa.',
   },
   robots: {
     index: true,
