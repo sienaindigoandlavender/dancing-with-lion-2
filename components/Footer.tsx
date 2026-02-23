@@ -15,14 +15,7 @@ const LEGAL_LINKS = [
   { label: 'Disclaimer', href: '/disclaimer' },
 ]
 
-const NETWORK_SITES = [
-  { name: 'Slow Morocco', url: 'https://slowmorocco.com' },
-  { name: 'House of Weaves', url: 'https://houseofweaves.com' },
-  { name: 'Cuisines of Morocco', url: 'https://cuisinesofmorocco.com' },
-  { name: 'Darija', url: 'https://dharija.space' },
-  { name: 'Derb 37', url: 'https://derb37.com' },
-  { name: 'Amazigh Online', url: 'https://amazigh.online' },
-]
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -74,27 +67,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Level 2 — Network */}
-      <div className="bg-[#161616]">
-        <div className="max-w-wide mx-auto px-6 md:px-10 py-8">
-          <p className="text-[10px] tracking-[0.15em] uppercase text-white/25 mb-4">The Network</p>
-          <div className="flex flex-wrap gap-x-6 gap-y-2">
-            {NETWORK_SITES.map((site) => (
-              <a
-                key={site.name}
-                href={site.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[12px] text-white/30 hover:text-white/60 transition-colors"
-              >
-                {site.name}
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Level 3 — Legal + Copyright */}
+      {/* Level 2 — Legal + Copyright */}
       <div className="bg-[#0e0e0e]">
         <div className="max-w-wide mx-auto px-6 md:px-10 py-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
