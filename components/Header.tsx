@@ -35,13 +35,13 @@ export default function Header() {
             {/* Desktop Nav */}
             <nav className="hidden md:flex items-center gap-8">
               <Link href="/data" className="meta-text hover:text-dwl-black transition-colors">
-                Data
+                Intelligence
               </Link>
               <Link href="/about" className="meta-text hover:text-dwl-black transition-colors">
                 About
               </Link>
               <Link href="/contact" className="meta-text hover:text-dwl-black transition-colors">
-                Contact
+                Briefings
               </Link>
               {/* Search icon */}
               <button
@@ -87,13 +87,13 @@ export default function Header() {
           <div className="md:hidden bg-white border-b border-dwl-border">
             <nav className="max-w-wide mx-auto px-6 py-8 flex flex-col gap-6">
               <Link href="/data" onClick={() => setMenuOpen(false)} className="meta-text">
-                Data
+                Intelligence
               </Link>
               <Link href="/about" onClick={() => setMenuOpen(false)} className="meta-text">
                 About
               </Link>
               <Link href="/contact" onClick={() => setMenuOpen(false)} className="meta-text">
-                Contact
+                Briefings
               </Link>
             </nav>
           </div>

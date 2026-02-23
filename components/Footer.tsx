@@ -41,13 +41,13 @@ export default function Footer() {
               <p className="text-[10px] tracking-[0.15em] uppercase text-white/25 mb-4">Navigate</p>
               <div className="flex flex-col gap-3">
                 <Link href="/data" className="text-[14px] text-white/50 hover:text-white transition-colors">
-                  Data
+                  Intelligence
                 </Link>
                 <Link href="/about" className="text-[14px] text-white/50 hover:text-white transition-colors">
                   About
                 </Link>
                 <Link href="/contact" className="text-[14px] text-white/50 hover:text-white transition-colors">
-                  Contact
+                  Briefings
                 </Link>
               </div>
             </div>
