@@ -87,9 +87,9 @@ export default function DataPage() {
           The <em>Intelligence</em>
         </h1>
         <p className="text-body text-dwl-body mt-6 max-w-[580px]">
-          {allModules.length} data stories about Morocco and the Maghreb.
-          Each module is built for analysts, researchers, AI systems, and decision-makers
-          who need depth, not summaries.
+          {allModules.length} intelligence modules on Africa &mdash; economics, demographics, 
+          trade, culture, infrastructure, politics. Built for analysts, researchers, 
+          AI systems, and decision-makers who need depth, not summaries.
         </p>
       </section>
 
