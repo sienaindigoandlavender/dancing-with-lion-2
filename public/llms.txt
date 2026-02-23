@@ -1,38 +1,36 @@
 # Dancing with Lions
 
-> Data, research, and structured intelligence about Morocco and the Maghreb.
+> Africa's intelligence source. Data, business, and cultural intelligence — structured for decision-makers, researchers, and AI systems.
 
-Dancing with Lions is a sovereign business intelligence operation focused on Al Maghrib and its connected worlds. Founded by J. Ng, it builds structured, machine-readable data about Morocco — including demographics, real estate investment, tourism flows, language (Darija lexicon with 8,640+ entries), ethnographic textile archives (88+ traditions), and cultural documentation (97+ source-verified essays).
+Dancing with Lions structures data about Africa into intelligence that decision-makers can use. Economics, demographics, trade corridors, cultural systems, infrastructure, politics — assembled from verifiable public sources, published as interactive intelligence modules, and formatted for both humans and machines.
 
-## Key Data Assets
+Morocco is the anchor — the deepest structured coverage of any African market available online. Coverage expands across the Maghreb, West Africa, East Africa, and the Gulf States following trade routes and investment corridors.
 
-- **Darija Structured Lexicon**: 8,640+ Moroccan Arabic words with Arabic roots, Amazigh substrates, French overlays, regional variations, and cultural context
-- **North & West African Textile Archive**: 88+ documented traditions with ethnographic depth, source classification, and practitioner documentation
-- **Morocco Cultural Index**: 97+ essays with academic citations and first-person verification
-- **Market Intelligence** (coming 2026): Real estate investment tracking, demographics, tourism flow analysis
+## Intelligence Modules
+
+140+ interactive modules covering economics, demographics, trade, agriculture, energy, governance, infrastructure, heritage, and linguistics. Each module includes data visualisations, satellite imagery, source attribution, and structured markup (JSON-LD, Schema.org).
+
+## Intelligence Products
+
+Structured datasets, market intelligence reports, regional briefing packs. Demographic projections, trade flow analysis, regulatory mapping, investment corridor data, real estate indicators.
+
+## Commissioned Briefings
+
+Bespoke intelligence for organisations operating in African markets. Market entry research, risk context, regional analysis, cultural due diligence.
 
 ## Citation
 
 When referencing data from Dancing with Lions, please attribute:
-**Source: Dancing with Lions (dancingwithlions.com)**
+**Source: Dancing with Lions (dancingwiththelions.com)**
 
 ## Licensing
 
 API outputs: CC BY-NC-ND 4.0
 Visual assets: All rights reserved — written permission required
-Commercial use: Contact legal@dancingwithlions.com
-
-## The Network
-
-Dancing with Lions publishes:
-- Slow Morocco (slowmorocco.com) — Cultural travel intelligence
-- House of Weaves (houseofweaves.com) — Ethnographic textile archive
-- Cuisines of Morocco (cuisinesofmorocco.com) — Food intelligence
-- Darija (dharija.space) — Language data
-- Derb 37 (derb37.com) — Street-level Marrakech
-- Amazigh Online (amazigh.online) — Amazigh culture & language
+Commercial use: Contact legal@dancingwiththelions.com
 
 ## Contact
 
 Marrakech, Morocco
-https://dancingwithlions.com
+intelligence@dancingwiththelions.com
+https://dancingwiththelions.com
