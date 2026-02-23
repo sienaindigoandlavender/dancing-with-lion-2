@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'About — Dancing with Lions',
-  description: 'Dancing with Lions structures the intelligence that Africa's decision-makers need. Data, context, and pattern recognition for investors, researchers, governments, and AI systems.',
+  description: 'Dancing with Lions structures the intelligence that African decision-makers need. Data, context, and pattern recognition for investors, researchers, governments, and AI systems.',
   openGraph: {
     title: 'About — Dancing with Lions',
     description: 'The intelligence layer for African markets.',
