@@ -169,7 +169,7 @@ export default function TheAtlanticSpine() {
             The Atlantic<br /><em>Spine</em>
           </h1>
           <div className="mt-10 max-w-[620px]">
-            <p className="text-[16px] md:text-[18px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
+            <p className="text-[16px] md:text-[18px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.85)' }}>
               5,660 kilometres of pipeline. 13 countries. $25 billion. Lagos to Tangier 
               along the Atlantic coast. The largest energy infrastructure project in 
               African history — and it is racing against a rival that crosses the Sahara.
@@ -189,7 +189,7 @@ export default function TheAtlanticSpine() {
             ].map(([val, lab]) => (
               <div key={lab}>
                 <p className="font-serif text-[24px] md:text-[28px] italic text-white">{val}</p>
-                <p className="text-[10px] uppercase tracking-[0.1em] mt-1" style={{ color: 'rgba(255,255,255,0.3)' }}>{lab}</p>
+                <p className="text-[10px] uppercase tracking-[0.1em] mt-1" style={{ color: 'rgba(255,255,255,0.55)' }}>{lab}</p>
               </div>
             ))}
           </div>
@@ -254,7 +254,7 @@ export default function TheAtlanticSpine() {
           <h2 className="font-serif text-[28px] md:text-[36px] italic leading-[1.05] mb-4 text-white">
             13 countries. 3 languages. One pipeline.
           </h2>
-          <p className="text-[14px] max-w-[560px] leading-relaxed mb-12" style={{ color: 'rgba(255,255,255,0.4)' }}>
+          <p className="text-[14px] max-w-[560px] leading-relaxed mb-12" style={{ color: 'rgba(255,255,255,0.7)' }}>
             The NMGP crosses anglophone, francophone, and lusophone Africa. No other infrastructure 
             project on the continent spans all three linguistic zones.
           </p>
@@ -282,10 +282,10 @@ export default function TheAtlanticSpine() {
                       {c.language}
                     </span>
                   </div>
-                  <p className="text-[11px] mb-4" style={{ color: 'rgba(255,255,255,0.3)' }}>
+                  <p className="text-[11px] mb-4" style={{ color: 'rgba(255,255,255,0.55)' }}>
                     Pop. {c.population} · {c.gasAccess}
                   </p>
-                  <p className="text-[12px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.5)' }}>
+                  <p className="text-[12px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
                     {c.note}
                   </p>
                 </div>
@@ -441,7 +441,7 @@ export default function TheAtlanticSpine() {
                   }}
                 >
                   <h3 className="text-[14px] text-white font-semibold mb-4">{title}</h3>
-                  <p className="text-[13px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.45)' }}>{text}</p>
+                  <p className="text-[13px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>{text}</p>
                 </div>
               )
             })}
