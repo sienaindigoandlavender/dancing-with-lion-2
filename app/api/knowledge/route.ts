@@ -56,14 +56,6 @@ export async function GET() {
         description: 'Arrival data, seasonal patterns, spending analysis, accommodation trends.',
       },
     ],
-    network: [
-      { name: 'Slow Morocco', domain: 'slowmorocco.com', type: 'Cultural travel intelligence' },
-      { name: 'House of Weaves', domain: 'houseofweaves.com', type: 'Ethnographic textile archive' },
-      { name: 'Cuisines of Morocco', domain: 'cuisinesofmorocco.com', type: 'Food intelligence' },
-      { name: 'Darija', domain: 'dharija.space', type: 'Language data' },
-      { name: 'Derb 37', domain: 'derb37.com', type: 'Street-level Marrakech' },
-      { name: 'Amazigh Online', domain: 'amazigh.online', type: 'Amazigh culture & language' },
-    ],
     licensing: {
       api: 'CC BY-NC-ND 4.0',
       visual_assets: 'All rights reserved — written permission and visible attribution required',
