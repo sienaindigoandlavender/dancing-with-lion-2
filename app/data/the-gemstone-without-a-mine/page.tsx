@@ -93,6 +93,7 @@ function SatelliteMap() {
 
   useEffect(() => {
     if (!mapRef.current || loaded) return
+
     const link = document.createElement('link')
     link.rel = 'stylesheet'
     link.href = 'https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css'
@@ -104,44 +105,108 @@ function SatelliteMap() {
       const mapboxgl = (window as any).mapboxgl
       if (!mapboxgl) return
       mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || ''
+
       const map = new mapboxgl.Map({
         container: mapRef.current!,
         style: 'mapbox://styles/mapbox/satellite-v9',
         center: [25.50, 25.35],
-        zoom: 7.5,
+        zoom: 9.5,
         pitch: 0,
         bearing: 0,
         interactive: true,
         attributionControl: false,
       })
+
       map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), 'top-right')
       map.addControl(new mapboxgl.ScaleControl({ maxWidth: 200 }), 'bottom-left')
+
       map.on('load', () => {
+        // Strewn field outline — approximate 6,500 km² ellipse
+        map.addSource('strewn-field', {
+          type: 'geojson',
+          data: {
+            type: 'Feature',
+            geometry: {
+              type: 'Polygon',
+              coordinates: [(() => {
+                const cx = 25.50, cy = 25.35, rx = 0.65, ry = 0.45
+                const pts = []
+                for (let i = 0; i <= 64; i++) {
+                  const a = (i / 64) * 2 * Math.PI
+                  pts.push([cx + rx * Math.cos(a), cy + ry * Math.sin(a)])
+                }
+                return pts
+              })()]
+            },
+            properties: {}
+          }
+        })
+
+        map.addLayer({
+          id: 'strewn-fill',
+          type: 'fill',
+          source: 'strewn-field',
+          paint: {
+            'fill-color': '#D4AF37',
+            'fill-opacity': 0.08,
+          }
+        })
+
+        map.addLayer({
+          id: 'strewn-outline',
+          type: 'line',
+          source: 'strewn-field',
+          paint: {
+            'line-color': '#D4AF37',
+            'line-width': 1.5,
+            'line-opacity': 0.6,
+            'line-dasharray': [4, 3],
+          }
+        })
+
+        // Centre marker with popup
         new mapboxgl.Marker({ color: '#D4AF37' })
           .setLngLat([25.50, 25.35])
+          .setPopup(new mapboxgl.Popup({ offset: 25, closeButton: false })
+            .setHTML('<div style="font-family:IBM Plex Mono,monospace;font-size:11px;padding:4px"><strong>LDG Strewn Field</strong><br/>6,500 km² scatter zone<br/>98% pure silica glass</div>'))
+          .addTo(map)
+
+        // Gilf Kebir marker
+        new mapboxgl.Marker({ color: '#8B6914' })
+          .setLngLat([25.00, 23.50])
+          .setPopup(new mapboxgl.Popup({ offset: 25, closeButton: false })
+            .setHTML('<div style="font-family:IBM Plex Mono,monospace;font-size:11px;padding:4px"><strong>Gilf Kebir</strong><br/>Plateau to the south<br/>Paleolithic tool sites</div>'))
           .addTo(map)
       })
+
       setLoaded(true)
     }
     document.head.appendChild(script)
   }, [loaded])
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '500px', background: '#1a1a1a' }}>
+    <div style={{ position: 'relative', width: '100%', height: '600px', background: '#0a0a0a' }}>
       <div ref={mapRef} style={{ width: '100%', height: '100%' }} />
       <div style={{
-        position: 'absolute', bottom: 16, right: 16, background: 'rgba(0,0,0,0.7)',
-        padding: '8px 14px', fontSize: 11, fontFamily: "'IBM Plex Mono', monospace",
-        color: '#ffffff', letterSpacing: '0.02em',
+        position: 'absolute', bottom: 16, right: 16, background: 'rgba(0,0,0,0.8)',
+        padding: '10px 16px', fontSize: 11, fontFamily: "'IBM Plex Mono', monospace",
+        color: '#ffffff', letterSpacing: '0.02em', backdropFilter: 'blur(8px)',
       }}>
         25.35°N, 25.50°E — Great Sand Sea, Egypt-Libya border
       </div>
       <div style={{
-        position: 'absolute', top: 16, left: 16, background: 'rgba(0,0,0,0.7)',
-        padding: '8px 14px', fontSize: 10, fontFamily: "'IBM Plex Mono', monospace",
-        color: '#ffffff', letterSpacing: '0.05em', textTransform: 'uppercase',
+        position: 'absolute', top: 16, left: 16, background: 'rgba(0,0,0,0.8)',
+        padding: '10px 16px', fontSize: 10, fontFamily: "'IBM Plex Mono', monospace",
+        color: '#ffffff', letterSpacing: '0.05em', textTransform: 'uppercase', backdropFilter: 'blur(8px)',
       }}>
         Satellite View — Mapbox
+      </div>
+      <div style={{
+        position: 'absolute', bottom: 16, left: 16, background: 'rgba(0,0,0,0.8)',
+        padding: '10px 16px', fontSize: 10, fontFamily: "'IBM Plex Mono', monospace",
+        color: '#D4AF37', letterSpacing: '0.03em', backdropFilter: 'blur(8px)',
+      }}>
+        ◇ Dashed line = approximate strewn field boundary
       </div>
     </div>
   )
