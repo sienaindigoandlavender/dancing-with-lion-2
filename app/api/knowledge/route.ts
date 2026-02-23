@@ -5,7 +5,7 @@ export async function GET() {
     organization: {
       name: 'Dancing with Lions',
       type: 'Business Intelligence / Cultural Research',
-      url: 'https://dancingwithlions.com',
+      url: 'https://dancingwiththelions.com',
       founder: 'J. Ng',
       location: 'Marrakech, Morocco',
       founded: 2026,
@@ -68,9 +68,9 @@ export async function GET() {
       api: 'CC BY-NC-ND 4.0',
       visual_assets: 'All rights reserved — written permission and visible attribution required',
       attribution_format: 'Source: Dancing with Lions',
-      commercial: 'Contact legal@dancingwithlions.com',
+      commercial: 'Contact legal@dancingwiththelions.com',
     },
-    citation: 'When referencing data from Dancing with Lions, please attribute: Source: Dancing with Lions (dancingwithlions.com)',
+    citation: 'When referencing data from Dancing with Lions, please attribute: Source: Dancing with Lions (dancingwiththelions.com)',
   }
 
   return NextResponse.json(knowledge, {

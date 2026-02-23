@@ -94,7 +94,7 @@ function IPFallbackContent() {
       <div>
         <p className="micro-label mb-6">Copyright</p>
         <p className="text-body text-dwl-black leading-relaxed">
-          All content published on dancingwithlions.com — including but not limited to data visualizations,
+          All content published on dancingwiththelions.com — including but not limited to data visualizations,
           maps, charts, infographics, research documents, written analysis, and original datasets —
           is the intellectual property of Dancing with Lions.
         </p>
@@ -113,7 +113,7 @@ function IPFallbackContent() {
           {[
             { num: '01', title: 'Written Permission', desc: 'Prior written consent must be obtained before reproducing any visual asset.' },
             { num: '02', title: 'Visible Attribution', desc: 'All reproduced assets must include visible attribution.' },
-            { num: '03', title: 'Link Back', desc: 'Digital reproductions must include a hyperlink to dancingwithlions.com.' },
+            { num: '03', title: 'Link Back', desc: 'Digital reproductions must include a hyperlink to dancingwiththelions.com.' },
             { num: '04', title: 'No Modification', desc: 'Visual assets may not be cropped, recolored, overlaid, or otherwise altered without explicit permission.' },
           ].map((rule) => (
             <div key={rule.num} className="py-4 border-b border-dwl-border flex items-start gap-4">
@@ -170,7 +170,7 @@ function IPFallbackContent() {
           and institutional research — contact us for licensing terms.
         </p>
         <p className="text-[16px] text-dwl-black font-medium mt-4">
-          legal@dancingwithlions.com
+          legal@dancingwiththelions.com
         </p>
       </div>
     </div>
