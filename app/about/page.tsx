@@ -10,17 +10,6 @@ export const metadata: Metadata = {
   },
 }
 
-const NETWORK = [
-  { name: 'Slow Morocco', domain: 'slowmorocco.com', role: 'Cultural travel intelligence — Morocco' },
-  { name: 'Slow World', domain: 'slowworld.travel', role: 'Cultural journeys — Türkiye, Namibia, Tunisia, Mauritius' },
-  { name: 'House of Weaves', domain: 'houseofweaves.com', role: 'Ethnographic textile archive — North & West Africa' },
-  { name: 'Tilwen', domain: 'tilwen.com', role: 'Documented rugs with provenance' },
-  { name: 'Cuisines of Morocco', domain: 'cuisinesofmorocco.com', role: 'Food intelligence — regional, historical, practical' },
-  { name: 'Darija Dictionary', domain: 'dharija.space', role: 'Moroccan Arabic reference — 8,500+ entries' },
-  { name: 'Architecture of Morocco', domain: 'architectureofmorocco.com', role: 'Built heritage database' },
-  { name: 'Derb 37', domain: 'derb37.com', role: 'Street-level Marrakech — daily life documented' },
-]
-
 export default function AboutPage() {
   return (
     <div className="pt-16">
@@ -230,50 +219,6 @@ export default function AboutPage() {
                 'History & Identity', 'Environmental', 'Governance & Policy',
               ].map((v, i) => (
                 <p key={i} className="text-[13px] text-dwl-body">{v}</p>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="max-w-wide mx-auto px-6 md:px-10"><div className="border-t border-dwl-border" /></div>
-
-      {/* ═══ THE NETWORK ═══ */}
-      <section className="px-8 md:px-[8%] lg:px-[12%] py-section">
-        <div className="max-w-wide mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
-          <div className="md:col-span-4">
-            <p className="micro-label">The network</p>
-          </div>
-          <div className="md:col-span-8">
-            <p className="text-body text-dwl-body leading-relaxed mb-8 max-w-[580px]">
-              Dancing with Lions operates a network of specialist platforms. 
-              Each one applies structured intelligence to a specific vertical. 
-              The data flows between them &mdash; the textile archive informs the 
-              cultural modules, the language database informs the regional 
-              analysis, the food platform informs the economic data. 
-              The network compounds.
-            </p>
-            <div className="max-w-[620px]">
-              {NETWORK.map((s, i) => (
-                <div key={i} className="py-4 border-b border-dwl-border flex items-baseline justify-between gap-4">
-                  <div className="flex items-baseline gap-4 min-w-0">
-                    <span className="text-[11px] text-dwl-muted font-medium tabular-nums shrink-0">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
-                    <div className="min-w-0">
-                      <p className="text-[15px] text-dwl-black font-semibold">{s.name}</p>
-                      <p className="text-[12px] text-dwl-muted mt-0.5">{s.role}</p>
-                    </div>
-                  </div>
-                  <a
-                    href={`https://${s.domain}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[11px] text-dwl-muted hover:text-dwl-black transition-colors shrink-0"
-                  >
-                    {s.domain} ↗
-                  </a>
-                </div>
               ))}
             </div>
           </div>

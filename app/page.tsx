@@ -8,7 +8,7 @@ import { SEARCH_INDEX } from '@/lib/search-index'
    Africa's intelligence source.
    ═══════════════════════════════════════════════════════ */
 
-const LATEST = SEARCH_INDEX.slice(-6).reverse()
+const LATEST = SEARCH_INDEX.slice(-4).reverse()
 
 /* Compute category counts dynamically */
 const VERTICALS = (() => {
@@ -61,28 +61,84 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══ THE STATEMENT ═══ */}
+      {/* ═══ THE HOOK — Africa reframed ═══ */}
       <section className="border-t border-dwl-border">
         <div className="px-8 md:px-[8%] lg:px-[12%] py-24 md:py-40">
-          <div className="max-w-[780px]">
-            <p className="font-serif text-[clamp(1.6rem,3.5vw,2.8rem)] text-dwl-black leading-[1.3] italic">
-              54 countries. 1.4 billion people. The fastest-growing 
-              economies on earth. And the thinnest intelligence 
-              infrastructure of any continent.
-            </p>
-            <p className="text-body text-dwl-body mt-8 leading-relaxed max-w-[580px]">
-              The data exists &mdash; buried in government reports, scattered across 
-              institutional databases, locked in languages and formats that 
-              decision-makers cannot access. We find it, structure it, verify it, 
-              and publish it. Open access. Machine-readable. Beautifully designed. 
-              Continuously expanding.
-            </p>
+          <div className="max-w-wide mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
+            <div className="md:col-span-7">
+              <p className="font-serif text-[clamp(1.8rem,4vw,3.2rem)] text-dwl-black leading-[1.25] italic">
+                Morocco holds 70% of the world&rsquo;s phosphate reserves. 
+                Nigeria&rsquo;s film industry generates $6.4 billion annually. 
+                Ethiopia built Africa&rsquo;s first waste-to-energy plant. 
+                Rwanda runs the continent&rsquo;s only drone blood-delivery network.
+              </p>
+              <p className="text-body text-dwl-body mt-8 leading-relaxed max-w-[540px]">
+                This is the Africa that doesn&rsquo;t make headlines. 
+                The data is extraordinary &mdash; but scattered across government 
+                reports, institutional databases, and languages that 
+                decision-makers cannot access. We assemble it, structure it, 
+                and make it visible.
+              </p>
+            </div>
+            <div className="md:col-span-5 flex flex-col justify-end">
+              <div className="border-l-[3px] border-dwl-black pl-6 md:pl-8">
+                <p className="font-serif text-[clamp(2.5rem,6vw,4.5rem)] text-dwl-black leading-[0.9] italic">
+                  54
+                </p>
+                <p className="text-[11px] text-dwl-muted uppercase tracking-[0.1em] mt-2">
+                  countries. 1.4 billion people.
+                </p>
+                <p className="text-[13px] text-dwl-body mt-4 leading-relaxed">
+                  The fastest-growing economies on earth &mdash; and the 
+                  thinnest intelligence infrastructure of any continent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ MOROCCO — THE ANCHOR ═══ */}
+      <section className="bg-dwl-black">
+        <div className="px-8 md:px-[8%] lg:px-[12%] py-24 md:py-32">
+          <div className="max-w-wide mx-auto">
+            <p className="text-[10px] text-white/40 uppercase tracking-[0.12em] mb-8">Deep coverage</p>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
+              <div className="md:col-span-7">
+                <h2 className="font-serif text-[clamp(2rem,5vw,3.8rem)] text-white leading-[0.95] italic">
+                  Morocco is our anchor.
+                </h2>
+                <p className="text-[15px] text-white/50 mt-6 leading-relaxed max-w-[500px]">
+                  The most complete structured intelligence on Morocco available 
+                  anywhere online. Economics, demographics, trade, agriculture, 
+                  energy, heritage, linguistics, architecture, food systems, 
+                  governance. Expanding across the Maghreb and the continent &mdash; 
+                  following trade routes, not borders.
+                </p>
+              </div>
+              <div className="md:col-span-5">
+                <div className="space-y-6">
+                  {[
+                    { region: 'Morocco & the Maghreb', status: 'Deep coverage' },
+                    { region: 'West Africa', status: 'Expanding' },
+                    { region: 'East Africa', status: 'Expanding' },
+                    { region: 'Southern Africa', status: 'Coming' },
+                    { region: 'Gulf States', status: 'Coming' },
+                  ].map((r, i) => (
+                    <div key={i} className="flex items-baseline justify-between border-b border-white/10 pb-3">
+                      <p className="text-[14px] text-white/80">{r.region}</p>
+                      <p className="text-[10px] text-white/30 uppercase tracking-[0.1em]">{r.status}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ═══ THREE PILLARS ═══ */}
-      <section className="border-t border-dwl-border">
+      <section className="border-b border-dwl-border">
         <div className="px-8 md:px-[8%] lg:px-[12%] py-24 md:py-32">
           <p className="micro-label mb-16">Three layers of intelligence</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-dwl-border">
@@ -107,25 +163,6 @@ export default function HomePage() {
                 <p className="font-serif text-[36px] italic text-dwl-black leading-none mb-5">{p.num}</p>
                 <h2 className="text-[15px] text-dwl-black font-semibold uppercase tracking-[0.05em] mb-4">{p.title}</h2>
                 <p className="text-[14px] text-dwl-body leading-relaxed">{p.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══ NUMBERS ═══ */}
-      <section className="bg-dwl-black">
-        <div className="px-8 md:px-[8%] lg:px-[12%] py-20 md:py-28">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
-            {[
-              { num: `${SEARCH_INDEX.length}+`, label: 'Intelligence modules' },
-              { num: '8,500+', label: 'Structured lexicon entries' },
-              { num: '88+', label: 'Textile records documented' },
-              { num: '12', label: 'Countries in active coverage' },
-            ].map((s, i) => (
-              <div key={i}>
-                <p className="font-serif text-[clamp(2.5rem,5vw,4rem)] italic text-white leading-none">{s.num}</p>
-                <p className="text-[11px] text-white/40 uppercase tracking-[0.1em] mt-3">{s.label}</p>
               </div>
             ))}
           </div>
@@ -210,75 +247,56 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══ THE NETWORK ═══ */}
-      <section className="border-t border-dwl-border bg-dwl-offwhite">
-        <div className="px-8 md:px-[8%] lg:px-[12%] py-24 md:py-32">
-          <p className="micro-label mb-4">The Network</p>
-          <p className="text-body text-dwl-body leading-relaxed mb-12 max-w-[580px]">
-            Dancing with Lions operates a network of specialist platforms. 
-            Each one applies structured intelligence to a specific domain &mdash; textiles, 
-            food systems, language, architecture, travel. The data flows between them.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { name: 'Slow Morocco', desc: 'Cultural travel intelligence', domain: 'slowmorocco.com' },
-              { name: 'House of Weaves', desc: 'Ethnographic textile archive', domain: 'houseofweaves.com' },
-              { name: 'Cuisines of Morocco', desc: 'Food intelligence platform', domain: 'cuisinesofmorocco.com' },
-              { name: 'Darija Dictionary', desc: '8,500+ entries · Moroccan Arabic', domain: 'dharija.space' },
-            ].map((s, i) => (
-              <a
-                key={i}
-                href={`https://${s.domain}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group"
-              >
-                <p className="text-[15px] text-dwl-black font-semibold group-hover:opacity-60 transition-opacity">{s.name}</p>
-                <p className="text-[12px] text-dwl-muted mt-1 leading-relaxed">{s.desc}</p>
-                <p className="text-[11px] text-dwl-muted mt-2 group-hover:text-dwl-black transition-colors">{s.domain} ↗</p>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══ CTA ═══ */}
+      {/* ═══ HOW IT WORKS + CTA ═══ */}
       <section className="bg-dwl-black">
         <div className="px-8 md:px-[8%] lg:px-[12%] py-24 md:py-32">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
-            <div>
-              <p className="text-[10px] text-white/40 uppercase tracking-[0.12em] mb-4">Open access</p>
-              <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] text-white leading-[0.95] italic">
-                Explore the platform
-              </h2>
-              <p className="text-[14px] text-white/50 mt-4 max-w-[400px] leading-relaxed">
-                {SEARCH_INDEX.length}+ intelligence modules. Economics, demographics, 
-                trade, heritage, infrastructure, politics. Satellite maps, data 
-                visualisations, source documentation. Open access.
-              </p>
-              <Link
-                href="/data"
-                className="inline-block mt-8 px-10 py-4 bg-white text-dwl-black text-[11px] font-semibold uppercase tracking-[0.1em] hover:opacity-80 transition-opacity"
-              >
-                Browse Modules →
-              </Link>
-            </div>
-            <div>
-              <p className="text-[10px] text-white/40 uppercase tracking-[0.12em] mb-4">Intelligence services</p>
-              <h2 className="font-serif text-[clamp(1.5rem,3vw,2.5rem)] text-white leading-[1.1] italic">
-                Commission a briefing
-              </h2>
-              <p className="text-[14px] text-white/50 mt-4 max-w-[400px] leading-relaxed">
-                Bespoke intelligence for organisations operating in African markets. 
-                Market entry research, risk context, regional analysis, data 
-                storytelling for your stakeholders.
-              </p>
-              <a
-                href="mailto:intelligence@dancingwiththelions.com"
-                className="inline-block mt-8 px-10 py-4 border border-white/20 text-white text-[11px] font-semibold uppercase tracking-[0.1em] hover:bg-white hover:text-dwl-black transition-all"
-              >
-                Get in touch →
-              </a>
+          <div className="max-w-wide mx-auto">
+            <p className="text-[10px] text-white/40 uppercase tracking-[0.12em] mb-12">How it works</p>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24">
+              <div className="md:col-span-7">
+                <div className="space-y-10">
+                  {[
+                    {
+                      num: '01',
+                      title: 'Open platform',
+                      text: 'Browse our growing library of interactive intelligence modules — free, open access. Each module covers a single subject with data visualisations, satellite imagery, and source documentation.',
+                    },
+                    {
+                      num: '02',
+                      title: 'Intelligence products',
+                      text: 'Structured databases, specialist archives, and regional briefing packs — formatted for analysts, researchers, and institutional subscribers.',
+                    },
+                    {
+                      num: '03',
+                      title: 'Commissioned briefings',
+                      text: 'Bespoke intelligence for your organisation. Market entry research, risk context, regional analysis, cultural due diligence — delivered as interactive data stories, not slide decks.',
+                    },
+                  ].map((step) => (
+                    <div key={step.num} className="flex gap-6">
+                      <p className="font-serif text-[28px] italic text-white/20 leading-none shrink-0">{step.num}</p>
+                      <div>
+                        <p className="text-[13px] text-white font-semibold uppercase tracking-[0.05em]">{step.title}</p>
+                        <p className="text-[14px] text-white/45 mt-2 leading-relaxed">{step.text}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="md:col-span-5 flex flex-col justify-center">
+                <h2 className="font-serif text-[clamp(1.8rem,3.5vw,2.8rem)] text-white leading-[1.1] italic">
+                  Need intelligence<br />on an African market?
+                </h2>
+                <p className="text-[14px] text-white/45 mt-4 leading-relaxed">
+                  Tell us what you&rsquo;re working on. We&rsquo;ll tell you 
+                  what we already have and what we can build.
+                </p>
+                <a
+                  href="mailto:intelligence@dancingwiththelions.com"
+                  className="inline-block mt-8 px-10 py-4 bg-white text-dwl-black text-[11px] font-semibold uppercase tracking-[0.1em] hover:opacity-80 transition-opacity self-start"
+                >
+                  Get in touch →
+                </a>
+              </div>
             </div>
           </div>
         </div>
