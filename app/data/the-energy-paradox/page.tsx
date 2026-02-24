@@ -97,7 +97,7 @@ export default function TheEnergyParadox() {
       {/* PULLQUOTE */}
       <section className="border-t border-[#e5e5e5] bg-[#fafafa]">
         <div className="max-w-[800px] mx-auto px-6 md:px-10 py-20 md:py-28 min-h-[42vh] flex items-center">
-          <blockquote className="border-l-[3px] pl-6 md:pl-8" style={{ borderColor: C.solar }}>
+          <blockquote className="border-l-[3px] pl-6 md:pl-8" style={{ borderColor: '#D97706' }}>
             <p className="font-serif text-[24px] md:text-[32px] italic leading-[1.4] text-[#0a0a0a]">Africa is not asking for help. It is offering answers. Energy is not just a public good. It is a driver of jobs, industry, and transformation.</p>
             <p className="text-[11px] text-[#a3a3a3] mt-4 uppercase tracking-wider">Claver Gatete — UN Under-Secretary-General, Executive Secretary of ECA (Jul 2025)</p>
           </blockquote>
@@ -114,7 +114,7 @@ export default function TheEnergyParadox() {
             { to: 'The Tech Leapfrog', link: '/data/the-tech-leapfrog', insight: 'The pattern repeats: where legacy infrastructure is absent, Africa builds something better. M-Pesa skipped banks. Distributed solar may skip the grid.' },
             { to: 'The Demographic Dividend', link: '/data/the-demographic-dividend', insight: 'The population doubles by 2050. Every new person needs energy. The demographic arithmetic makes the energy paradox not an abstract challenge but an urgent countdown.' },
           ].map((c, i) => (
-            <div key={i} className="border-l-[3px] pl-6 md:pl-8" style={{ borderColor: C.solar }}>
+            <div key={i} className="border-l-[3px] pl-6 md:pl-8" style={{ borderColor: '#D97706' }}>
               <Link href={c.link} className="text-[10px] text-[#fbbf24] uppercase tracking-[0.1em] underline hover:no-underline font-semibold">{c.to}</Link>
               <p className="text-[14px] text-white/60 leading-relaxed max-w-[560px] mt-2">{c.insight}</p>
             </div>
