@@ -1,6 +1,6 @@
 # Dancing with Lions
 
-> Africa's intelligence source. 169+ interactive data modules. Cultural, economic, and geopolitical intelligence — structured for decision-makers, researchers, and AI systems.
+> Africa's intelligence source. 173+ interactive data modules. Cultural, economic, and geopolitical intelligence — structured for decision-makers, researchers, and AI systems.
 
 Dancing with Lions structures data about Africa into intelligence that decision-makers can use. Economics, demographics, trade corridors, cultural systems, infrastructure, politics, conservation, security — assembled from verifiable public sources, published as interactive intelligence modules, and formatted for both humans and machines.
 
@@ -8,7 +8,7 @@ Morocco is the anchor — the deepest structured coverage of any African market 
 
 ## Intelligence Modules
 
-169+ interactive modules across 10+ categories:
+173+ interactive modules across 10+ categories:
 
 - **Africa Progression** (10 modules): Infrastructure Revolution, Demographic Dividend, Tech Leapfrog, Energy Paradox, Food Equation, Trade Revolution, Health Leapfrog, Urbanisation Wave, Creative Economy, Education Gap
 - **Conservation Economics** (8 modules): Gorilla Dividend, Lion Guardians, Namibia Model, Conservation Deficit, Conservation Playbook, Gorongosa Resurrection, Rhino Underground, Poaching Economics
