@@ -1,6 +1,8 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
 
 const SOURCES = [
   'STiR Coffee & Tea — China 2024 tea exports: 374,100 MT, $1.42B revenue. Morocco 81,000 MT (+34.7%).',
@@ -135,6 +137,42 @@ export default function TheTeaRoad() {
               </div>
               <p className="text-[11px] text-[#525252] w-16 text-right">{(d.mt / 1000).toFixed(d.mt >= 10000 ? 0 : 1)}K MT</p>
             </div>
+          ))}
+        </div>
+      </div></section>
+
+      {/* MAP: CHINA → MOROCCO → WEST AFRICA */}
+      <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">The Tea Route</p>
+        <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-6">Zhejiang &rarr; Casablanca &rarr; West Africa</h2>
+        <DWLRouteMap
+          center={[20, 25]}
+          zoom={2.3}
+          height="520px"
+          points={[
+            { coords: [120.2, 30.3], label: 'Zhejiang (origin)', color: '#E63946', size: 8 },
+            { coords: [-7.6, 33.6], label: 'Casablanca', color: '#2D6E4F', size: 8 },
+            { coords: [-5.0, 34.0], label: 'Fez', color: '#2D6E4F', size: 5 },
+            { coords: [-8.0, 31.6], label: 'Marrakech', color: '#2D6E4F', size: 5 },
+            { coords: [-5.8, 35.8], label: 'Tangier', color: '#2D6E4F', size: 5 },
+            { coords: [-0.2, 5.6], label: 'Accra (Ghana)', color: '#B45309', size: 6 },
+            { coords: [-15.9, 18.1], label: 'Nouakchott (Mauritania)', color: '#047857', size: 6 },
+            { coords: [-17.4, 14.7], label: 'Dakar (Senegal)', color: '#FCBF49', size: 6 },
+            { coords: [3.0, 36.8], label: 'Algiers', color: '#5E60CE', size: 5 },
+            { coords: [69.2, 41.3], label: 'Tashkent (Uzbekistan)', color: '#5E60CE', size: 5 },
+          ]}
+          lines={[
+            { coords: [[120.2, 30.3], [100, 15], [70, 12], [50, 15], [30, 28], [-7.6, 33.6]], color: '#E63946', width: 3, label: 'China → Morocco (81K MT)' },
+            { coords: [[-7.6, 33.6], [-0.2, 5.6]], color: '#B45309', label: 'To Ghana' },
+            { coords: [[-7.6, 33.6], [-15.9, 18.1]], color: '#047857', label: 'To Mauritania' },
+            { coords: [[-7.6, 33.6], [-17.4, 14.7]], color: '#FCBF49', label: 'To Senegal' },
+            { coords: [[-7.6, 33.6], [3.0, 36.8]], color: '#5E60CE', label: 'To Algeria' },
+            { coords: [[120.2, 30.3], [90, 38], [69.2, 41.3]], color: '#5E60CE', dashed: true },
+          ]}
+        />
+        <div className="flex flex-wrap gap-4 mt-4">
+          {[{ c: '#E63946', l: 'China → Morocco (main route)' }, { c: '#2D6E4F', l: 'Morocco (hub)' }, { c: '#B45309', l: 'Ghana redistribution' }, { c: '#FCBF49', l: 'Senegal' }, { c: '#047857', l: 'Mauritania' }].map(k => (
+            <div key={k.l} className="flex items-center gap-2"><div className="w-2.5 h-2.5 rounded-full" style={{ background: k.c }} /><p className="text-[10px] text-[#737373]">{k.l}</p></div>
           ))}
         </div>
       </div></section>

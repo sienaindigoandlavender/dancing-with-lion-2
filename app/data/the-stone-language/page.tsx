@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import dynamic from 'next/dynamic'
+const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
 
 /* ═══════════════════════════════════════════════════
    THE STONE LANGUAGE
@@ -278,6 +280,32 @@ export default function StoneLang() {
           <Prose>That is more interesting than a connection. That is a universal.</Prose>
         </Fade>
       </Sec>
+
+      {/* ═══ MAP: CAIRNS WORLDWIDE ═══ */}
+      <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">Every Continent. No Contact.</p>
+        <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-6">Independent invention of the same solution</h2>
+        <DWLRouteMap
+          center={[20, 30]}
+          zoom={1.8}
+          height="480px"
+          points={[
+            { coords: [-68.0, -16.5], label: 'Apachetas (Andes)', color: '#E63946', size: 7 },
+            { coords: [-65.0, 63.7], label: 'Inuksuit (Arctic Canada)', color: '#0369A1', size: 7 },
+            { coords: [107.0, 47.9], label: 'Ovoo (Mongolia)', color: '#FCBF49', size: 7 },
+            { coords: [39.0, 12.0], label: 'Pilas (Ethiopia)', color: '#2D6E4F', size: 7 },
+            { coords: [-6.3, 53.3], label: 'Cairns (Ireland)', color: '#5E60CE', size: 6 },
+            { coords: [15.0, 63.0], label: 'Varder (Scandinavia)', color: '#5E60CE', size: 6 },
+            { coords: [-21.9, 64.1], label: 'Vörður (Iceland)', color: '#0369A1', size: 6 },
+            { coords: [76.0, 35.0], label: 'Mani stones (Tibet/Ladakh)', color: '#FCBF49', size: 6 },
+            { coords: [35.2, 31.8], label: 'Tumuli (Levant)', color: '#B45309', size: 5 },
+            { coords: [172.0, -43.5], label: 'Rock cairns (NZ)', color: '#047857', size: 5 },
+            { coords: [132.0, -25.0], label: 'Stone arrangements (Australia)', color: '#047857', size: 6 },
+          ]}
+          lines={[]}
+        />
+        <p className="text-[11px] text-[#737373] mt-4">No trade routes connect these points. No cultural transmission explains the pattern. Treeless terrain + need for landmarks = stacked stones. Convergent evolution, written in rock.</p>
+      </div></section>
 
       {/* ═══ SOURCES ═══ */}
       <section style={{ padding: '64px 24px', background: C.bg, borderTop: `1px solid ${C.border}` }}>

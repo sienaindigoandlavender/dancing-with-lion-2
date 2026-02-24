@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import dynamic from 'next/dynamic'
+const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
 
 /* ═══════════════════════════════════════════════════════
    THE CHURCHES THAT SWALLOWED THE MOUNTAIN
@@ -247,6 +249,31 @@ export default function TheChurchesThatSwallowedTheMountain() {
           </div>
         </Fade>
       </Sec>
+
+      {/* ═══ MAP: LALIBELA ═══ */}
+      <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">Sacred Geography</p>
+        <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-6">Lalibela as New Jerusalem &mdash; the sacred axis of Ethiopian Christianity</h2>
+        <DWLRouteMap
+          center={[39, 13]}
+          zoom={5.5}
+          height="480px"
+          points={[
+            { coords: [39.04, 12.03], label: 'Lalibela (11 churches)', color: '#E63946', size: 9 },
+            { coords: [38.72, 15.34], label: 'Aksum (Ark of the Covenant)', color: '#FCBF49', size: 8 },
+            { coords: [37.48, 11.59], label: 'Gondar (castles)', color: '#5E60CE', size: 6 },
+            { coords: [38.75, 9.02], label: 'Addis Ababa', color: '#047857', size: 6 },
+            { coords: [39.47, 8.55], label: 'Debre Libanos', color: '#047857', size: 5 },
+            { coords: [37.32, 12.60], label: 'Lake Tana (island monasteries)', color: '#5E60CE', size: 6 },
+            { coords: [39.28, 12.60], label: 'Yeha (pre-Aksumite)', color: '#B45309', size: 5 },
+          ]}
+          lines={[
+            { coords: [[38.72, 15.34], [39.04, 12.03]], color: '#E63946', width: 3, label: 'Aksum → Lalibela axis' },
+            { coords: [[39.04, 12.03], [37.48, 11.59], [37.32, 12.60]], color: '#5E60CE', dashed: true, label: 'Northern circuit' },
+            { coords: [[39.04, 12.03], [38.75, 9.02]], color: '#047857', dashed: true },
+          ]}
+        />
+      </div></section>
 
       {/* SOURCES */}
       <section style={{ padding: '64px 24px', background: C.bg, borderTop: `1px solid ${C.border}` }}>

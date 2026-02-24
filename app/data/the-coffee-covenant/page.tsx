@@ -1,6 +1,8 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
 
 const SOURCES = [
   'ECTA — Ethiopian Coffee and Tea Authority: $2.65B exports, 469K tons (2024/25 fiscal year record).',
@@ -160,6 +162,45 @@ export default function TheCoffeeCovenant() {
               <p className="text-[10px] uppercase tracking-[0.12em] text-[#B45309] mb-1">{t.year} · {t.loc}</p>
               <p className="text-[13px] text-[#262626] leading-relaxed">{t.event}</p>
             </div>
+          ))}
+        </div>
+      </div></section>
+
+      {/* MAP: THE THEFT ROUTE */}
+      <section className="border-t border-[#e5e5e5] bg-[#fafafa]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">The Route of the Stolen Seedlings</p>
+        <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-6">Kaffa &rarr; Mocha &rarr; Amsterdam &rarr; Java &rarr; Martinique &rarr; Brazil</h2>
+        <DWLRouteMap
+          center={[30, 10]}
+          zoom={2}
+          height="520px"
+          points={[
+            { coords: [36.3, 7.3], label: 'Kaffa (origin)', color: '#047857', size: 8 },
+            { coords: [43.3, 13.3], label: 'Mocha (Yemen)', color: '#B45309', size: 7 },
+            { coords: [4.9, 52.4], label: 'Amsterdam', color: '#E63946', size: 6 },
+            { coords: [110.4, -7.8], label: 'Java', color: '#E63946', size: 6 },
+            { coords: [2.3, 48.9], label: 'Paris', color: '#5E60CE', size: 5 },
+            { coords: [-61.0, 14.6], label: 'Martinique', color: '#5E60CE', size: 6 },
+            { coords: [-52.3, 4.9], label: 'French Guiana', color: '#5E60CE', size: 5 },
+            { coords: [-43.2, -22.9], label: 'Brazil', color: '#FCBF49', size: 7 },
+            { coords: [38.7, 7.0], label: 'Yirgacheffe', color: '#2D6E4F', size: 5 },
+            { coords: [38.5, 6.5], label: 'Sidamo', color: '#2D6E4F', size: 5 },
+            { coords: [42.1, 9.3], label: 'Harrar', color: '#2D6E4F', size: 5 },
+            { coords: [36.8, 7.7], label: 'Jimma', color: '#2D6E4F', size: 5 },
+          ]}
+          lines={[
+            { coords: [[36.3, 7.3], [43.3, 13.3]], color: '#B45309', label: 'To Yemen' },
+            { coords: [[43.3, 13.3], [4.9, 52.4]], color: '#E63946', label: 'Dutch steal' },
+            { coords: [[4.9, 52.4], [110.4, -7.8]], color: '#E63946', label: 'To Java 1696' },
+            { coords: [[4.9, 52.4], [2.3, 48.9]], color: '#5E60CE' },
+            { coords: [[2.3, 48.9], [-61.0, 14.6]], color: '#5E60CE', label: 'To Martinique 1723' },
+            { coords: [[-61.0, 14.6], [-52.3, 4.9]], color: '#FCBF49' },
+            { coords: [[-52.3, 4.9], [-43.2, -22.9]], color: '#FCBF49', label: 'To Brazil 1727' },
+          ]}
+        />
+        <div className="flex flex-wrap gap-4 mt-4">
+          {[{ c: '#047857', l: 'Origin (Kaffa)' }, { c: '#2D6E4F', l: 'Ethiopian regions' }, { c: '#E63946', l: 'Dutch route' }, { c: '#5E60CE', l: 'French route' }, { c: '#FCBF49', l: 'Brazil route' }].map(k => (
+            <div key={k.l} className="flex items-center gap-2"><div className="w-2.5 h-2.5 rounded-full" style={{ background: k.c }} /><p className="text-[10px] text-[#737373]">{k.l}</p></div>
           ))}
         </div>
       </div></section>

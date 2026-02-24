@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import dynamic from 'next/dynamic'
+const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
 
 /* ═══════════════════════════════════════════════════
    WHAT SOLOMON KNEW
@@ -425,6 +427,35 @@ export default function WhatSolomonKnew() {
           <Prose>The nine domains of the Wisdom of Solomon are not a relic. They are a reminder of what a complete knowledge system looks like — before the disciplines forgot they were one.</Prose>
         </Fade>
       </Sec>
+
+      {/* ═══ MAP: SOLOMON'S TRADE NETWORK ═══ */}
+      <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
+        <Micro>Solomon&rsquo;s Trade Network</Micro>
+        <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-6">Jerusalem at the crossroads of three continents</h2>
+        <DWLRouteMap
+          center={[38, 28]}
+          zoom={3.8}
+          height="480px"
+          points={[
+            { coords: [35.2, 31.8], label: 'Jerusalem (Temple)', color: '#FCBF49', size: 9 },
+            { coords: [34.1, 33.3], label: 'Tyre (Hiram)', color: '#5E60CE', size: 7 },
+            { coords: [35.5, 34.4], label: 'Lebanon (cedar)', color: '#2D6E4F', size: 6 },
+            { coords: [29.3, 30.0], label: 'Timna (copper)', color: '#B45309', size: 6 },
+            { coords: [43.3, 13.3], label: 'Sheba / Yemen', color: '#E63946', size: 7 },
+            { coords: [38.7, 15.3], label: 'Aksum', color: '#E63946', size: 6 },
+            { coords: [44.0, 32.6], label: 'Babylon', color: '#5E60CE', size: 5 },
+            { coords: [52.0, 32.4], label: 'Persia', color: '#5E60CE', size: 5 },
+            { coords: [36.3, 34.0], label: 'Byblos', color: '#047857', size: 5 },
+          ]}
+          lines={[
+            { coords: [[35.2, 31.8], [34.1, 33.3]], color: '#5E60CE', label: 'Phoenician alliance' },
+            { coords: [[34.1, 33.3], [35.5, 34.4]], color: '#2D6E4F', label: 'Cedar supply' },
+            { coords: [[35.2, 31.8], [29.3, 30.0]], color: '#B45309', label: 'Copper from Timna' },
+            { coords: [[35.2, 31.8], [40, 22], [43.3, 13.3]], color: '#E63946', width: 3, label: 'Incense Route (Sheba)' },
+            { coords: [[43.3, 13.3], [38.7, 15.3]], color: '#E63946', dashed: true },
+          ]}
+        />
+      </div></section>
 
       {/* ═══ SOURCES ═══ */}
       <section style={{ padding: '64px 24px', background: C.bg, borderTop: `1px solid ${C.border}` }}>

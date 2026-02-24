@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import dynamic from 'next/dynamic'
+const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
 
 /* ═══════════════════════════════════════════════════════
    THE SON WHO TOOK THE FIRE
@@ -314,6 +316,32 @@ export default function TheSonWhoTookTheFire() {
           </div>
         </Fade>
       </Sec>
+
+      {/* ═══ MAP: MENELIK'S JOURNEY ═══ */}
+      <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">The Journey of the Ark</p>
+        <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-6">Jerusalem &rarr; Aksum. The Ark moves south.</h2>
+        <DWLRouteMap
+          center={[38, 22]}
+          zoom={4.2}
+          height="480px"
+          points={[
+            { coords: [35.2, 31.8], label: 'Jerusalem (Temple)', color: '#FCBF49', size: 9 },
+            { coords: [38.7, 15.3], label: 'Aksum (Chapel of the Tablet)', color: '#E63946', size: 9 },
+            { coords: [39.0, 12.0], label: 'Lalibela (New Jerusalem)', color: '#E63946', size: 7 },
+            { coords: [39.3, 12.6], label: 'Yeha', color: '#047857', size: 5 },
+            { coords: [38.3, 9.0], label: 'Addis Ababa', color: '#047857', size: 5 },
+            { coords: [45.3, 15.4], label: 'Sheba / Marib', color: '#B45309', size: 6 },
+            { coords: [36.5, 30.5], label: 'Aqaba', color: '#5E60CE', size: 4 },
+            { coords: [43.2, 13.0], label: 'Bab el-Mandeb', color: '#5E60CE', size: 4 },
+          ]}
+          lines={[
+            { coords: [[35.2, 31.8], [36.5, 30.5], [38, 25], [40, 20], [42, 15], [43.2, 13.0], [38.7, 15.3]], color: '#E63946', width: 3, label: 'Menelik\'s return' },
+            { coords: [[45.3, 15.4], [38.7, 15.3]], color: '#B45309', dashed: true, label: 'Sabaean connection' },
+            { coords: [[38.7, 15.3], [39.0, 12.0]], color: '#047857', label: 'Sacred geography' },
+          ]}
+        />
+      </div></section>
 
       {/* ═══ SOURCES ═══ */}
       <section style={{ padding: '64px 24px', background: C.bg, borderTop: `1px solid ${C.border}` }}>

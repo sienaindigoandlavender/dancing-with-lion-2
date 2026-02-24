@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import dynamic from 'next/dynamic'
+const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
 
 /* ═══════════════════════════════════════════════════════
    THE QUEEN WHO DID NOT KNEEL
@@ -377,6 +379,34 @@ export default function TheQueenWhoDidNotKneel() {
           </div>
         </Fade>
       </Sec>
+
+      {/* ═══ MAP: THE INCENSE ROUTE ═══ */}
+      <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">The Incense Route</p>
+        <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-6">Sheba controlled the frankincense. Solomon controlled the crossroads.</h2>
+        <DWLRouteMap
+          center={[42, 18]}
+          zoom={4}
+          height="480px"
+          points={[
+            { coords: [45.3, 15.4], label: 'Marib (Sheba capital)', color: '#E63946', size: 8 },
+            { coords: [49.0, 14.5], label: 'Hadramaut (frankincense)', color: '#B45309', size: 7 },
+            { coords: [54.1, 17.0], label: 'Dhofar (frankincense groves)', color: '#B45309', size: 7 },
+            { coords: [35.2, 31.8], label: 'Jerusalem', color: '#FCBF49', size: 8 },
+            { coords: [38.7, 15.3], label: 'Aksum', color: '#047857', size: 7 },
+            { coords: [39.3, 12.6], label: 'Yeha (Sabaean temple)', color: '#047857', size: 5 },
+            { coords: [36.5, 30.5], label: 'Aqaba / Ezion-Geber', color: '#5E60CE', size: 5 },
+            { coords: [43.2, 13.0], label: 'Bab el-Mandeb (strait)', color: '#E63946', size: 5 },
+            { coords: [31.2, 30.0], label: 'Memphis / Egypt', color: '#5E60CE', size: 5 },
+          ]}
+          lines={[
+            { coords: [[54.1, 17.0], [49.0, 14.5], [45.3, 15.4]], color: '#B45309', width: 3, label: 'Frankincense harvest' },
+            { coords: [[45.3, 15.4], [44, 17], [42, 22], [38, 28], [35.2, 31.8]], color: '#E63946', width: 3, label: 'Incense Road north' },
+            { coords: [[45.3, 15.4], [43.2, 13.0], [38.7, 15.3]], color: '#047857', label: 'Across Red Sea' },
+            { coords: [[35.2, 31.8], [31.2, 30.0]], color: '#5E60CE', dashed: true, label: 'To Egypt' },
+          ]}
+        />
+      </div></section>
 
       {/* ═══ SOURCES ═══ */}
       <section style={{ padding: '64px 24px', background: C.bg, borderTop: `1px solid ${C.border}` }}>

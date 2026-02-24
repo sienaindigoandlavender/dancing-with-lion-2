@@ -1,6 +1,8 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
 
 const SOURCES = [
   'Cooks Vanilla — Market Report March 2025: Madagascar exported 4,300 MT in H1 2024. Oversupply era.',
@@ -159,6 +161,41 @@ export default function TheVanillaOrchid() {
                 <p className="text-[13px] text-[#525252] leading-relaxed mt-1">{j.desc}</p>
               </div>
             </div>
+          ))}
+        </div>
+      </div></section>
+
+      {/* MAP: MESOAMERICA → INDIAN OCEAN → WORLD */}
+      <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">The Vanilla Route</p>
+        <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-6">Veracruz &rarr; R&eacute;union &rarr; Madagascar &rarr; the world</h2>
+        <DWLRouteMap
+          center={[40, 0]}
+          zoom={2}
+          height="520px"
+          points={[
+            { coords: [-96.9, 20.5], label: 'Papantla, Veracruz (origin)', color: '#5E60CE', size: 8 },
+            { coords: [55.5, -21.1], label: 'Réunion (Edmond Albius)', color: '#E63946', size: 8 },
+            { coords: [49.8, -14.3], label: 'SAVA, Madagascar (80%)', color: '#E63946', size: 9 },
+            { coords: [57.5, -20.3], label: 'Mauritius (hub)', color: '#B45309', size: 7 },
+            { coords: [43.3, -11.7], label: 'Comoros', color: '#047857', size: 5 },
+            { coords: [115.2, -8.7], label: 'Bali, Indonesia', color: '#047857', size: 6 },
+            { coords: [-77.0, 38.9], label: 'USA (42% consumption)', color: '#0369A1', size: 7 },
+            { coords: [2.3, 48.9], label: 'France (19%)', color: '#5E60CE', size: 6 },
+            { coords: [10.0, 51.0], label: 'Germany (12%)', color: '#FCBF49', size: 5 },
+          ]}
+          lines={[
+            { coords: [[-96.9, 20.5], [-30, 10], [20, -5], [55.5, -21.1]], color: '#E63946', width: 2, label: 'Spain → Réunion (1819)' },
+            { coords: [[55.5, -21.1], [49.8, -14.3]], color: '#E63946', width: 3, label: 'Technique spreads' },
+            { coords: [[49.8, -14.3], [57.5, -20.3]], color: '#B45309', label: 'To Mauritius' },
+            { coords: [[49.8, -14.3], [20, 0], [-30, 20], [-77.0, 38.9]], color: '#0369A1', dashed: true, label: 'To USA' },
+            { coords: [[49.8, -14.3], [30, 10], [2.3, 48.9]], color: '#5E60CE', dashed: true, label: 'To France' },
+            { coords: [[49.8, -14.3], [115.2, -8.7]], color: '#047857', dashed: true },
+          ]}
+        />
+        <div className="flex flex-wrap gap-4 mt-4">
+          {[{ c: '#5E60CE', l: 'Mesoamerican origin' }, { c: '#E63946', l: 'Indian Ocean (production)' }, { c: '#B45309', l: 'Mauritius hub' }, { c: '#0369A1', l: 'US (top consumer)' }, { c: '#047857', l: 'Other producers' }].map(k => (
+            <div key={k.l} className="flex items-center gap-2"><div className="w-2.5 h-2.5 rounded-full" style={{ background: k.c }} /><p className="text-[10px] text-[#737373]">{k.l}</p></div>
           ))}
         </div>
       </div></section>
