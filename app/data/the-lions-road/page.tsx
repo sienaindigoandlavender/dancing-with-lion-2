@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
+import ConnectedIntelligence from '@/components/data/ConnectedIntelligence'
 import { HISTORIC_RANGE, CURRENT_RANGE, SILK_ROUTES, KEY_POINTS, TIMELINE, ARTWORKS, LAYERS, BIBLIOGRAPHY } from './data'
 
 /* ═══════════════════════════════════════════════════
@@ -535,6 +537,26 @@ export default function TheLionsRoad() {
         </div>
       </section>
 
+      {/* ═══ CONNECTED MODULES ═══ */}
+      <section style={{ borderTop: '1px solid #e5e5e5', padding: '48px 24px' }}>
+        <div style={{ maxWidth: 800, margin: '0 auto' }}>
+          <p style={{ fontFamily: 'var(--font-plex-mono), monospace', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: C.muted, marginBottom: 24 }}>Continue Reading</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
+            {[
+              { href: '/data/the-son-who-took-the-fire', title: 'The Son Who Took the Fire', sub: 'Menelik I and the Lion of Judah — the symbol\'s Ethiopian origin.' },
+              { href: '/data/trans-saharan-trade', title: 'Trans-Saharan Trade Routes', sub: 'The corridors that carried goods, symbols, and beliefs across Africa.' },
+              { href: '/data/the-silk-road-into-africa', title: 'The Silk Road Into Africa', sub: 'Where the eastern trade routes met the African continent.' },
+              { href: '/data/the-churches-that-swallowed-the-mountain', title: 'The Churches That Swallowed the Mountain', sub: 'Lalibela — the rock-hewn New Jerusalem.' },
+            ].map(l => (
+              <Link key={l.href} href={l.href} style={{ display: 'block', padding: '16px 20px', background: C.alt, borderRadius: 2, textDecoration: 'none', transition: 'background 0.2s' }}>
+                <p style={{ fontFamily: 'var(--font-garamond), Georgia, serif', fontSize: 16, fontStyle: 'italic', color: C.ink, marginBottom: 4, lineHeight: 1.3 }}>{l.title}</p>
+                <p style={{ fontFamily: 'var(--font-plex-mono), monospace', fontSize: 10, color: C.muted, lineHeight: 1.5 }}>{l.sub}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ═══ ATTRIBUTION FOOTER ═══ */}
       <section style={{ padding: '24px', background: C.alt, textAlign: 'center' as const }}>
         <p style={{ fontFamily: 'var(--font-plex-mono), monospace', fontSize: 10, letterSpacing: '0.08em', color: C.muted }}>
@@ -546,6 +568,7 @@ export default function TheLionsRoad() {
       </section>
 
       {/* ═══ FOOTER ═══ */}
+      <ConnectedIntelligence moduleId="the-lions-road" />
       <footer>
         <div style={{ background: '#1f1f1f', padding: '40px 24px' }}>
           <div style={{ maxWidth: 800, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>

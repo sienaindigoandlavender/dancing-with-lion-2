@@ -1,8 +1,10 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
+import ConnectedIntelligence from '@/components/data/ConnectedIntelligence'
 
 /* ═══════════════════════════════════════════════════
    THE STONE LANGUAGE
@@ -198,11 +200,11 @@ export default function StoneLang() {
       {/* ═══ INTRO ═══ */}
       <Sec>
         <Fade>
-          <Prose>In the High Atlas, you see them on passes. Small pyramids of stacked stone, sometimes with a stick or a rag tied to the top. They mark the trail where there are no signs. They mark graves where there are no headstones. They mark the boundary between one tribe's territory and the next. The Amazigh call them kerkour.</Prose>
+          <Prose>In the High Atlas, you see them on passes. Small pyramids of stacked stone, sometimes with a stick or a rag tied to the top. They mark the trail where there are no signs. They mark graves where there are no headstones. They mark the boundary between one <Link href="/data/amazigh-identity" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Amazigh</Link> tribe's territory and the next. The Amazigh call them kerkour.</Prose>
           <Prose>In the Canadian Arctic, the Inuit build inuksuit — stone figures that "act in the capacity of a human." They point toward caribou hunting grounds, mark safe passages across the tundra, store messages between families. Some on Baffin Island are 4,000 years old.</Prose>
           <Prose>In Mongolia, travellers circle ovoo cairns three times clockwise, adding a stone and leaving offerings of blue silk for the sky spirits. In the Andes, Quechua pilgrims place stones on apachetas at high passes with coca leaf prayers. In Scotland, Highland warriors piled stones before battle and removed them after — the unclaimed stones became the memorial. In Korea, hikers stack stones at mountain peaks for the Mountain Spirit. In Genesis 31, Jacob and Laban built a cairn as a covenant witness — gal-ed, "heap of testimony."</Prose>
           <Prose>None of these peoples are connected. The Inuit and the Amazigh have never met. The Mongols and the Quechua share no ancestor for 15,000 years. The Scottish and the Korean traditions evolved on opposite ends of the Eurasian landmass with no contact whatsoever.</Prose>
-          <Prose>This is not a connection. This is convergence. The same problem, solved the same way, independently, across five continents, for at least 8,000 years. The problem: a treeless landscape, loose stone, and the need to say something to the next person who passes.</Prose>
+          <Prose>This is not a connection. This is convergence. The same problem, solved the same way, independently, across five continents, for at least 8,000 years. The problem: a treeless landscape, loose stone, and the need to say something to the next person who passes. <Link href="/data/the-lions-road" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>The lion symbol</Link> followed a similar arc — appearing independently in civilisations that never met, for the same reason: apex predator as metaphor for power.</Prose>
         </Fade>
       </Sec>
 
@@ -323,10 +325,31 @@ export default function StoneLang() {
         </div>
       </section>
 
+      {/* ═══ CONNECTED MODULES ═══ */}
+      <section style={{ borderTop: '1px solid #e5e5e5', padding: '48px 24px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <p style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: C.muted, marginBottom: 24 }}>Continue Reading</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
+            {[
+              { href: '/data/the-churches-that-swallowed-the-mountain', title: 'The Churches That Swallowed the Mountain', sub: 'When stone stacking became architecture. Lalibela carved downward.' },
+              { href: '/data/what-solomon-knew', title: 'What Solomon Knew', sub: 'Solomon\'s stone Temple — the building that defined sacred architecture.' },
+              { href: '/data/the-lions-road', title: 'The Lion\'s Road', sub: 'Another convergent pattern — the lion symbol across disconnected civilisations.' },
+              { href: '/data/the-coffee-covenant', title: 'The Coffee Covenant', sub: 'A different convergence — every culture that finds coffee invents a ceremony around it.' },
+            ].map(l => (
+              <Link key={l.href} href={l.href} style={{ display: 'block', padding: '16px 20px', background: C.alt, borderRadius: 2, textDecoration: 'none', transition: 'background 0.2s' }}>
+                <p style={{ fontFamily: F.serif, fontSize: 16, fontStyle: 'italic', color: C.text, marginBottom: 4, lineHeight: 1.3 }}>{l.title}</p>
+                <p style={{ fontFamily: F.mono, fontSize: 10, color: C.muted, lineHeight: 1.5 }}>{l.sub}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section style={{ padding: '24px', background: C.alt, textAlign: 'center' as const }}>
         <p style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: '0.08em', color: C.muted }}>© Dancing with Lions</p>
       </section>
 
+      <ConnectedIntelligence moduleId="the-stone-language" />
       <footer>
         <div style={{ background: '#1f1f1f', padding: '40px 24px' }}>
           <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>

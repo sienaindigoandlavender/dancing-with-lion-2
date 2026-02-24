@@ -1,8 +1,10 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
+import ConnectedIntelligence from '@/components/data/ConnectedIntelligence'
 
 /* ═══════════════════════════════════════════════════════
    THE QUEEN WHO DID NOT KNEEL
@@ -222,9 +224,9 @@ export default function TheQueenWhoDidNotKneel() {
           <Title>The only product the ancient world could not live without</Title>
         </Fade>
         <Fade delay={100}>
-          <Prose>Incense was not a luxury good. It was infrastructure. Every temple in the ancient world — Egyptian, Greek, Babylonian, Israelite — burned it daily. Frankincense and myrrh were as essential as grain. The Temple in Jerusalem required specific formulations prescribed in Exodus 30:34: stacte, onycha, galbanum, and pure frankincense.</Prose>
+          <Prose>Incense was not a luxury good. It was infrastructure. Every temple in the ancient world — Egyptian, Greek, Babylonian, Israelite — <Link href="/data/the-sacred-smoke" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>burned it daily</Link>. Frankincense and myrrh were as essential as grain. The Temple in Jerusalem required specific formulations prescribed in Exodus 30:34: stacte, onycha, galbanum, and pure frankincense.</Prose>
           <Prose>Without supply from the Arabian Peninsula, the Temple could not function.</Prose>
-          <Prose>The Sabaeans dominated this trade from approximately 950 BCE. Their camel caravans carried goods from the frankincense groves of Dhofar and Hadramawt, through Ma'rib for taxation and consolidation, north through the Hejaz and the Negev, to the port of Gaza and onward to the Mediterranean. Every caravan paid Sabaean taxes. Every transaction passed through Sabaean hands.</Prose>
+          <Prose>The Sabaeans dominated this trade from approximately 950 BCE. Their camel caravans carried goods from the frankincense groves of Dhofar and Hadramawt, through Ma'rib for taxation and consolidation, north through the Hejaz and the Negev, to the port of Gaza and onward to the Mediterranean. Every caravan paid Sabaean taxes. Every transaction passed through Sabaean hands. Three thousand years later, the same routes carry <Link href="/data/the-coffee-covenant" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>coffee from Ethiopia</Link> and <Link href="/data/spice-routes" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>spices from the Indian Ocean</Link> — the geography of trade outlasts every empire that tries to control it.</Prose>
         </Fade>
         <Fade delay={200}>
           <div style={{ padding: 24, borderLeft: `3px solid ${C.gold}`, background: C.bg, marginBottom: 32 }}>
@@ -431,10 +433,31 @@ export default function TheQueenWhoDidNotKneel() {
         </div>
       </section>
 
+      {/* ═══ CONNECTED MODULES ═══ */}
+      <section style={{ borderTop: '1px solid #e5e5e5', padding: '48px 24px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <p style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: C.muted, marginBottom: 24 }}>Continue Reading</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
+            {[
+              { href: '/data/what-solomon-knew', title: 'What Solomon Knew', sub: 'The unified knowledge system Bilqis came to test.' },
+              { href: '/data/the-son-who-took-the-fire', title: 'The Son Who Took the Fire', sub: 'Menelik I — what the visit produced. The Ark moves south.' },
+              { href: '/data/the-coffee-covenant', title: 'The Coffee Covenant', sub: 'The Ethiopia–Yemen corridor Sheba controlled. Kaffa to Mocha.' },
+              { href: '/data/the-silk-road-into-africa', title: 'The Silk Road Into Africa', sub: 'The incense routes that made Sheba wealthy.' },
+            ].map(l => (
+              <Link key={l.href} href={l.href} style={{ display: 'block', padding: '16px 20px', background: C.alt, borderRadius: 2, textDecoration: 'none', transition: 'background 0.2s' }}>
+                <p style={{ fontFamily: F.serif, fontSize: 16, fontStyle: 'italic', color: C.text, marginBottom: 4, lineHeight: 1.3 }}>{l.title}</p>
+                <p style={{ fontFamily: F.mono, fontSize: 10, color: C.muted, lineHeight: 1.5 }}>{l.sub}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section style={{ padding: '24px', background: C.alt, textAlign: 'center' as const }}>
         <p style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: '0.08em', color: C.muted }}>© Dancing with Lions</p>
       </section>
 
+      <ConnectedIntelligence moduleId="the-queen-who-did-not-kneel" />
       <footer>
         <div style={{ background: '#1f1f1f', padding: '40px 24px' }}>
           <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>

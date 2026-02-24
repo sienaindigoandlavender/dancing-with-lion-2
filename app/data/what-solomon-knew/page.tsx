@@ -1,8 +1,10 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
+import ConnectedIntelligence from '@/components/data/ConnectedIntelligence'
 
 /* ═══════════════════════════════════════════════════
    WHAT SOLOMON KNEW
@@ -320,7 +322,7 @@ export default function WhatSolomonKnew() {
           <Prose>Cosmology and pharmacology are connected because the elements that constitute the world also constitute the body. The stars that govern the seasons also govern the timing of planting, which determines which plants are available, which determines which medicines can be made.</Prose>
           <Prose>The spirits that cause disease are thwarted by angels whose names encode the remedy. The animals whose natures Solomon knew also provided the materials — liver of fish, gall of catfish — that the Testament prescribes as cures.</Prose>
           <Prose>This is not mysticism. It is systems thinking before the term existed.</Prose>
-          <Prose>Every traditional knowledge system on earth — Ayurveda, Traditional Chinese Medicine, Amazigh herbal medicine, Gnawa trance healing — operates on this same assumption: the body and the cosmos are mirrors of each other. What happens in the sky affects what grows in the ground, which affects what happens in the body, which affects what happens in the mind. One system.</Prose>
+          <Prose>Every traditional knowledge system on earth — Ayurveda, Traditional Chinese Medicine, <Link href="/data/the-apothecary" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Amazigh herbal medicine</Link>, <Link href="/data/the-gnawa-road" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Gnawa trance healing</Link> — operates on this same assumption: the body and the cosmos are mirrors of each other. What happens in the sky affects what grows in the ground, which affects what happens in the body, which affects what happens in the mind. One system.</Prose>
         </Fade>
       </Sec>
 
@@ -476,10 +478,32 @@ export default function WhatSolomonKnew() {
         </div>
       </section>
 
+      {/* ═══ CONNECTED MODULES ═══ */}
+      <section style={{ borderTop: '1px solid #e5e5e5', padding: '48px 24px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <p style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: C.muted, marginBottom: 24 }}>Continue Reading</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
+            {[
+              { href: '/data/the-queen-who-did-not-kneel', title: 'The Queen Who Did Not Kneel', sub: 'Bilqis visits Solomon. The geopolitics behind the riddles.' },
+              { href: '/data/the-son-who-took-the-fire', title: 'The Son Who Took the Fire', sub: 'Menelik I carries the Ark south. The dynasty begins.' },
+              { href: '/data/the-coffee-covenant', title: 'The Coffee Covenant', sub: 'Ethiopia\'s Kaffa forests — where the plant the world runs on was born.' },
+              { href: '/data/spice-routes', title: 'The Spice Routes', sub: 'The trade networks Solomon\'s kingdom sat at the centre of.' },
+              { href: '/data/trans-saharan-trade', title: 'Trans-Saharan Trade Routes', sub: 'Gold, salt, and knowledge across the desert.' },
+            ].map(l => (
+              <Link key={l.href} href={l.href} style={{ display: 'block', padding: '16px 20px', background: C.alt, borderRadius: 2, textDecoration: 'none', transition: 'background 0.2s' }}>
+                <p style={{ fontFamily: F.serif, fontSize: 16, fontStyle: 'italic', color: C.text, marginBottom: 4, lineHeight: 1.3 }}>{l.title}</p>
+                <p style={{ fontFamily: F.mono, fontSize: 10, color: C.muted, lineHeight: 1.5 }}>{l.sub}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section style={{ padding: '24px', background: C.alt, textAlign: 'center' as const }}>
         <p style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: '0.08em', color: C.muted }}>© Dancing with Lions</p>
       </section>
 
+      <ConnectedIntelligence moduleId="what-solomon-knew" />
       <footer>
         <div style={{ background: '#1f1f1f', padding: '40px 24px' }}>
           <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>

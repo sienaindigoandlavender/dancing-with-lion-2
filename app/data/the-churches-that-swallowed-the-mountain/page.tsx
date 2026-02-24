@@ -1,8 +1,10 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
+import ConnectedIntelligence from '@/components/data/ConnectedIntelligence'
 
 /* ═══════════════════════════════════════════════════════
    THE CHURCHES THAT SWALLOWED THE MOUNTAIN
@@ -120,7 +122,7 @@ export default function TheChurchesThatSwallowedTheMountain() {
           <Title>The "usurpers" built this</Title>
         </Fade>
         <Fade delay={100}>
-          <Prose>In the last story, we traced how the Kebra Nagast was compiled between 1314 and 1322 to legitimise a coup — how six Tigrayan scribes declared the Zagwe dynasty usurpers and built a mythological bloodline that would rule Ethiopia for 704 years.</Prose>
+          <Prose>In the last story, we traced how the <Link href="/data/the-son-who-took-the-fire" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Kebra Nagast was compiled between 1314 and 1322</Link> to legitimise a coup — how six Tigrayan scribes declared the Zagwe dynasty usurpers and built a mythological bloodline that would rule Ethiopia for 704 years.</Prose>
           <Prose>Here is what the "usurpers" actually built.</Prose>
           <Prose>Eleven churches. Carved not from blocks hauled up a hillside, but from the living rock of the earth itself. Carved downward. You do not approach them. You descend into them. Their roofs sit at ground level. The architecture is below you before you see it.</Prose>
           <Prose>The Solomonic dynasty needed a 117-chapter book to justify their rule. The Zagwe left something the book could not erase: stone.</Prose>
@@ -134,7 +136,7 @@ export default function TheChurchesThatSwallowedTheMountain() {
           <Title>How you carve a church out of a mountain</Title>
         </Fade>
         <Fade delay={50}>
-          <Prose>You do not build. You remove. This is subtractive architecture — the opposite of every construction method the world has known.</Prose>
+          <Prose>You do not build. You remove. This is subtractive architecture — the opposite of every construction method the world has known. Humans have been <Link href="/data/the-stone-language" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>stacking stones</Link> for millennia. Lalibela inverted the instinct.</Prose>
         </Fade>
         {BUILD_STEPS.map((s, i) => (
           <Fade key={s.step} delay={i * 30}>
@@ -295,10 +297,31 @@ export default function TheChurchesThatSwallowedTheMountain() {
         </div>
       </section>
 
+      {/* ═══ CONNECTED MODULES ═══ */}
+      <section style={{ borderTop: '1px solid #e5e5e5', padding: '48px 24px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <p style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: C.muted, marginBottom: 24 }}>Continue Reading</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
+            {[
+              { href: '/data/the-son-who-took-the-fire', title: 'The Son Who Took the Fire', sub: 'The Solomonic claim that Lalibela\'s builders worked to fulfil.' },
+              { href: '/data/the-stone-language', title: 'The Stone Language', sub: 'When every culture stacks rocks. The convergent instinct Lalibela took further.' },
+              { href: '/data/the-coffee-covenant', title: 'The Coffee Covenant', sub: 'Ethiopia\'s other sacred ritual — the buna ceremony.' },
+              { href: '/data/the-lions-road', title: 'The Lion\'s Road', sub: 'The Asiatic lion and the symbol that crowned Ethiopian kings.' },
+            ].map(l => (
+              <Link key={l.href} href={l.href} style={{ display: 'block', padding: '16px 20px', background: C.alt, borderRadius: 2, textDecoration: 'none', transition: 'background 0.2s' }}>
+                <p style={{ fontFamily: F.serif, fontSize: 16, fontStyle: 'italic', color: C.text, marginBottom: 4, lineHeight: 1.3 }}>{l.title}</p>
+                <p style={{ fontFamily: F.mono, fontSize: 10, color: C.muted, lineHeight: 1.5 }}>{l.sub}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section style={{ padding: '24px', background: C.alt, textAlign: 'center' as const }}>
         <p style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: '0.08em', color: C.muted }}>© Dancing with Lions</p>
       </section>
 
+      <ConnectedIntelligence moduleId="the-churches-that-swallowed-the-mountain" />
       <footer>
         <div style={{ background: '#1f1f1f', padding: '40px 24px' }}>
           <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>

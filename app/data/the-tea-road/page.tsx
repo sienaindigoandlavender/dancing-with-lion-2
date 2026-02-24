@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
+import ConnectedIntelligence from '@/components/data/ConnectedIntelligence'
 
 const SOURCES = [
   'STiR Coffee & Tea — China 2024 tea exports: 374,100 MT, $1.42B revenue. Morocco 81,000 MT (+34.7%).',
@@ -109,7 +110,7 @@ export default function TheTeaRoad() {
       <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">001 · The Atay Ceremony</p>
         <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-4">Three glasses. One proverb. The whole arc of a life.</h2>
-        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">Moroccan tea is not a drink. It is a protocol. Gunpowder green from Zhejiang province meets fresh nana mint from the Mekn&egrave;s plateau. Sugar — always too much sugar, by European standards — completes the trinity. The pour is theatrical: from a metre high, the stream aerates the tea and builds the foam. Three glasses, each sweeter than the last, each carrying a line of the proverb that Moroccans know by heart.</p>
+        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">Moroccan tea is not a drink. It is a protocol. Gunpowder green from Zhejiang province meets fresh nana mint from the Mekn&egrave;s plateau. Sugar — always too much sugar, by European standards — completes the trinity. The pour is theatrical: from a metre high, the stream aerates the tea and builds the foam. Three glasses, each sweeter than the last, each carrying a line of the proverb that Moroccans know by heart. Ethiopia has <Link href="/data/the-coffee-covenant" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">its own three-cup ritual</Link> — the buna ceremony — and the same unspoken rule: you cannot leave before the third.</p>
         <div ref={h1.ref} className="grid md:grid-cols-3 gap-6">
           {GLASSES.map((g, i) => (
             <div key={g.name} className="border border-[#e5e5e5] rounded-sm p-6 transition-all duration-700" style={{ opacity: h1.visible ? 1 : 0, transform: h1.visible ? 'translateY(0)' : 'translateY(20px)', transitionDelay: `${i * 150}ms` }}>
@@ -125,7 +126,7 @@ export default function TheTeaRoad() {
       <section className="border-t border-[#e5e5e5] bg-[#fafafa]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">002 · Where China&rsquo;s Tea Goes</p>
         <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-4">Morocco buys three times more than America.</h2>
-        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">Africa is China&rsquo;s most important tea export destination by volume. Morocco alone takes 22% of all Chinese tea exports — 81,000 metric tons in 2024, up 34.7% from the previous year. The price is the lowest among China&rsquo;s African partners at $3.01/kg, because Morocco buys in bulk: raw gunpowder green, re-blended, re-packaged, and re-shipped to five neighbouring countries. Morocco is not just a customer. It is a distribution hub for Chinese green tea across West and North Africa.</p>
+        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">Africa is China&rsquo;s most important tea export destination by volume. Morocco alone takes 22% of all Chinese tea exports — 81,000 metric tons in 2024, up 34.7% from the previous year. The price is the lowest among China&rsquo;s African partners at $3.01/kg, because Morocco buys in bulk: raw gunpowder green, re-blended, re-packaged, and re-shipped to five neighbouring countries. Morocco is not just a customer. It is a distribution hub for Chinese green tea across West and North Africa — a gateway position it also plays in <Link href="/data/the-silk-road-into-africa" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">China&rsquo;s broader Belt &amp; Road investments</Link> on the continent.</p>
         <div ref={h2.ref} className="space-y-4">
           {CHINA_DESTINATIONS.map((d, i) => (
             <div key={d.name} className="flex items-center gap-3 transition-all duration-600" style={{ opacity: h2.visible ? 1 : 0, transitionDelay: `${i * 70}ms` }}>
@@ -240,12 +241,31 @@ export default function TheTeaRoad() {
         </div>
       </section>
 
+      {/* CONNECTED MODULES */}
+      <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-12 md:py-16">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[#a3a3a3] mb-6">Continue Reading</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[
+            { href: '/data/the-coffee-covenant', title: 'The Coffee Covenant', sub: 'Another ceremony, another commodity — Ethiopia\'s buna ritual and stolen genetics.' },
+            { href: '/data/spice-routes', title: 'The Spice Routes', sub: 'The maritime routes that carried tea, spices, and silk between continents.' },
+            { href: '/data/the-silk-road-into-africa', title: 'The Silk Road Into Africa', sub: 'Where China\'s ancient trade networks met the African continent.' },
+            { href: '/data/al-andalus', title: 'The Al-Andalus Corridor', sub: 'Morocco\'s gateway — Islamic Spain and the trade that shaped Maghreb culture.' },
+          ].map(l => (
+            <Link key={l.href} href={l.href} className="block p-4 bg-[#fafafa] rounded-sm hover:bg-[#f0f0f0] transition-colors">
+              <p className="font-serif text-[16px] italic text-[#0a0a0a] leading-tight mb-1">{l.title}</p>
+              <p className="text-[10px] text-[#a3a3a3] leading-relaxed">{l.sub}</p>
+            </Link>
+          ))}
+        </div>
+      </div></section>
+
       {/* SOURCES */}
       <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-12">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#a3a3a3] mb-4">Sources &amp; Attribution</p>
         <div className="space-y-1">
           {SOURCES.map((s, i) => <p key={i} className="text-[10px] text-[#a3a3a3] leading-relaxed">{s}</p>)}
         </div>
+        <ConnectedIntelligence moduleId="the-tea-road" />
         <p className="text-[10px] text-[#a3a3a3] mt-6">&copy; Dancing with Lions 2025. Module 171. Data compiled from CAPIAC, STiR, UN COMTRADE, ITC, FAO. Licensed under CC BY-NC-ND 4.0.</p>
         <div className="mt-8 pt-6 border-t border-[#f0f0f0]">
           <Link href="/data" className="text-[11px] uppercase tracking-[0.1em] text-[#737373] hover:text-[#0a0a0a] transition-colors">&larr; All Modules</Link>

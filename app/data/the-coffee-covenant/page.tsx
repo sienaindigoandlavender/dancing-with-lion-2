@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
+import ConnectedIntelligence from '@/components/data/ConnectedIntelligence'
 
 const SOURCES = [
   'ECTA — Ethiopian Coffee and Tea Authority: $2.65B exports, 469K tons (2024/25 fiscal year record).',
@@ -111,7 +112,7 @@ export default function TheCoffeeCovenant() {
       <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">001 · The Buna Ceremony</p>
         <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-4">Three cups. Two hours. The conversation that matters.</h2>
-        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">The buna ceremony is not performance. It is social technology refined over centuries. Green beans roasted over charcoal, ground by hand in a wooden mortar, brewed three times in a clay jebena. Anyone who tries to hurry is gently mocked until they relax. Ethiopia exports coffee to the world — but the ceremony stays home. You don&rsquo;t drink coffee in Ethiopia. You attend it.</p>
+        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">The buna ceremony is not performance. It is social technology refined over centuries. Green beans roasted over charcoal, ground by hand in a wooden mortar, brewed three times in a clay jebena. Anyone who tries to hurry is gently mocked until they relax. Ethiopia exports coffee to the world — but the ceremony stays home. You don&rsquo;t drink coffee in Ethiopia. You attend it. Morocco has <Link href="/data/the-tea-road" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">its own ceremony</Link> — three glasses of mint tea, poured from height — and the same rule applies: you cannot rush it.</p>
         <div ref={h1.ref} className="grid md:grid-cols-3 gap-6">
           {CEREMONY.map((c, i) => (
             <div key={c.cup} className="border border-[#e5e5e5] rounded-sm p-6 transition-all duration-700" style={{ opacity: h1.visible ? 1 : 0, transform: h1.visible ? 'translateY(0)' : 'translateY(20px)', transitionDelay: `${i * 150}ms` }}>
@@ -153,7 +154,7 @@ export default function TheCoffeeCovenant() {
       <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">003 · The Stolen Genetics</p>
         <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-4">Every coffee farm on Earth descends from theft.</h2>
-        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">The Dutch stole a plant from Mocha. The French stole from the Dutch. Brazil stole from the French. Every commercial coffee plantation in the world traces its genetic lineage back to stolen Ethiopian seedlings — a handful of plants that became a $485-billion global industry. The wild genetic diversity still grows only in Ethiopia&rsquo;s southwestern forests. The forests are shrinking. The genetic library is closing.</p>
+        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">The Dutch stole a plant from Mocha. The French stole from the Dutch. Brazil stole from the French. Every commercial coffee plantation in the world traces its genetic lineage back to stolen Ethiopian seedlings — a handful of plants that became a $485-billion global industry. The same pattern repeated with <Link href="/data/the-cacao-equation" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">cacao</Link> and <Link href="/data/the-vanilla-orchid" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">vanilla</Link>: origin in the Global South, theft by colonial powers, profit captured in the North. The wild genetic diversity still grows only in Ethiopia&rsquo;s southwestern forests. The forests are shrinking. The genetic library is closing.</p>
         <div ref={h3.ref} className="relative pl-8 space-y-6">
           <div className="absolute left-3 top-0 bottom-0 w-px bg-[#e5e5e5]" />
           {THEFT_TIMELINE.map((t, i) => (
@@ -230,7 +231,7 @@ export default function TheCoffeeCovenant() {
           <div className="space-y-6 text-[15px] md:text-[16px] text-[#262626] leading-[1.8]">
             <p>Coffea arabica is native to the highlands of southwestern Ethiopia — specifically the Kaffa region, from which the word &ldquo;coffee&rdquo; derives. The plant still grows wild there, in the understory of cloud forests between 1,500 and 2,100 metres. Goats still graze among it.</p>
             <p>The legend says Kaldi, a 9th-century herder, noticed his goats becoming unusually energetic after eating the red berries. He brought them to a monastery. The monks threw them in the fire, appalled at this stimulant. The roasting beans released their aroma. The monks changed their minds.</p>
-            <p>What is documented: Sufi monasteries in Yemen were using coffee for nighttime prayers by the 15th century. The port of Mocha became the world&rsquo;s coffee hub. The Ottomans spread it through their empire. The Dutch stole seedlings for Java. The French stole a single plant for Martinique. Brazil stole from French Guiana.</p>
+            <p>What is documented: Sufi monasteries in Yemen were using coffee for nighttime prayers by the 15th century. The port of Mocha became the world&rsquo;s coffee hub — on the same <Link href="/data/the-queen-who-did-not-kneel" className="underline underline-offset-2 hover:text-[#525252] transition-colors">Red Sea coast where Sheba had traded frankincense</Link> centuries before. The Ottomans spread it through their empire. The Dutch stole seedlings for Java. The French stole a single plant for Martinique. Brazil stole from French Guiana.</p>
             <p>Every commercial coffee plant on Earth descends from those thefts. The wild genetics still grow only in Ethiopia.</p>
             <p>In 2024, Ethiopia hit a record: $2.65 billion in coffee export revenue, 469,000 metric tons shipped. Arabica prices surged from 270 to 423 cents per pound as global supply tightened. Germany, Saudi Arabia, and the United States are the top buyers. Ethiopia targets $4 billion by 2033.</p>
             <p>But the real treasure is not in the export figures. It is in the forests of Kaffa, where wild coffee genetic diversity dwarfs anything cultivated anywhere. Climate models suggest that wild arabica could lose most of its suitable habitat within decades. The genetic material needed to adapt the world&rsquo;s coffee to a warming planet may disappear before it can be collected.</p>
@@ -250,12 +251,32 @@ export default function TheCoffeeCovenant() {
         </div>
       </section>
 
+      {/* CONNECTED MODULES */}
+      <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-12 md:py-16">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[#a3a3a3] mb-6">Continue Reading</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[
+            { href: '/data/the-queen-who-did-not-kneel', title: 'The Queen Who Did Not Kneel', sub: 'The Ethiopia–Yemen corridor Sheba controlled. The geopolitics of frankincense.' },
+            { href: '/data/the-tea-road', title: 'The Tea Road', sub: 'China to Morocco — another ceremony, another stolen commodity, another route.' },
+            { href: '/data/the-cacao-equation', title: 'The Cacao Equation', sub: 'Colonial commodity theft — from Mesoamerica to West Africa. The same pattern.' },
+            { href: '/data/the-vanilla-orchid', title: 'The Vanilla Orchid', sub: 'Another stolen origin. Another enslaved hand that changed the world.' },
+            { href: '/data/spice-routes', title: 'The Spice Routes', sub: 'The trade networks that carried coffee from Ethiopia to the world.' },
+          ].map(l => (
+            <Link key={l.href} href={l.href} className="block p-4 bg-[#fafafa] rounded-sm hover:bg-[#f0f0f0] transition-colors">
+              <p className="font-serif text-[16px] italic text-[#0a0a0a] leading-tight mb-1">{l.title}</p>
+              <p className="text-[10px] text-[#a3a3a3] leading-relaxed">{l.sub}</p>
+            </Link>
+          ))}
+        </div>
+      </div></section>
+
       {/* SOURCES */}
       <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-12">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#a3a3a3] mb-4">Sources &amp; Attribution</p>
         <div className="space-y-1">
           {SOURCES.map((s, i) => <p key={i} className="text-[10px] text-[#a3a3a3] leading-relaxed">{s}</p>)}
         </div>
+        <ConnectedIntelligence moduleId="the-coffee-covenant" />
         <p className="text-[10px] text-[#a3a3a3] mt-6">&copy; Dancing with Lions 2025. Module 170. Data compiled from ECTA, USDA FAS, ICO, FAO. Licensed under CC BY-NC-ND 4.0.</p>
         <div className="mt-8 pt-6 border-t border-[#f0f0f0]">
           <Link href="/data" className="text-[11px] uppercase tracking-[0.1em] text-[#737373] hover:text-[#0a0a0a] transition-colors">&larr; All Modules</Link>

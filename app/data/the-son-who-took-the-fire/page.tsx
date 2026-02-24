@@ -1,8 +1,10 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
+import ConnectedIntelligence from '@/components/data/ConnectedIntelligence'
 
 /* ═══════════════════════════════════════════════════════
    THE SON WHO TOOK THE FIRE
@@ -210,7 +212,7 @@ export default function TheSonWhoTookTheFire() {
           </Quote>
         </Fade>
         <Fade delay={200}>
-          <Prose>In 1270, an Amhara nobleman named Yekuno Amlak overthrew the Zagwe dynasty. The Zagwe had built the rock-hewn churches of Lalibela. They were Christians. They were legitimate rulers. But Yekuno Amlak needed the Ethiopian Orthodox Church to support his seizure of power. He needed more than military victory. He needed a story.</Prose>
+          <Prose>In 1270, an Amhara nobleman named Yekuno Amlak overthrew the Zagwe dynasty. The Zagwe had built the <Link href="/data/the-churches-that-swallowed-the-mountain" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>rock-hewn churches of Lalibela</Link>. They were Christians. They were legitimate rulers. But Yekuno Amlak needed the Ethiopian Orthodox Church to support his seizure of power. He needed more than military victory. He needed a story.</Prose>
           <Prose>He claimed direct descent from the Aksumite royal house. The Aksumite royal house, he claimed, descended from Menelik I. The Zagwe? Usurpers. Their centuries of rule were an interruption. He was not overthrowing legitimate authority. He was restoring it.</Prose>
         </Fade>
       </Sec>
@@ -365,10 +367,31 @@ export default function TheSonWhoTookTheFire() {
         </div>
       </section>
 
+      {/* ═══ CONNECTED MODULES ═══ */}
+      <section style={{ borderTop: '1px solid #e5e5e5', padding: '48px 24px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <p style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: C.muted, marginBottom: 24 }}>Continue Reading</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
+            {[
+              { href: '/data/what-solomon-knew', title: 'What Solomon Knew', sub: 'The father\'s unified knowledge system. What Menelik inherited.' },
+              { href: '/data/the-queen-who-did-not-kneel', title: 'The Queen Who Did Not Kneel', sub: 'The mother\'s visit. Bilqis and the geopolitics behind it.' },
+              { href: '/data/the-churches-that-swallowed-the-mountain', title: 'The Churches That Swallowed the Mountain', sub: 'Lalibela — the New Jerusalem the Solomonic dynasty built.' },
+              { href: '/data/the-lions-road', title: 'The Lion\'s Road', sub: 'The Lion of Judah — from Asiatic range to Solomonic symbol.' },
+            ].map(l => (
+              <Link key={l.href} href={l.href} style={{ display: 'block', padding: '16px 20px', background: C.alt, borderRadius: 2, textDecoration: 'none', transition: 'background 0.2s' }}>
+                <p style={{ fontFamily: F.serif, fontSize: 16, fontStyle: 'italic', color: C.text, marginBottom: 4, lineHeight: 1.3 }}>{l.title}</p>
+                <p style={{ fontFamily: F.mono, fontSize: 10, color: C.muted, lineHeight: 1.5 }}>{l.sub}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section style={{ padding: '24px', background: C.alt, textAlign: 'center' as const }}>
         <p style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: '0.08em', color: C.muted }}>© Dancing with Lions</p>
       </section>
 
+      <ConnectedIntelligence moduleId="the-son-who-took-the-fire" />
       <footer>
         <div style={{ background: '#1f1f1f', padding: '40px 24px' }}>
           <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>

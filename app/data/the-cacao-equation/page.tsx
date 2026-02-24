@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
+import ConnectedIntelligence from '@/components/data/ConnectedIntelligence'
 
 const SOURCES = [
   'ICCO — International Cocoa Organization: Global production 4.38M MT (2023/24). West Africa 70%.',
@@ -129,7 +130,7 @@ export default function TheCacaoEquation() {
       <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">001 · The Sacred Drink</p>
         <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-4">Theobroma. Food of the gods. Drunk bitter.</h2>
-        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">Theobroma cacao originated in the upper Amazon basin and was domesticated in Mesoamerica around 1500 BCE. The Olmec ground roasted beans, mixed them with water, chilli, and vanilla, and drank the result as a frothy, bitter ceremonial beverage. The Maya refined the process and restricted chocolate to elites and rituals. The Aztecs elevated cacao beans to literal currency &mdash; a system so stable that counterfeiters filled empty shells with mud. Moctezuma reportedly drank 50 cups a day from gold goblets. When Cort&eacute;s arrived in 1519, he saw cacao as a commodity before he understood it as a sacrament.</p>
+        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">Theobroma cacao originated in the upper Amazon basin and was domesticated in Mesoamerica around 1500 BCE. The Olmec ground roasted beans, mixed them with water, chilli, and <Link href="/data/the-vanilla-orchid" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">vanilla</Link>, and drank the result as a frothy, bitter ceremonial beverage. The Maya refined the process and restricted chocolate to elites and rituals. The Aztecs elevated cacao beans to literal currency &mdash; a system so stable that counterfeiters filled empty shells with mud. Moctezuma reportedly drank 50 cups a day from gold goblets. When Cort&eacute;s arrived in 1519, he saw cacao as a commodity before he understood it as a sacrament.</p>
         <div ref={h1.ref} className="grid md:grid-cols-3 gap-6">
           {[
             { title: 'Olmec · ~1500 BCE', desc: 'First cultivators. The word "cacao" is Olmec. Residue found in pottery from San Lorenzo Tenochtitlán. A bitter, fermented drink — closer to beer than chocolate.', color: '#B45309' },
@@ -259,7 +260,7 @@ export default function TheCacaoEquation() {
       <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">005 · The Value Chain</p>
         <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-4">Africa grows. Europe grinds. The margins stay north.</h2>
-        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">A $4 chocolate bar at a European supermarket began as beans sold by a West African farmer for less than 25 cents of that $4. Europe processes 43% of the world&rsquo;s cocoa &mdash; the Netherlands and Germany alone grind more than all of Africa combined. The five largest chocolate companies (Mars, Mondelēz, Ferrero, Nestlé, Hershey) capture more value than the 3.2 million farming families who grow the crop. The equation is colonial in structure, even when the flags have changed.</p>
+        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">A $4 chocolate bar at a European supermarket began as beans sold by a West African farmer for less than 25 cents of that $4. Europe processes 43% of the world&rsquo;s cocoa &mdash; the Netherlands and Germany alone grind more than all of Africa combined. The five largest chocolate companies (Mars, Mondelēz, Ferrero, Nestlé, Hershey) capture more value than the 3.2 million farming families who grow the crop. The equation is colonial in structure, even when the flags have changed. The same dynamic shapes <Link href="/data/the-blood-gold" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">West African gold</Link>, <Link href="/data/the-coffee-covenant" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Ethiopian coffee</Link>, and <Link href="/data/the-vanilla-orchid" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Malagasy vanilla</Link> &mdash; raw materials flow north, value stays north.</p>
         <div ref={h5.ref} className="space-y-4 mt-8">
           {VALUE_CHAIN.map((v, i) => (
             <div key={v.actor} className="transition-all duration-500" style={{ opacity: h5.visible ? 1 : 0, transitionDelay: `${i * 80}ms` }}>
@@ -316,12 +317,32 @@ export default function TheCacaoEquation() {
         </div>
       </section>
 
+      {/* CONNECTED MODULES */}
+      <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-12 md:py-16">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[#a3a3a3] mb-6">Continue Reading</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[
+            { href: '/data/the-vanilla-orchid', title: 'The Vanilla Orchid', sub: 'Same extraction equation — Mesoamerican origin, island transplant, enslaved technique.' },
+            { href: '/data/the-coffee-covenant', title: 'The Coffee Covenant', sub: 'The first stolen commodity. Every Arabica plant outside Ethiopia descends from theft.' },
+            { href: '/data/trans-saharan-trade', title: 'Trans-Saharan Trade Routes', sub: 'West Africa\'s trade networks — gold, salt, and now 70% of the world\'s cacao.' },
+            { href: '/data/the-blood-gold', title: 'The Blood Gold', sub: 'Another West African resource where the equation favours the north.' },
+            { href: '/data/the-food-equation', title: 'The Food Equation', sub: 'Who grows the food. Who eats it. Who profits.' },
+          ].map(l => (
+            <Link key={l.href} href={l.href} className="block p-4 bg-[#fafafa] rounded-sm hover:bg-[#f0f0f0] transition-colors">
+              <p className="font-serif text-[16px] italic text-[#0a0a0a] leading-tight mb-1">{l.title}</p>
+              <p className="text-[10px] text-[#a3a3a3] leading-relaxed">{l.sub}</p>
+            </Link>
+          ))}
+        </div>
+      </div></section>
+
       {/* SOURCES */}
       <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-12">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#a3a3a3] mb-4">Sources &amp; Attribution</p>
         <div className="space-y-1">
           {SOURCES.map((s, i) => <p key={i} className="text-[10px] text-[#a3a3a3] leading-relaxed">{s}</p>)}
         </div>
+        <ConnectedIntelligence moduleId="the-cacao-equation" />
         <p className="text-[10px] text-[#a3a3a3] mt-6">&copy; Dancing with Lions 2025. Module 173. Data compiled from ICCO, USDA FAS, FAO, Oxfam. Licensed under CC BY-NC-ND 4.0.</p>
         <div className="mt-8 pt-6 border-t border-[#f0f0f0]">
           <Link href="/data" className="text-[11px] uppercase tracking-[0.1em] text-[#737373] hover:text-[#0a0a0a] transition-colors">&larr; All Modules</Link>

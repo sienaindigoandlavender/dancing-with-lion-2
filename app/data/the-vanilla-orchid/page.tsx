@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const DWLRouteMap = dynamic(() => import('@/components/maps/DWLRouteMap'), { ssr: false })
+import ConnectedIntelligence from '@/components/data/ConnectedIntelligence'
 
 const SOURCES = [
   'Cooks Vanilla — Market Report March 2025: Madagascar exported 4,300 MT in H1 2024. Oversupply era.',
@@ -276,7 +277,7 @@ export default function TheVanillaOrchid() {
             <p>Madagascar&rsquo;s SAVA region — Sambava, Antalaha, Voh&eacute;mar, Andapa — produces 80% of the world&rsquo;s vanilla. The northeast coast, humid, cyclone-prone, connected to the rest of the country by roads that wash out every rainy season. An estimated 80,000 smallholder farmers cultivate vanilla in SAVA, most on plots under two hectares. The beans grow for nine months on the vine. Then begins the curing: blanching, sweating in the sun, months of slow drying, months of conditioning in sealed boxes. From flower to exportable bean: over a year.</p>
             <p>The price chart reads like a seismograph. Cyclone hits Madagascar: price spikes. Crop recovers: price collapses. Government imposes minimum export price: price stabilises. Speculators hoard: price doubles. Oversupply: price halves. In 2018, vanilla hit $600 per kilogram — more expensive per weight than silver. By 2024, industrial grade was selling at $140. The volatility is structural: when 80% of a global commodity depends on one island in one cyclone belt, the math is fragile.</p>
             <p>Mauritius enters the story as both re-export hub and historical cradle. The French brought vanilla to Mauritius and R&eacute;union in the early 19th century. It was on R&eacute;union that Edmond Albius, a twelve-year-old enslaved boy, discovered hand-pollination in 1841 — the technique that made the entire industry possible. Today, Mauritius is a top-five destination for Madagascar&rsquo;s vanilla exports, processing and re-shipping beans to European and American markets. In January 2024, demand was so explosive that air freight from Madagascar was re-routed through Mauritius to avoid shipping delays.</p>
-            <p>The paradox sits at the centre of the industry: farmers in SAVA earn $2 to $8 per kilogram of green beans while retail consumers in New York pay $150 to $240 per kilogram of cured vanilla. The value chain is long, opaque, and dominated by intermediaries. Fair trade certification reaches a fraction of growers. The boy who invented the technique died in poverty. The farmers who grow it remain among the poorest in one of the poorest countries on Earth.</p>
+            <p>The paradox sits at the centre of the industry: farmers in SAVA earn $2 to $8 per kilogram of green beans while retail consumers in New York pay $150 to $240 per kilogram of cured vanilla. The value chain is long, opaque, and dominated by intermediaries. The same structural inequality shapes <Link href="/data/the-cacao-equation" className="underline underline-offset-2 hover:text-[#525252] transition-colors">West African cacao</Link> and <Link href="/data/the-coffee-covenant" className="underline underline-offset-2 hover:text-[#525252] transition-colors">Ethiopian coffee</Link> — <Link href="/data/the-food-equation" className="underline underline-offset-2 hover:text-[#525252] transition-colors">Africa&rsquo;s food equation</Link> repeating across commodities. Fair trade certification reaches a fraction of growers. The boy who invented the technique died in poverty. The farmers who grow it remain among the poorest in one of the poorest countries on Earth.</p>
             <p>The orchid still blooms for one morning. The hand still lifts the rostellum. The bean still takes a year to cure. Nothing about vanilla has become easier in 180 years. Only the scale has changed — and the distance between the hand that pollinates and the mouth that tastes.</p>
           </div>
         </div>
@@ -292,12 +293,31 @@ export default function TheVanillaOrchid() {
         </div>
       </section>
 
+      {/* CONNECTED MODULES */}
+      <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-12 md:py-16">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[#a3a3a3] mb-6">Continue Reading</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[
+            { href: '/data/the-cacao-equation', title: 'The Cacao Equation', sub: 'Same pattern — Mesoamerican origin, colonial transplant, African labour, northern profit.' },
+            { href: '/data/the-coffee-covenant', title: 'The Coffee Covenant', sub: 'Another stolen genetic origin. Every commercial coffee plant descends from theft.' },
+            { href: '/data/the-tea-road', title: 'The Tea Road', sub: 'Another ceremony commodity. China to Morocco — 81,000 metric tons of stolen routine.' },
+            { href: '/data/spice-routes', title: 'The Spice Routes', sub: 'The Indian Ocean trade networks that connected Madagascar, Mauritius, and the world.' },
+          ].map(l => (
+            <Link key={l.href} href={l.href} className="block p-4 bg-[#fafafa] rounded-sm hover:bg-[#f0f0f0] transition-colors">
+              <p className="font-serif text-[16px] italic text-[#0a0a0a] leading-tight mb-1">{l.title}</p>
+              <p className="text-[10px] text-[#a3a3a3] leading-relaxed">{l.sub}</p>
+            </Link>
+          ))}
+        </div>
+      </div></section>
+
       {/* SOURCES */}
       <section className="border-t border-[#e5e5e5]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-12">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#a3a3a3] mb-4">Sources &amp; Attribution</p>
         <div className="space-y-1">
           {SOURCES.map((s, i) => <p key={i} className="text-[10px] text-[#a3a3a3] leading-relaxed">{s}</p>)}
         </div>
+        <ConnectedIntelligence moduleId="the-vanilla-orchid" />
         <p className="text-[10px] text-[#a3a3a3] mt-6">&copy; Dancing with Lions 2025. Module 172. Data compiled from USDA, FAO, Tridge, UN COMTRADE. Licensed under CC BY-NC-ND 4.0.</p>
         <div className="mt-8 pt-6 border-t border-[#f0f0f0]">
           <Link href="/data" className="text-[11px] uppercase tracking-[0.1em] text-[#737373] hover:text-[#0a0a0a] transition-colors">&larr; All Modules</Link>
