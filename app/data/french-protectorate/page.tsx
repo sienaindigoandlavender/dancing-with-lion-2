@@ -84,7 +84,7 @@ export default function FrenchProtectoratePage() {
             The French<br />Protectorate
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[540px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
-            1912–1956. Forty-four years between the Treaty of Fez and
+            1912–1956. Forty-four years between the Treaty of <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Fez</Link> and
             the Joint Declaration. Lyautey built the villes nouvelles.
             Morocco built the resistance that dismantled them.
           </p>
@@ -170,7 +170,7 @@ export default function FrenchProtectoratePage() {
           <p className="text-[11px] uppercase tracking-[0.12em] mb-4" style={{ color: '#2D5F8A' }}>002 — The Dual City</p>
           <h2 className="font-serif text-[32px] md:text-[44px] italic leading-[1.05] mb-4" style={{ color: '#ffffff' }}>Villes Nouvelles</h2>
           <p className="text-[13px] max-w-[540px] leading-relaxed mb-6" style={{ color: 'rgba(0,0,0,0.4)' }}>
-            Prost designed European districts alongside existing medinas.
+            Prost designed European districts alongside existing <Link href="/data/medina-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">medina</Link>s.
             Wide boulevards on one side of the wall. Narrow alleys on the other.
             Casablanca&rsquo;s medina reached 1,290 people per hectare.
             The European quarter across the road: 50.

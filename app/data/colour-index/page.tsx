@@ -540,7 +540,7 @@ export default function ColourIndexPage() {
           <p className="text-[15px] leading-[1.8]" style={{ color: C.text }}>
             Every colour in Morocco has a chemistry and a biography. Marrakech is red because the Haouz
             plain is rich in iron oxide. Chefchaouen is blue because Sephardic Jews fleeing the Inquisition
-            painted their exile the colour of heaven. Fes is green because Islam reserves it for the sacred.
+            painted their exile the colour of heaven. <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Fes</Link> is green because Islam reserves it for the sacred.
           </p>
           <p className="text-[15px] leading-[1.8]" style={{ color: C.text }}>
             This index maps 24 colours to their mineral source, their craft tradition, and their meaning.
@@ -637,7 +637,7 @@ export default function ColourIndexPage() {
             <p className="text-[14px] leading-relaxed" style={{ color: C.text }}>
               Moroccan cities are coloured by what lies beneath them. Marrakech is red because
               the Haouz plain is red. Fes tiles are earth-toned because the Saïss basin provides
-              specific clays. Essaouira is white because the Atlantic coast is limestone.
+              specific clays. Essaouira is white because the <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Atlantic coast</Link> is limestone.
               Before branding, before municipal codes, before Instagram — geology was the stylist.
             </p>
           </div>
@@ -645,7 +645,7 @@ export default function ColourIndexPage() {
             <h3 className="font-serif text-[18px] mb-3">Exile Paints Cities</h3>
             <p className="text-[14px] leading-relaxed" style={{ color: C.text }}>
               Chefchaouen&apos;s blue came from Jewish refugees. Essaouira&apos;s Portuguese fortifications brought
-              European whitewash. Fes&apos;s Andalusian quarter carries design patterns from Córdoba and
+              European whitewash. Fes&apos;s <Link href="/data/al-andalus" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Andalusian</Link> quarter carries design patterns from Córdoba and
               Granada. Morocco&apos;s most famous colours arrived with people who were forced to leave somewhere else.
               The palette is a map of displacement.
             </p>

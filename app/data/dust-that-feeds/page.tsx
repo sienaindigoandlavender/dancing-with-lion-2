@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react'
+import Link from 'next/link'
 
 /* ═══════════════════════════════════════════════════
    THE DUST THAT FEEDS
@@ -390,7 +391,7 @@ export default function DustThatFeeds() {
           The mechanism is phosphorus. Amazonian soils are ancient and heavily weathered. Nutrients are locked in the living plants, not the ground. When leaves decompose, their phosphorus is rapidly reabsorbed. But some washes away in the torrential rain, draining from the basin like a slow leak. Without replacement, the forest would starve. The replacement comes from 5,000 kilometres away, in the form of dust.
         </p>
         <p style={{ fontSize: 16, lineHeight: 2, color: C.ink, marginTop: 24 }}>
-          The source is the Bodele Depression in Chad: the dried bed of Mega-Lake Chad, a body of water that 7,000 years ago was larger than all the Great Lakes combined. When the Sahara dried, the lake vanished. Its sediment stayed: billions of fossilised diatoms, single-celled algae whose silica-rich cell walls are loaded with phosphorus, iron, and calcium. One hundred dust storms a year rake across this lakebed. In winter, the depression produces 700,000 tonnes of dust per day. The Tibesti and Ennedi mountains channel the wind into a natural jet at 47 kilometres per hour. The dust rises to 5,000 metres. The trade winds carry it west.
+          The source is the Bodele Depression in Chad: the dried bed of Mega-<Link href="/data/the-lake-of-fire" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Lake Chad</Link>, a body of water that 7,000 years ago was larger than all the Great Lakes combined. When the Sahara dried, the lake vanished. Its sediment stayed: billions of fossilised diatoms, single-celled algae whose silica-rich cell walls are loaded with phosphorus, iron, and calcium. One hundred dust storms a year rake across this lakebed. In winter, the depression produces 700,000 tonnes of dust per day. The Tibesti and Ennedi mountains channel the wind into a natural jet at 47 kilometres per hour. The dust rises to 5,000 metres. The trade winds carry it west.
         </p>
       </section>
 

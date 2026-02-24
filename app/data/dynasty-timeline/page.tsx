@@ -93,8 +93,8 @@ export default function DynastyTimelinePage() {
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
           Morocco is one of the oldest continuous states in Africa. From the Idrisids
           in 789 to the Alaouites today, seven dynasties have held power — alternating
-          between Arab Sharifian families and Berber tribal confederations, between
-          Fes and Marrakech, between expansion and retreat.
+          between Arab Sharifian families and <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Berber</Link> tribal confederations, between
+          <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Fes</Link> and Marrakech, between expansion and retreat.
         </p>
       </section>
 

@@ -320,7 +320,7 @@ export default function CarpetCodePage() {
             A field guide to reading a rug. 30 Amazigh motifs decoded.
           </p>
           <p className="text-[15px] leading-[1.8] max-w-[600px]" style={{ color: C.text }}>
-            Every Amazigh carpet is a letter. The diamond is the womb. The zigzag is water.
+            Every <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Amazigh</Link> carpet is a letter. The diamond is the womb. The zigzag is water.
             The comb purifies. The scorpion wards. Before the Amazigh had a written script
             in common use, they had wool. Weavers — always women — encoded identity,
             protection, fertility, and cosmology into geometric patterns passed from mother

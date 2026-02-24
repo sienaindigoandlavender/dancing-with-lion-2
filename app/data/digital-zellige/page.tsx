@@ -473,10 +473,10 @@ export default function DigitalZelligePage() {
       <section style={{ backgroundColor: '#1f1f1f' }} className="px-8 md:px-[8%] lg:px-[12%] py-12">
         <div className="border-t pt-8 max-w-[560px]" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
           <p className="font-serif italic text-[20px] leading-[1.4]" style={{ color: C.ink }}>
-            A zellige mosaic is never finished by one person. The cutter shapes the tile.
+            A <Link href="/data/geometry-of-zellige" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">zellige</Link> mosaic is never finished by one person. The cutter shapes the tile.
             The glazer paints it. The setter places it. The patron pays for it.
             Each transaction in the export data is a tile in the same tradition —
-            a piece of fired earth, cut in Fes, glazed in Safi, shipped to Brooklyn,
+            a piece of fired earth, cut in <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Fes</Link>, glazed in Safi, shipped to Brooklyn,
             set into a kitchen wall six thousand kilometres from the kiln.
             The pattern holds. The distances have changed.
           </p>

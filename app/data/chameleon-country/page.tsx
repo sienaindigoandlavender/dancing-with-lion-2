@@ -355,7 +355,7 @@ export default function ChameleonCountryPage() {
               </p>
             </div>
             <div className="flex gap-2 flex-wrap">
-              {[null, 'Ouarzazate', 'Tangier', 'Essaouira', 'Marrakech', 'Rabat'].map(loc => (
+              {[null, 'Ouarzazate', 'Tangier', 'Essaouira', 'Marrakech', '<Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Rabat</Link>'].map(loc => (
                 <button key={loc || 'all'}
                   className="font-mono text-[10px] px-2 py-1 rounded-full border transition-all duration-200"
                   style={{
@@ -488,7 +488,7 @@ export default function ChameleonCountryPage() {
               <p className="micro-label mb-2" style={{ color: C.desert }}>The Colour Signature</p>
               <p className="text-[12px] leading-[1.7]" style={{ color: C.text }}>
                 Ridley Scott&apos;s palette is warm ochre and burnt sienna. Nolan works
-                in high-contrast blues and desaturated earth. Stahelski pushed Essaouira
+                in high-contrast blues and desaturated earth. Stahelski pushed <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Essaouira</Link>
                 into midnight blue and gold. The same stone, the same light — rendered
                 unrecognisable by colour grading alone.
               </p>

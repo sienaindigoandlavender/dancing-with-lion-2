@@ -288,7 +288,7 @@ export default function FourPeaksPage() {
         </div>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
           Jbel Toubkal rises 4,167 metres above sea level — the highest point in North Africa,
-          the Atlas Mountains, and the Arab world. Sixty kilometres from Marrakech, visible on
+          the <Link href="/data/atlas-mountains" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Atlas Mountains</Link>, and the Arab world. Sixty kilometres from Marrakech, visible on
           clear days. Jbel Saghro, in the Anti-Atlas, reaches 2,712m — lower but wilder, drier,
           volcanic. Put them next to Kilimanjaro (5,895m, highest in Africa, a freestanding
           giant with five climate zones) and Everest (8,849m, highest on Earth, where the summit

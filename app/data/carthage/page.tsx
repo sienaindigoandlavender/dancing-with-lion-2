@@ -274,7 +274,7 @@ export default function CarthagePage() {
         <h2 className="font-serif text-[clamp(1.8rem,4vw,2.8rem)] mb-2">The Sites</h2>
         <p className="text-[13px] mb-8 max-w-[540px]" style={{ color: C.muted }}>
           Toggle between the archaeological ruins at Carthage (9 sites across a 2 × 2.5 km area,
-          now a suburb of Tunis) and the Carthaginian Empire at its peak — colonies from Essaouira
+          now a suburb of Tunis) and the Carthaginian Empire at its peak — colonies from <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Essaouira</Link>
           to Lebanon.
         </p>
         <CarthageMap />

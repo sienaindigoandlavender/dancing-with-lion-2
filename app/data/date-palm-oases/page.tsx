@@ -106,7 +106,7 @@ export default function DatePalmOasesPage() {
           <h2 className="font-serif text-[32px] md:text-[44px] italic leading-[1.05] mb-4" style={{ color: '#ffffff' }}>Four Oasis Regions</h2>
           <p className="text-[13px] max-w-[520px] leading-relaxed mb-6" style={{ color: 'rgba(0,0,0,0.4)' }}>
             South of the Atlas. Long ribbons of palm groves along desert rivers.
-            These were the caravan routes to Timbuktu. The oases are measured
+            These were the <Link href="/data/trans-saharan-trade" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">caravan routes</Link> to Timbuktu. The oases are measured
             by the number of their palms, not by area.
           </p>
           <div ref={mapContainer} className="w-full rounded-sm overflow-hidden" style={{ height: '420px', border: '1px solid #1a1a1a' }} />

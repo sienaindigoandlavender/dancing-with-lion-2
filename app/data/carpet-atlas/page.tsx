@@ -91,7 +91,7 @@ export default function CarpetAtlasPage() {
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
             Every diamond is a womb. Every zigzag is water. Every cross
-            wards off djinn. For millennia, Amazigh women have woven
+            wards off djinn. For millennia, <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Amazigh</Link> women have woven
             autobiography into wool — encoding fertility, protection,
             and identity in a visual language older than writing itself.
             No two rugs are identical. This is the atlas of where they come from.

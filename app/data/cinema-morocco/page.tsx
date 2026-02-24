@@ -299,7 +299,7 @@ export default function CinemaMoroccoPage() {
           <p className="text-[11px] uppercase tracking-[0.12em] mb-4" style={{ color: '#A0452E' }}>003 — Morocco Is Essos</p>
           <h2 className="font-serif text-[32px] md:text-[44px] italic leading-[1.05] mb-4" style={{ color: '#ffffff' }}>Game of Thrones in Morocco</h2>
           <p className="text-[13px] max-w-[550px] leading-relaxed mb-10" style={{ color: 'rgba(0,0,0,0.4)' }}>
-            Prominent in Season 3. Essaouira&rsquo;s ramparts became Astapor.
+            Prominent in Season 3. <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Essaouira</Link>&rsquo;s ramparts became Astapor.
             Aït Benhaddou became Yunkai. Atlas Studios built Pentos.
             The unaired pilot filmed the Drogo–Daenerys wedding here &mdash;
             George R.R. Martin cameoed as a Pentoshi nobleman.
@@ -333,7 +333,7 @@ export default function CinemaMoroccoPage() {
           <p className="micro-label mb-4">004 — Why Morocco</p>
           <h2 className="font-serif text-[32px] md:text-[44px] italic text-dwl-black leading-[1.05] mb-4">The Incentive Structure</h2>
           <p className="text-[14px] text-dwl-body max-w-[580px] leading-relaxed mb-10">
-            Reliable weather. Desert, mountains, medinas, Atlantic coast within hours. Trained local crew.
+            Reliable weather. Desert, mountains, <Link href="/data/medina-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">medina</Link>s, Atlantic coast within hours. Trained local crew.
             Moroccan army as extras. And since March 2022, a 30% cash rebate administered by the Centre
             Cinématographique Marocain (CCM).
           </p>
