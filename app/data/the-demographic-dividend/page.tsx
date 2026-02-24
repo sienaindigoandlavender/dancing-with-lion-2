@@ -153,7 +153,7 @@ export default function TheDemographicDividend() {
       {/* PULLQUOTE */}
       <section className="border-t border-[#e5e5e5] bg-[#fafafa]">
         <div className="max-w-[800px] mx-auto px-6 md:px-10 py-20 md:py-28 min-h-[42vh] flex items-center">
-          <blockquote className="border-l-[3px] pl-6 md:pl-8" style={{ borderColor: C.amber }}>
+          <blockquote className="border-l-[3px] pl-6 md:pl-8" style={{ borderColor: '#B45309' }}>
             <p className="font-serif text-[24px] md:text-[32px] italic leading-[1.4] text-[#0a0a0a]">By 2035, more young Africans will enter the workforce each year than in the rest of the world combined.</p>
             <p className="text-[11px] text-[#a3a3a3] mt-4 uppercase tracking-wider">World Economic Forum, 2023</p>
           </blockquote>
