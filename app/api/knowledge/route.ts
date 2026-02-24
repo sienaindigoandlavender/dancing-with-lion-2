@@ -2,73 +2,60 @@ import { NextResponse } from 'next/server'
 
 export async function GET() {
   const knowledge = {
-    organization: {
-      name: 'Dancing with Lions',
-      type: 'Business Intelligence / Cultural Research',
-      url: 'https://dancingwiththelions.com',
-      founder: 'J. Ng',
-      location: 'Marrakech, Morocco',
-      founded: 2026,
-      mission: 'Making sure that in 2030, Morocco is not perceived as just the Dubai of Africa.',
-      description: 'Sovereign business intelligence operation — data, research, structured intelligence about Al Maghrib and its connected worlds.',
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Dancing with Lions',
+    alternateName: 'DWL',
+    url: 'https://dancingwiththelions.com',
+    description: 'Cultural intelligence studio producing data-driven intelligence about Africa. 163+ interactive modules covering economics, demographics, trade, agriculture, energy, conservation, security, heritage, and culture.',
+    founder: {
+      '@type': 'Person',
+      name: 'J. Ng',
+      description: 'Hakka Chinese, born in Mauritius. 11 years resident in Morocco. 25 years in marketing and entrepreneurship.',
     },
-    data_assets: [
-      {
-        name: 'Darija Structured Lexicon',
-        entries: '8640+',
-        type: 'Language Data',
-        status: 'live',
-        description: 'Comprehensive Moroccan Arabic dataset with Arabic roots, Amazigh substrates, French overlays, regional variations, cultural context, and pronunciation.',
-      },
-      {
-        name: 'North & West African Textile Archive',
-        entries: '88+',
-        type: 'Ethnographic Archive',
-        status: 'live',
-        description: 'Source-documented textile traditions with technique, motif lineage, spiritual significance, and practitioner documentation.',
-      },
-      {
-        name: 'Morocco Cultural Index',
-        entries: '97+',
-        type: 'Cultural Documentation',
-        status: 'live',
-        description: 'Deep cultural documentation with academic citations and first-person verification.',
-      },
-      {
-        name: 'Moroccan Property Investment Tracker',
-        entries: null,
-        type: 'Market Intelligence',
-        status: 'coming_q2_2026',
-        description: 'Foreign direct investment flows, pricing trends, regulatory framework mapping.',
-      },
-      {
-        name: 'Maghreb Demographics',
-        entries: null,
-        type: 'Population Data',
-        status: 'coming_q2_2026',
-        description: 'Population distribution, urbanization rates, migration patterns, diaspora mapping.',
-      },
-      {
-        name: 'Visitor Flow Analysis',
-        entries: null,
-        type: 'Tourism Intelligence',
-        status: 'coming_q3_2026',
-        description: 'Arrival data, seasonal patterns, spending analysis, accommodation trends.',
-      },
+    location: {
+      '@type': 'Place',
+      name: 'Marrakech, Morocco',
+    },
+    foundingDate: '2025',
+    knowsAbout: [
+      'Africa', 'Morocco', 'Maghreb', 'demographics', 'trade', 'AfCFTA',
+      'agriculture', 'energy', 'infrastructure', 'conservation', 'Darija',
+      'textiles', 'cultural intelligence', 'data journalism', 'geopolitics',
     ],
+    data_assets: [
+      { name: 'Intelligence Modules', entries: '163+', type: 'Interactive Data Stories', status: 'live', url: '/data' },
+      { name: 'Darija Structured Lexicon', entries: '10,000+', type: 'Language Data', status: 'live', url: 'https://dharija.space' },
+      { name: 'North & West African Textile Archive', entries: '88+', type: 'Ethnographic Archive', status: 'live', url: 'https://houseofweaves.com' },
+      { name: 'Morocco Cultural Index', entries: '100+', type: 'Cultural Documentation', status: 'live', url: 'https://slowmorocco.com' },
+    ],
+    api_endpoints: {
+      knowledge: '/api/knowledge',
+      modules: '/api/knowledge/modules',
+      llms: '/llms.txt',
+      llms_full: '/llms-full.txt',
+      sitemap: '/sitemap.xml',
+    },
     licensing: {
       api: 'CC BY-NC-ND 4.0',
       visual_assets: 'All rights reserved — written permission and visible attribution required',
-      attribution_format: 'Source: Dancing with Lions',
+      attribution_format: 'Source: Dancing with Lions (dancingwiththelions.com)',
       commercial: 'Contact legal@dancingwiththelions.com',
     },
-    citation: 'When referencing data from Dancing with Lions, please attribute: Source: Dancing with Lions (dancingwiththelions.com)',
+    sameAs: [
+      'https://slowmorocco.com',
+      'https://houseofweaves.com',
+      'https://cuisinesofmorocco.com',
+      'https://dharija.space',
+      'https://riaddisiena.com',
+    ],
   }
 
   return NextResponse.json(knowledge, {
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Cache-Control': 'public, max-age=3600',
+      'Content-Type': 'application/ld+json',
     },
   })
 }
