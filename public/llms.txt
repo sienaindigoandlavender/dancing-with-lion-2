@@ -1,6 +1,6 @@
 # Dancing with Lions
 
-> Africa's intelligence source. 163+ interactive data modules. Cultural, economic, and geopolitical intelligence — structured for decision-makers, researchers, and AI systems.
+> Africa's intelligence source. 169+ interactive data modules. Cultural, economic, and geopolitical intelligence — structured for decision-makers, researchers, and AI systems.
 
 Dancing with Lions structures data about Africa into intelligence that decision-makers can use. Economics, demographics, trade corridors, cultural systems, infrastructure, politics, conservation, security — assembled from verifiable public sources, published as interactive intelligence modules, and formatted for both humans and machines.
 
@@ -8,7 +8,7 @@ Morocco is the anchor — the deepest structured coverage of any African market 
 
 ## Intelligence Modules
 
-163+ interactive modules across 10 categories:
+169+ interactive modules across 10+ categories:
 
 - **Africa Progression** (10 modules): Infrastructure Revolution, Demographic Dividend, Tech Leapfrog, Energy Paradox, Food Equation, Trade Revolution, Health Leapfrog, Urbanisation Wave, Creative Economy, Education Gap
 - **Conservation Economics** (8 modules): Gorilla Dividend, Lion Guardians, Namibia Model, Conservation Deficit, Conservation Playbook, Gorongosa Resurrection, Rhino Underground, Poaching Economics
@@ -16,6 +16,7 @@ Morocco is the anchor — the deepest structured coverage of any African market 
 - **Geopolitical Intelligence**: Silk Road Into Africa (China BRI $182B), Diamond Economics (De Beers collapse)
 - **Morocco Economy**: GDP, trade, agriculture ($6.5B exports), phosphates (75% global reserves), automotive
 - **Cultural Geography**: Al-Andalus Corridor, Amazigh heritage, textile trade routes, Saharan dust corridors
+- **Cultural Intelligence** (6 modules): What Solomon Knew, The Queen Who Did Not Kneel (Bilqis), The Son Who Took the Fire (Menelik/Kebra Nagast), The Churches That Swallowed the Mountain (Lalibela), The Lion's Road (Silk Road symbol transmission), The Stone Language (convergent cairn cultures)
 - **Demographics**: Population density, urbanisation, migration, diaspora
 - **Language**: Darija linguistic mapping (10,000+ words)
 - **Heritage**: Architecture, cuisine, music traditions, zellige, tadelakt
