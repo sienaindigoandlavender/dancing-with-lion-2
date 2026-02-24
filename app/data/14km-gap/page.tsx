@@ -253,7 +253,7 @@ export default function FourteenKmGapPage() {
           <em>The 14km Gap</em>
         </h1>
         <p className="text-[15px] max-w-[600px] leading-[1.7] mb-6" style={{ color: C.body }}>
-          Morocco and Spain are separated by 14 kilometres of water.
+          Morocco and Spain are separated by <Link href="/data/the-14-kilometres" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">14 kilometres</Link> of water.
           The distance between their economies is measured in multiples.
         </p>
         <p className="text-[13px] max-w-[600px] leading-[1.7] mb-8" style={{ color: C.muted }}>

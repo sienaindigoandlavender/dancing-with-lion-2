@@ -112,7 +112,7 @@ export default function ArganTrianglePage() {
           <p className="text-[11px] uppercase tracking-[0.2em] mb-6 opacity-0" style={{ color: '#5C7C3E', animation: 'fadeUp 1s ease 0.3s forwards' }}>Data Module 070 — Agricultural &amp; Economic Intelligence</p>
           <h1 className="font-serif leading-[0.92] tracking-[-0.03em] opacity-0" style={{ fontSize: 'clamp(3rem, 9vw, 7.5rem)', color: '#ffffff', fontStyle: 'italic', animation: 'fadeUp 1s ease 0.5s forwards' }}>The Argan<br />Triangle</h1>
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
-            The only place on earth argan trees grow. Twenty million trees across 830,000 hectares of UNESCO-protected biosphere, from Essaouira to Agadir to the Anti-Atlas. The women-led economy of Morocco&rsquo;s liquid gold.
+            The only place on earth argan trees grow. Twenty million trees across 830,000 hectares of UNESCO-protected biosphere, from <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Essaouira</Link> to Agadir to the <Link href="/data/atlas-mountains" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Anti-Atlas</Link>. The women-led economy of Morocco&rsquo;s liquid gold.
           </p>
           <div className="flex flex-wrap gap-10 md:gap-16 mt-12 opacity-0" style={{ animation: 'fadeUp 1s ease 0.9s forwards' }}>
             {HERO_STATS.map((s) => (

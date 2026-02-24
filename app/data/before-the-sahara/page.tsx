@@ -121,7 +121,7 @@ export default function BeforeTheSaharaPage() {
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
             The land between Atlas and sand. Two-thirds of Morocco&rsquo;s oases
-            have vanished in a century. 15 million date palms reduced to 6 million.
+            have vanished in a century. 15 million <Link href="/data/date-palm-oases" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">date palms</Link> reduced to 6 million.
             NDVI vegetation data, climate zones, oasis collapse, and the green
             projects trying to hold the line.
           </p>

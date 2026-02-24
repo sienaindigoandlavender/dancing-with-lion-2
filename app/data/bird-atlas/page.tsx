@@ -377,7 +377,7 @@ export default function BirdAtlasPage() {
         <div className="space-y-10 max-w-[640px]">
           <div style={{ opacity: notes.vis ? 1 : 0, transition: 'opacity 0.6s' }}>
             <h3 className="font-serif text-[22px] text-dwl-black">The 14km Bottleneck</h3>
-            <p className="text-[15px] text-dwl-gray leading-relaxed mt-3">Soaring birds — raptors, storks, pelicans — cannot sustain flight over open water. They depend on thermals, columns of rising warm air that only form over land. When they reach the Mediterranean, they funnel to the narrowest crossing points: the Strait of Gibraltar (14km), the Bosphorus (700m), and Cap Bon to Sicily (140km). Gibraltar alone funnels 450,000 birds through a gap narrower than many cities.</p>
+            <p className="text-[15px] text-dwl-gray leading-relaxed mt-3">Soaring birds — raptors, storks, pelicans — cannot sustain flight over open water. They depend on thermals, columns of rising warm air that only form over land. When they reach the Mediterranean, they funnel to the narrowest crossing points: the <Link href="/data/the-14-kilometres" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Strait of Gibraltar</Link> (14km), the Bosphorus (700m), and Cap Bon to Sicily (140km). Gibraltar alone funnels 450,000 birds through a gap narrower than many cities.</p>
           </div>
           <div style={{ opacity: notes.vis ? 1 : 0, transition: 'opacity 0.6s 0.2s' }}>
             <h3 className="font-serif text-[22px] text-dwl-black">The Last Ibis</h3>
@@ -385,7 +385,7 @@ export default function BirdAtlasPage() {
           </div>
           <div style={{ opacity: notes.vis ? 1 : 0, transition: 'opacity 0.6s 0.4s' }}>
             <h3 className="font-serif text-[22px] text-dwl-black">The Banc d'Arguin</h3>
-            <p className="text-[15px] text-dwl-gray leading-relaxed mt-3">Every winter, 2.3 million wading birds pack the shallow waters off Mauritania's coast. The Banc d'Arguin is the terminus of the East Atlantic Flyway — the end of a journey that starts in Siberia, passes through the Wadden Sea, and follows the Atlantic coast of Africa. It is the single most important wintering site for Palearctic waders on the planet. The fishermen who live there, the Imraguen, are one of the few communities in the world who fish cooperatively with dolphins.</p>
+            <p className="text-[15px] text-dwl-gray leading-relaxed mt-3">Every winter, 2.3 million wading birds pack the shallow waters off Mauritania's coast. The Banc d'Arguin is the terminus of the East Atlantic Flyway — the end of a journey that starts in Siberia, passes through the Wadden Sea, and follows the <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Atlantic coast</Link> of Africa. It is the single most important wintering site for Palearctic waders on the planet. The fishermen who live there, the Imraguen, are one of the few communities in the world who fish cooperatively with dolphins.</p>
           </div>
         </div>
       </div></section></div>

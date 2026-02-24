@@ -85,7 +85,7 @@ export default function CalendarOfLightPage() {
           That difference means Tangier gets {swing.toFixed(1)} more hours of daylight variation
           between solstices than Agadir. In June, Tangier sees {fmt(cityData[0].months[5].sunset)} sunsets;
           Agadir sees {fmt(cityData[5].months[5].sunset)}. By December, Tangier&apos;s day shrinks to {cityData[0].months[11].daylight.toFixed(1)} hours
-          while Agadir holds at {cityData[5].months[11].daylight.toFixed(1)}. Latitude is destiny — for light, for agriculture, for Ramadan fasting hours.
+          while Agadir holds at {cityData[5].months[11].daylight.toFixed(1)}. Latitude is destiny — for light, for agriculture, for <Link href="/data/ramadan-moon" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Ramadan</Link> fasting hours.
         </p>
       </section>
 

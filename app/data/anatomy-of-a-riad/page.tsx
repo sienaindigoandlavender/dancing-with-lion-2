@@ -55,7 +55,7 @@ export default function AnatomyOfARiadPage() {
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
             From the street, nothing. A plain wall, a modest door.
-            Behind it: a garden, a fountain, zellige mosaics, carved cedar,
+            Behind it: a garden, a fountain, <Link href="/data/geometry-of-zellige" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">zellige</Link> mosaics, carved cedar,
             tadelakt polished with river stones. The Moroccan riad is a
             thousand-year-old machine for privacy, beauty, and climate control.
           </p>

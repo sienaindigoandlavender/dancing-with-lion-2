@@ -408,7 +408,7 @@ export default function ArganConstellationPage() {
           </p>
         </div>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
-          Argan oil — Morocco&apos;s liquid gold — comes from the kernel of a
+          <Link href="/data/argan-triangle" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Argan</Link> oil — Morocco&apos;s liquid gold — comes from the kernel of a
           tree that grows nowhere else on earth. UNESCO declared the Arganeraie
           a Biosphere Reserve in 1998. The traditional extraction method has not
           changed in centuries: women gather, dry, crack, grind, and knead by hand.

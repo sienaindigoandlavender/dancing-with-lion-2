@@ -191,7 +191,7 @@ export default function AlAndalusPage() {
             className="text-[18px] md:text-[20px] max-w-[560px] leading-relaxed"
             style={{ color: 'rgba(0,0,0,0.5)' }}
           >
-            One continuous cultural bridge from Seville to Fes. Architecture, music, food, language — four layers of shared DNA.
+            One continuous cultural bridge from Seville to <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Fes</Link>. Architecture, music, food, language — four layers of shared DNA.
             Toggle each layer. Explore each point.
           </p>
 

@@ -381,10 +381,10 @@ export default function AlmohadAtlasPage() {
         <p className="text-[13px] max-w-[580px] leading-[1.7] mt-6" style={{ color: C.text }}>
           Between 1130 and 1269, the Almohad caliphate controlled everything from the
           Sahara to the Tagus, from the Atlantic to Tripoli. They rejected the ornamental
-          excess of their Almoravid predecessors and built instead with monumental restraint —
+          excess of their <Link href="/data/dynasty-timeline" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Almoravid</Link> predecessors and built instead with monumental restraint —
           enormous minarets, austere facades, horseshoe arches that framed emptiness as
           deliberately as they framed stone. Their three sister minarets — the Kutubiyya in
-          Marrakech, the Giralda in Seville, the Hassan Tower in Rabat — still define the
+          Marrakech, the Giralda in Seville, the Hassan Tower in <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Rabat</Link> — still define the
           skylines of three cities in two countries on two continents.
         </p>
 

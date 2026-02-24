@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 
 /* ═══════════════════════════════════════════════════
    BEFORE THE CRESCENT
@@ -528,7 +529,7 @@ export default function BeforeTheCrescent() {
             <span style={{ color: 'rgba(255,255,255,0.7)' }}>they didn't find an empty land.</span>
           </div>
           <p style={{ fontSize: 14, lineHeight: 1.9, color: 'rgba(255,255,255,0.75)', marginTop: 32, maxWidth: 520, margin: '32px auto 0' }}>
-            They found a place where Homo sapiens had lived for 315,000 years. Where Phoenician, Carthaginian, Roman, Vandal, and Byzantine layers sat on top of each other like geological strata. Where Judaism and Christianity were already established. Where Amazigh tribes governed themselves and had outlasted every empire that tried to absorb them. The conquest took 70 years. The Middle East had fallen in a decade.
+            They found a place where Homo sapiens had lived for 315,000 years. Where <Link href="/data/carthage" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Phoenician</Link>, Carthaginian, Roman, Vandal, and Byzantine layers sat on top of each other like geological strata. Where Judaism and Christianity were already established. Where <Link href="/data/amazigh-identity" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Amazigh</Link> tribes governed themselves and had outlasted every empire that tried to absorb them. The conquest took 70 years. The Middle East had fallen in a decade.
           </p>
           <p style={{ fontSize: 14, lineHeight: 1.9, color: 'rgba(255,255,255,0.6)', marginTop: 24, maxWidth: 520, margin: '24px auto 0' }}>
             Islam arrived. But Morocco was already Morocco.

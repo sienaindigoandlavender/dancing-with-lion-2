@@ -120,7 +120,7 @@ export default function AutomotiveIndustryPage() {
         new mapboxgl!.default.Popup({ offset: 8, maxWidth: '220px', closeButton: false })
           .setHTML(`
             <div style="font-family:'IBM Plex Mono',monospace">
-              <div style="font-size:13px;color:#f5f5f5;font-weight:600">Tanger Med Port</div>
+              <div style="font-size:13px;color:#f5f5f5;font-weight:600"><Link href="/data/port-strategy" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Tanger Med</Link> Port</div>
               <div style="font-size:11px;color:#E63946;margin:3px 0">600,872 vehicles (2024)</div>
               <div style="font-size:10px;color:#888">76% of Renault exports to Europe</div>
             </div>

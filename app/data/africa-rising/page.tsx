@@ -419,7 +419,7 @@ export default function AfricaRisingPage() {
             </div>
             <div>
               <p className="font-mono text-[10px] uppercase tracking-wider mb-1" style={{ color: C.ink }}>The infrastructure edge</p>
-              <p>Africa&apos;s first high-speed train (2018). Africa&apos;s largest port — Tangier Med, now the Mediterranean&apos;s busiest transshipment hub. 1,800km of motorway. The Noor-Ouarzazate solar complex — one of the world&apos;s largest concentrated solar power plants. None of this happened by accident. Morocco has invested consistently in hard infrastructure while many African peers invested in consumption or commodity extraction.</p>
+              <p>Africa&apos;s first high-speed train (2018). Africa&apos;s largest port — Tangier Med, now the Mediterranean&apos;s busiest transshipment hub. 1,800km of motorway. The <Link href="/data/solar-atlas" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Noor</Link>-Ouarzazate solar complex — one of the world&apos;s largest concentrated solar power plants. None of this happened by accident. Morocco has invested consistently in hard infrastructure while many African peers invested in consumption or commodity extraction.</p>
             </div>
             <div>
               <p className="font-mono text-[10px] uppercase tracking-wider mb-1" style={{ color: C.ink }}>The tourism narrative</p>

@@ -526,7 +526,7 @@ export default function AlphabetOfCraftPage() {
           Sixty traditions. Ten categories. One illustrated plate.
         </p>
         <p className="text-[13px] max-w-[640px] leading-[1.7] mt-4" style={{ color: C.text }}>
-          Every major craft tradition in Morocco — from zellige tilework to rammed-earth
+          Every major craft tradition in Morocco — from <Link href="/data/geometry-of-zellige" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">zellige</Link> tilework to rammed-earth
           construction — arranged as specimens on a single plate. Each entry:
           name, region, technique, materials. The categories span tile and mosaic,
           textile, leather, metalwork, wood, pottery, stone, fibre, body craft,
