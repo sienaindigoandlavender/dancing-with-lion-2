@@ -270,9 +270,9 @@ export default function TimelineOfMoroccoPage() {
 
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
           In 2017, a team led by Jean-Jacques Hublin reopened a collapsed cave 100 km west of
-          Marrakech. Inside: the oldest known remains of Homo sapiens — 315,000 years old. Five
+          Marrakech. Inside: the oldest known remains of Homo sapiens — <Link href="/data/before-the-crescent" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">315,000 years</Link> old. Five
           individuals. Modern faces, elongated braincases. Morocco shifted from the margins
-          of human origins to the centre. This timeline traces every chapter since: Phoenician
+          of human origins to the centre. This timeline traces every chapter since: <Link href="/data/carthage" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Phoenician</Link>
           traders, Roman columns, the birth of the Moroccan state under the Idrisids, the great
           Berber empires, colonial humiliation, and modern renaissance. Click any event to read
           the full story.

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import { COMPARISON, HAPLOGROUPS, TIMELINE, LOCATIONS, BIBLIOGRAPHY } from './data'
 
 const C = {
@@ -110,7 +111,7 @@ export default function SharedGrandmother() {
         </Fade>
         <Fade delay={300}>
           <p style={{ fontFamily: F.serif, fontSize: 'clamp(20px, 3vw, 28px)', fontWeight: 400, fontStyle: 'italic', color: C.muted, lineHeight: 1.4, maxWidth: 560 }}>
-            Amazigh & Sámi. Sahara & Arctic.<br />
+            <Link href="/data/amazigh-identity" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Amazigh</Link> & Sámi. Sahara & Arctic.<br />
             One mitochondrial DNA branch. 9,000 years.
           </p>
         </Fade>

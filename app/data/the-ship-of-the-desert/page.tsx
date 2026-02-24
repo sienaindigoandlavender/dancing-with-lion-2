@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 
 /* ═══════════════════════════════════════════════════════
    THE SHIP OF THE DESERT
@@ -441,7 +442,7 @@ export default function ShipOfTheDesertPage() {
           <div style={{ marginTop: 40, padding: 24, borderLeft: `3px solid ${P.cyan}`, background: C.alt }}>
             <div style={{ fontFamily: F.mono, fontSize: 10, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: P.cyan, marginBottom: 8 }}>The 8th-Century Innovation</div>
             <div style={{ fontFamily: F.mono, fontSize: 13, lineHeight: 1.7, color: C.body }}>
-              From the 8th century CE, Morocco bred Bactrian × dromedary hybrids — the first documented camel crossbreeding programme in Africa. The F1 hybrids produced two variants: a fast, light messenger camel and a heavy cargo animal that could carry more than either parent species. Hybrid camels can bear up to 400 kg — nearly double a purebred dromedary. The trans-Saharan caravan routes from Wadi Draa to the Ghana Empire opened in this same century.
+              From the 8th century CE, Morocco bred Bactrian × dromedary hybrids — the first documented camel crossbreeding programme in Africa. The F1 hybrids produced two variants: a fast, light messenger camel and a heavy cargo animal that could carry more than either parent species. Hybrid camels can bear up to 400 kg — nearly double a purebred dromedary. The <Link href="/data/trans-saharan-trade" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>trans-Saharan</Link> caravan routes from Wadi Draa to the Ghana Empire opened in this same century.
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import { PLACES, CAMPAIGN_ROUTE, DYNASTY, CALENDARS, TRADITIONS, TIMELINE, BIBLIOGRAPHY } from './data'
 
 /* ═══════════════════════════════════════════════════
@@ -129,7 +130,7 @@ export default function Yennayer() {
         </Fade>
         <Fade delay={300}>
           <p style={{ fontFamily: F.serif, fontSize: 'clamp(20px, 3vw, 28px)', fontWeight: 400, fontStyle: 'italic', color: C.muted, lineHeight: 1.4, maxWidth: 560 }}>
-            The Berber pharaoh. The 3,000-year calendar. The oldest New Year still celebrated.
+            The <Link href="/data/amazigh-identity" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Berber</Link> pharaoh. The 3,000-year calendar. The oldest New Year still celebrated.
           </p>
         </Fade>
         <Fade delay={450}>
@@ -309,7 +310,7 @@ export default function Yennayer() {
         <Fade delay={100}>
           <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap', marginBottom: 40 }}>
             {[
-              { key: 'all', label: 'All' }, { key: 'sheshonq', label: 'Sheshonq' },
+              { key: 'all', label: 'All' }, { key: 'sheshonq', label: '<Link href="/data/from-the-land-of-the-setting-sun" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Sheshonq</Link>' },
               { key: 'calendar', label: 'Calendar' }, { key: 'recognition', label: 'Recognition' },
             ].map(f => (
               <button key={f.key} onClick={() => setTimeFilter(f.key)} style={{

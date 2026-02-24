@@ -86,7 +86,7 @@ export default function TransSaharanTradePage() {
             Trans-Saharan<br />Trade Routes
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
-            Salt south, gold north. For twelve centuries, camel caravans
+            Salt south, gold north. For twelve centuries, <Link href="/data/the-ship-of-the-desert" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">camel</Link> caravans
             crossed the world&rsquo;s largest desert carrying the commodities
             that built empires, spread Islam, funded dynasties, and made
             Timbuktu and Marrakech two of the richest cities on earth.

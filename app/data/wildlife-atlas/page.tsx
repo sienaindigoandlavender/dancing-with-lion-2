@@ -587,15 +587,15 @@ export default function WildlifeAtlasPage() {
                 The Ghost in<br />the Mountains
               </h2>
               <p className="text-[15px] text-dwl-gray mt-6 leading-relaxed">
-                The Barbary lion was not just a predator. It was the symbol of North African
+                The <Link href="/data/the-last-lions" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Barbary lion</Link> was not just a predator. It was the symbol of North African
                 power for three thousand years. Nubian deities wore its face. Roman emperors
                 filled colosseums with its rage. Moroccan sultans kept it behind palace walls
                 as proof of divine authority. The football team still carries its name.
               </p>
               <p className="text-[15px] text-dwl-gray mt-4 leading-relaxed">
-                What killed it was not spectacular. Deforestation of the Atlas Mountains for timber and
+                What killed it was not spectacular. Deforestation of the <Link href="/data/atlas-mountains" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Atlas Mountains</Link> for timber and
                 agriculture shrank its range decade by decade. The arrival of modern firearms in the 19th
-                century made what remained a target. French colonial hunters treated it as a trophy.
+                century made what remained a target. <Link href="/data/french-protectorate" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">French colonial</Link> hunters treated it as a trophy.
                 By 1922, the gunshot that killed the last confirmed wild lion echoed through empty cedar forests.
               </p>
             </div>

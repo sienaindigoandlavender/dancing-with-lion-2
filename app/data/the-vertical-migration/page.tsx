@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link'
 
 /* ─── MODULE 132 — THE VERTICAL MIGRATION ─── */
 /*
@@ -241,12 +242,12 @@ function AgdalSystem() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <p style={{ fontFamily: '"IBM Plex Mono", monospace', fontSize: 14, color: '#0a0a0a', lineHeight: 1.9, marginBottom: 32 }}>
-            The word derives from the Amazigh root <em>GDL</em> — meaning simultaneously "to prohibit," "to protect," and "a territory." An agdal is all three at once. In the High Atlas, it refers to a communal highland pasture governed by seasonal closure: the tribal assembly (<em>jmaâ</em>) closes the mountain in spring, when plants are flowering and seeding. No herds enter. The vegetation completes its full reproductive cycle. Then the council reads the pasture — gauging whether the grass is mature enough — and declares the opening. Herds flood in. Animals eat. The land sustains.
+            The word derives from the <Link href="/data/amazigh-identity" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Amazigh</Link> root <em>GDL</em> — meaning simultaneously "to prohibit," "to protect," and "a territory." An agdal is all three at once. In the <Link href="/data/atlas-mountains" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>High Atlas</Link>, it refers to a communal highland pasture governed by seasonal closure: the tribal assembly (<em>jmaâ</em>) closes the mountain in spring, when plants are flowering and seeding. No herds enter. The vegetation completes its full reproductive cycle. Then the council reads the pasture — gauging whether the grass is mature enough — and declares the opening. Herds flood in. Animals eat. The land sustains.
           </p>
         </FadeIn>
         <FadeIn delay={0.15}>
           <p style={{ fontFamily: '"IBM Plex Mono", monospace', fontSize: 14, color: '#0a0a0a', lineHeight: 1.9, marginBottom: 32 }}>
-            This is not a folk practice. Research by the Global Diversity Foundation shows that biodiversity and vegetation cover — including endangered and endemic plant species — are measurably higher inside agdals than in adjacent areas without grazing prohibitions. The system maximises fodder production while sustaining the ecosystem. It is, by any ecological measure, a working technology. It has been working for at least 4,500 years, possibly longer. Agdals extend across the entire Maghreb, from southern Tunisia to the Western Sahara, from Mauritania to northern Algeria.
+            This is not a folk practice. Research by the Global Diversity Foundation shows that biodiversity and vegetation cover — including endangered and endemic plant species — are measurably higher inside <Link href="/data/the-ungovernable-pattern" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>agdal</Link>s than in adjacent areas without grazing prohibitions. The system maximises fodder production while sustaining the ecosystem. It is, by any ecological measure, a working technology. It has been working for at least 4,500 years, possibly longer. Agdals extend across the entire Maghreb, from southern Tunisia to the Western Sahara, from Mauritania to northern Algeria.
           </p>
         </FadeIn>
         <FadeIn delay={0.2}>

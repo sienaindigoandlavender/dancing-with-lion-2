@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 
 // ══════════════════════════════════════════════════
 // MODULE 136 — THE MEMORY IN THE STONE
@@ -379,7 +380,7 @@ export default function MemoryInStonePage() {
         <Fade delay={0.1}>
           <div style={{ fontSize: 14, color: '#262626', lineHeight: 1.85, maxWidth: 640, margin: '0 auto' }}>
             <p style={{ marginBottom: 20 }}>The artists of the Sahara were not climate scientists. They painted what they hunted, herded, and revered. But in doing so, they created one of the most comprehensive environmental records on Earth — a 12,000-year dataset encoded in pigment and stone.</p>
-            <p style={{ marginBottom: 20 }}>The Large Wild Fauna period records a Sahara that held hippos, crocodiles, elephants, and rhinoceros — animals requiring permanent water, dense vegetation, and stable ecosystems. The Pastoral period records the domestication of cattle and the spread of herding across what was still grassland. The Horse and Camel periods record the progressive drying that forced populations south to the Sahel and east to the Nile.</p>
+            <p style={{ marginBottom: 20 }}>The Large Wild Fauna period records a Sahara that held hippos, crocodiles, elephants, and rhinoceros — animals requiring permanent water, dense vegetation, and stable ecosystems. The Pastoral period records the domestication of cattle and the spread of herding across what was still grassland. The Horse and Camel periods record the progressive drying that forced populations south to the <Link href="/data/the-sahel-war" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Sahel</Link> and east to the Nile.</p>
             <p style={{ marginBottom: 20 }}>In southern Africa, the record runs deeper. The San painted not landscapes but cosmologies — the eland dance, the rain animal, the therianthropic transformation of shamans into spirit beings. These encode not climate data but cognitive data: evidence that Homo sapiens had developed symbolic thought, religious practice, and artistic tradition at least 27,000 years before Sumerian cuneiform.</p>
             <p style={{ marginBottom: 20 }}>The Dabous Giraffes in Niger stand 5.4 metres tall — the largest animal carvings on the planet — in a desert where no giraffe has walked for thousands of years. The Cave of Swimmers in Egypt shows humans swimming in a region receiving less than 1mm of annual rainfall. Twyfelfontein records rhinoceros, elephant, and giraffe in a valley that today supports only sparse scrubland.</p>
             <p>Across the continent, the stone remembers what the landscape has forgotten. Two million images. Fifty thousand sites. Seventy-five thousand years. The longest-running documentation project in human history — and nobody planned it.</p>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { PEOPLES, ARCHITECTURE, TERRAIN_EQUATION, TIMELINE, BIBLIOGRAPHY, type People, type StructuralParallel } from './data'
+import Link from 'next/link'
 
 /* ═══════════════════════════════════════════════════
    THE UNGOVERNABLE PATTERN — MODULE 128
@@ -116,8 +117,8 @@ export default function UngovernablePattern() {
       {/* ═══ OPENING ESSAY ═══ */}
       <Sec>
         <Fade>
-          <Prose>The Amazigh of Morocco elect a chief annually and rotate power between clans. The Haudenosaunee of North America give clan mothers the authority to remove chiefs. The Pashtun of Afghanistan make decisions by assembly where every adult male has a voice. The Mongols elected even Genghis Khan.</Prose>
-          <Prose>None of these peoples learned from each other. The Amazigh and the Haudenosaunee have never met. The Pashtun and the Mapuche share no ancestor for 50,000 years. The Roma and the Sámi occupy opposite ends of the European continent with no historical contact.</Prose>
+          <Prose>The <Link href="/data/amazigh-identity" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Amazigh</Link> of Morocco elect a chief annually and rotate power between clans. The Haudenosaunee of North America give clan mothers the authority to remove chiefs. The Pashtun of Afghanistan make decisions by assembly where every adult male has a voice. The Mongols elected even Genghis Khan.</Prose>
+          <Prose>None of these peoples learned from each other. The Amazigh and the Haudenosaunee have never met. The Pashtun and the Mapuche share no ancestor for 50,000 years. The Roma and the <Link href="/data/the-shared-grandmother" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Sámi</Link> occupy opposite ends of the European continent with no historical contact.</Prose>
           <Prose>Yet all nine peoples in this dataset invented the same political architecture: assembly governance, rotating or removable leadership, customary law parallel to state law, confederation for war that dissolves in peace. All nine span multiple modern states. All nine survived empires that tried to assimilate them. All nine were called "ungovernable" by the empires that failed. None of them consider themselves ungovernable. They are self-governing.</Prose>
           <Prose>This is convergent political evolution. The same pressures — mountain terrain, desert, steppe, or mobility — produce the same governance structure, independently, across five continents. The terrain that resists empires produces the same answer every time: the assembly, the removable leader, the customary law, and the refusal to centralise.</Prose>
         </Fade>

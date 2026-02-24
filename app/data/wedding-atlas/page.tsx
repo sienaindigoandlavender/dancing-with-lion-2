@@ -92,7 +92,7 @@ export default function WeddingAtlasPage() {
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
             Three to seven days. Seven outfit changes. Hundreds of guests.
-            From the hammam purification to the henna night, the amariya entrance
+            From the <Link href="/data/hammam-culture" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">hammam</Link> purification to the henna night, the amariya entrance
             to the mechoui feast — mapped ceremony by ceremony, region by region.
           </p>
 

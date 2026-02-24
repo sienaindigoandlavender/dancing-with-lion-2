@@ -119,7 +119,7 @@ export default function TheLastLions() {
         <div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
           <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">002 &middot; The Last Prides</p>
           <h2 className="font-serif text-[28px] md:text-[40px] italic text-[#0a0a0a] leading-[1.0] mb-4">Tanzania holds half. Five countries hold 75%.</h2>
-          <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">Tanzania has more lions than every other country combined. South Africa, Botswana, Kenya, and Zambia hold most of the rest. In West and Central Africa, where lions are genetically distinct from their eastern cousins and more closely related to Asiatic lions, perhaps 342 remain. The Central African Republic has 10.</p>
+          <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">Tanzania has more lions than every other country combined. South Africa, Botswana, Kenya, and Zambia hold most of the rest. In West and Central Africa, where lions are genetically distinct from their eastern cousins and more closely related to <Link href="/data/the-lions-road" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Asiatic lion</Link>s, perhaps 342 remain. The Central African Republic has 10.</p>
           <CountryBubbles />
         </div>
       </section>
@@ -160,7 +160,7 @@ export default function TheLastLions() {
           <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-6">006 &middot; The Pattern</p>
           <FadeIn>
             <p className="text-[15px] text-[#262626] leading-[1.8] mb-6" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>
-              Rwanda figured out the gorilla. One thousand mountain gorillas generate $19.2 million in permit fees alone. Fifteen percent of the country&rsquo;s GDP runs through tourism. The gorilla population is the only great ape that is increasing. The model is not complicated: make the animal worth more alive than dead to the people who live beside it.
+              Rwanda figured out the gorilla. One thousand <Link href="/data/the-gorilla-dividend" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">mountain gorilla</Link>s generate $19.2 million in permit fees alone. Fifteen percent of the country&rsquo;s GDP runs through tourism. The gorilla population is the only great ape that is increasing. The model is not complicated: make the animal worth more alive than dead to the people who live beside it.
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
@@ -170,7 +170,7 @@ export default function TheLastLions() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-[15px] text-[#262626] leading-[1.8] mb-6" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>
-              In the Maasai Mara, some conservation models now pay communities that show an increase in lion numbers. The Lion Guardians programme in Kenya employs Maasai warriors &mdash; the same men who once proved manhood by killing lions &mdash; to track and protect them. Namibia&rsquo;s desert-adapted lions recovered from 20 individuals to over 150 through community conservancies where locals receive direct tourism revenue. These programmes work. They are also small.
+              In the Maasai Mara, some conservation models now pay communities that show an increase in lion numbers. The Lion Guardians programme in Kenya employs <Link href="/data/the-lion-guardians" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Maasai warriors</Link> &mdash; the same men who once proved manhood by killing lions &mdash; to track and protect them. Namibia&rsquo;s desert-adapted lions recovered from 20 individuals to over 150 through community conservancies where locals receive direct tourism revenue. These programmes work. They are also small.
             </p>
           </FadeIn>
           <FadeIn delay={0.3}>

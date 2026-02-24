@@ -506,7 +506,7 @@ export default function ZaouiaMapPage() {
               <p className="font-mono text-[11px] font-semibold mb-2">The Africa Play</p>
               <p className="text-[12px] leading-[1.7]" style={{ color: C.text }}>
                 Morocco uses the Tijaniyya as its primary vector of religious diplomacy
-                in sub-Saharan Africa. The tomb of Ahmad al-Tijani in Fes draws tens
+                in sub-Saharan Africa. The tomb of Ahmad al-Tijani in <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Fes</Link> draws tens
                 of thousands of West African pilgrims annually. The Mohammed VI Foundation
                 of African Ulema operates through Tijani networks. Soft power through
                 spiritual kinship.
@@ -525,7 +525,7 @@ export default function ZaouiaMapPage() {
             <div>
               <p className="font-mono text-[11px] font-semibold">The Gnawa exception</p>
               <p className="text-[12px] leading-[1.7]" style={{ color: C.text }}>
-                Gnawa isn&apos;t a tariqa in the classical sense. It has no single founder,
+                <Link href="/data/the-gnawa-road" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Gnawa</Link> isn&apos;t a tariqa in the classical sense. It has no single founder,
                 no unified doctrine, no formal initiation chain. It is a spiritual
                 practice born from the forced migration of sub-Saharan Africans —
                 enslaved peoples who brought their music, their spirits, and their

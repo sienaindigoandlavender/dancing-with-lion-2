@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 
 // ══════════════════════════════════════════════
 // MODULE 137 — THE HORSES OF MOROCCO
@@ -282,7 +283,7 @@ export default function HorsesOfMoroccoPage() {
           <p style={{ fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#D4AF37', marginBottom: 8 }}>The Horse That Changed Everything</p>
           <h2 style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 400, fontStyle: 'italic', marginBottom: 24 }}>The Godolphin</h2>
           <div style={{ fontSize: 14, color: '#262626', lineHeight: 1.85, fontFamily: "'IBM Plex Mono', monospace" }}>
-            <p style={{ marginBottom: 20 }}>Around 1724, a colt is foaled — in Yemen according to some sources, from the Meknes stud farm according to SOREC. He passes through Syria, then Tunis, then arrives in Paris as a gift from one monarch to another. Louis XV does not value him. The horse reportedly pulls a water cart through the streets of the French capital.</p>
+            <p style={{ marginBottom: 20 }}>Around 1724, a colt is foaled — in Yemen according to some sources, from the <Link href="/data/imperial-cities" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Meknes</Link> stud farm according to SOREC. He passes through Syria, then Tunis, then arrives in Paris as a gift from one monarch to another. Louis XV does not value him. The horse reportedly pulls a water cart through the streets of the French capital.</p>
             <p style={{ marginBottom: 20 }}>In 1729, an Englishman named Edward Coke spots the horse and imports him to England. He is small. He is lop-eared. He has a bad temper. But when he is bred, he produces champions. His son Lath becomes one of the finest racehorses of his generation. His grandson Matchem becomes a champion sire for sixteen consecutive years.</p>
             <p style={{ marginBottom: 20 }}>He is called the Godolphin Arabian after his most famous owner — though many argue he is a Barb, not an Arabian. His head is convex, not dished. His build is compact, not refined. His conformation says Maghreb, not Peninsula.</p>
             <p style={{ marginBottom: 20 }}>He becomes one of three foundation stallions of the Thoroughbred. Through his male line come Man o{"'"}War, War Admiral, and Seabiscuit. Through both male and female lines, his blood flows in approximately 13.8% of all modern Thoroughbreds — making him the single most influential foundation sire when both lines are counted.</p>
@@ -298,7 +299,7 @@ export default function HorsesOfMoroccoPage() {
         <FadeIn>
           <div style={{ borderLeft: '3px solid #8B6914', padding: '16px 24px' }}>
             <p style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 'clamp(1.3rem, 3vw, 1.8rem)', fontStyle: 'italic', lineHeight: 1.6, color: '#0a0a0a' }}>
-              The Barb dies but never gives up. It is the horse that built the Andalusian, the Thoroughbred, the Mustang, and the Quarter Horse. It won Cannae. It crossed the Alps with Hannibal and the Atlantic with Columbus. It pulled a water cart in Paris and founded a billion-dollar racing industry. And in the mountains of the Maghreb, where it was born 3,500 years ago, it is still running.
+              The Barb dies but never gives up. It is the horse that built the <Link href="/data/al-andalus" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Andalusian</Link>, the Thoroughbred, the Mustang, and the Quarter Horse. It won Cannae. It crossed the Alps with Hannibal and the Atlantic with Columbus. It pulled a water cart in Paris and founded a billion-dollar racing industry. And in the mountains of the Maghreb, where it was born 3,500 years ago, it is still running.
             </p>
           </div>
         </FadeIn>

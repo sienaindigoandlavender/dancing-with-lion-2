@@ -275,9 +275,9 @@ export default function WorldCupBlueprintPage() {
           </p>
         </div>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
-          Morocco approved MAD 380 billion ($41 billion) for World Cup 2030
+          Morocco approved MAD 380 billion ($41 billion) for <Link href="/data/world-cup-2030" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">World Cup 2030</Link>
           infrastructure — not for 30 days of football, but for 50 years of
-          skeleton. High-speed rail stitching five cities into one corridor.
+          skeleton. <Link href="/data/tgv-rail-network" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">High-speed rail</Link> stitching five cities into one corridor.
           Airport capacity doubled. A stadium seating 115,000 people. And in
           the secondary cities that will never appear in a FIFA broadcast —
           new roads, new hotels, new reasons to stay.

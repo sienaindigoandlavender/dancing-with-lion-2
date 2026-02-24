@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 
 /* ═══════════════════════════════════════════════════
    WATERS OF EMPIRE
@@ -337,7 +338,7 @@ export default function WatersOfEmpire() {
             Same bones, different skin
           </h2>
           <p style={{ fontSize: 14, color: C.mid, marginBottom: 60, maxWidth: 600 }}>
-            The Islamic hammam inherited the Roman room sequence and adapted it. The cold plunge pool was removed — Islam requires running water, not still. The warm room grew. The exercise yard disappeared. The hypocaust stayed.
+            The Islamic <Link href="/data/hammam-culture" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>hammam</Link> inherited the Roman room sequence and adapted it. The cold plunge pool was removed — Islam requires running water, not still. The warm room grew. The exercise yard disappeared. The hypocaust stayed.
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
@@ -451,7 +452,7 @@ export default function WatersOfEmpire() {
             <span style={{ color: 'rgba(255,255,255,0.7)' }}>Islam didn't.</span>
           </div>
           <p style={{ fontSize: 14, lineHeight: 1.9, color: 'rgba(255,255,255,0.75)', marginTop: 32, maxWidth: 520, margin: '32px auto 0' }}>
-            The oldest Islamic hammam in Morocco sits on the ruins of a Roman colony at Volubilis. Same site. Same underfloor heating. Different God, same physics. The three-room sequence — warm, hot, furnace — has not changed in twenty-six centuries.
+            The oldest Islamic hammam in Morocco sits on the ruins of a Roman colony at <Link href="/data/rome-north-africa" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Volubilis</Link>. Same site. Same underfloor heating. Different God, same physics. The three-room sequence — warm, hot, furnace — has not changed in twenty-six centuries.
           </p>
         </div>
       </section>

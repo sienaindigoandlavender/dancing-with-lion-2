@@ -26,7 +26,7 @@ export default function ThePoachingEconomics() {
           <p className="text-[10px] uppercase tracking-[0.14em] text-white/30 mb-4">Module 153 · Conservation Economics</p>
           <h1 className="font-serif text-[42px] md:text-[64px] leading-[1.02] font-light italic mb-6">The Poaching<br />Economics</h1>
           <p className="text-[15px] text-white/50 leading-relaxed max-w-[540px] mb-10">
-            A ranger earns $200 a month. A poacher earns $5,000 for one rhino horn. The criminal syndicate that employs him earns $60,000 per kilogram. The consumer in Hanoi pays $400,000. The ranger is the only person in this chain who risks his life for no economic reward. The war on poaching is a war on poverty dressed up as a war on crime.
+            A ranger earns $200 a month. A poacher earns $5,000 for one <Link href="/data/the-rhino-underground" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">rhino horn</Link>. The criminal syndicate that employs him earns $60,000 per kilogram. The consumer in Hanoi pays $400,000. The ranger is the only person in this chain who risks his life for no economic reward. The war on poaching is a war on poverty dressed up as a war on crime.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {[

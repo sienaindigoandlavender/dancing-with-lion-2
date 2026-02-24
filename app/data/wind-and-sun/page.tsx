@@ -367,7 +367,7 @@ export default function WindAndSunPage() {
         </p>
         <p className="text-[13px] max-w-[620px] leading-[1.7] mb-8" style={{ color: C.body }}>
           Morocco has 3,000 hours of sunshine per year. Wind speeds of 9–11 m/s on the
-          Atlantic coast. A 60% wind capacity factor — three times the European average.
+          <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Atlantic coast</Link>. A 60% wind capacity factor — three times the European average.
           The target: 52% renewable electricity by 2030. At end of 2024, it reached 44%.
         </p>
 

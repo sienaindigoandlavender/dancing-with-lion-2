@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import { ISLANDS, MENCEYATOS, DNA_MARKERS, GENETIC_ASYMMETRY, SURVIVALS, TIMELINE, BIBLIOGRAPHY } from './data'
 
 const C = {
@@ -96,7 +97,7 @@ export default function GuancheGhost() {
         </Fade>
         <Fade delay={300}>
           <p style={{ fontFamily: F.serif, fontSize: 'clamp(20px, 3vw, 28px)', fontWeight: 400, fontStyle: 'italic', color: C.muted, lineHeight: 1.4, maxWidth: 580 }}>
-            Berber DNA in the Atlantic. A people who forgot the sea.<br />
+            <Link href="/data/amazigh-identity" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Berber</Link> DNA in the Atlantic. A people who forgot the sea.<br />
             Europe's first colonial genocide.
           </p>
         </Fade>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import { INSTRUMENTS, SEVEN_COLOURS, MAALEMS, LILA_PHASES, HISTORY, REGIONAL_STYLES, KEY_VOCABULARY, BIBLIOGRAPHY, MAP_POINTS, SOURCE_KINGDOMS, TRADE_ROUTES, DIASPORA } from './data'
 
 /* ═══════════════════════════════════════════════════
@@ -257,7 +258,7 @@ export default function TheGnawaRoad() {
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', color: C.gnawa, marginBottom: 16 }}>The Seven Colours</p>
           <p style={{ fontSize: 13, lineHeight: 1.7, color: C.body, marginBottom: 24, maxWidth: 560 }}>
-            Each spirit family has a colour, an incense, a domain, and a suite of songs.
+            Each spirit family has a colour, an <Link href="/data/the-sacred-smoke" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>incense</Link>, a domain, and a suite of songs.
             The lila moves through all seven from dusk to dawn.
           </p>
           <div style={{ display: 'flex', gap: 4, marginBottom: 24 }}>

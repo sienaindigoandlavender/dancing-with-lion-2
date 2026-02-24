@@ -241,7 +241,7 @@ export default function TheSahelWar() {
           <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">002 · Fatality Escalation</p>
           <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-4">Tripled since 2021</h2>
           <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">
-            Every year since Wagner arrived has been deadlier than the last. The juntas invited 
+            Every year since <Link href="/data/the-blood-gold" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Wagner</Link> arrived has been deadlier than the last. The juntas invited 
             Russia to fight terrorism. The terrorism tripled.
           </p>
           <div className="overflow-x-auto">

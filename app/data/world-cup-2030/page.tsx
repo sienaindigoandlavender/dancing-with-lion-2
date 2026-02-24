@@ -327,10 +327,10 @@ export default function WorldCup2030Page() {
               strokeDasharray="6,4" opacity="0.6" />
             <text x={HSR_LINE[2].x + 8} y={HSR_LINE[2].y - 4}
               fontSize="7" fill={C.rail} fontFamily="var(--font-plex-mono), monospace" opacity="0.8">
-              Al Boraq HSR
+              <Link href="/data/tgv-rail-network" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Al Boraq</Link> HSR
             </text>
 
-            {/* Strait of Gibraltar label */}
+            {/* <Link href="/data/the-14-kilometres" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Strait of Gibraltar</Link> label */}
             {(() => {
               const gib = project(35.9, -5.5)
               return <text x={gib.x} y={gib.y} fontSize="7" fill="#a3a3a3" textAnchor="middle"

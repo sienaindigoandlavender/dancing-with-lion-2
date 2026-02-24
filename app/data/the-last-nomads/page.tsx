@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link'
 
 /* ─── MODULE 131 — THE LAST NOMADS ─── */
 /* 
@@ -575,7 +576,7 @@ function MoroccoSection() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <p style={{ fontFamily: '"IBM Plex Mono", monospace', fontSize: 14, color: '#0a0a0a', lineHeight: 1.9, marginBottom: 40 }}>
-            In 1935, the French Protectorate counted its subjects and found that 16% of all Moroccan households lived under tents. Nomadic pastoralism was not marginal — it was how a significant minority of the country functioned. Herds were private property. Rangelands were collective property of the tribe. The Berber verb <em>gdel</em> — "to graze cattle in a meadow" — gave its name to the agdal system: high mountain pastures in the Atlas opened and closed by collective agreement. Rock engravings at Oukaïmeden date this practice to 2000 BCE.
+            In 1935, the French Protectorate counted its subjects and found that 16% of all Moroccan households lived under tents. Nomadic pastoralism was not marginal — it was how a significant minority of the country functioned. Herds were private property. Rangelands were collective property of the tribe. The <Link href="/data/amazigh-identity" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Berber</Link> verb <em>gdel</em> — "to graze cattle in a meadow" — gave its name to the agdal system: high mountain pastures in the Atlas opened and closed by collective agreement. Rock engravings at <Link href="/data/the-memory-in-the-stone" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Oukaïmeden</Link> date this practice to 2000 BCE.
           </p>
         </FadeIn>
         <FadeIn delay={0.15}>

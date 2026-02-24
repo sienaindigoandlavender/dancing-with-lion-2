@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import { BARBARY_RANGE, LAST_SIGHTINGS, ZOO_SITES, LION_TYPES, DECLINE, WILD_POPULATIONS, TIMELINE, BIBLIOGRAPHY } from './data'
 
 /* ═══════════════════════════════════════════════════
@@ -281,7 +282,7 @@ export default function TheLastLions() {
           {mapLayer === 'zoos' && (
             <div>
               <p style={{ fontFamily: F.mono, fontSize: 13, color: C.mid, lineHeight: 1.7, marginBottom: 24 }}>
-                Every Barbary lion alive today descends from the Moroccan royal collection — lions originally captured in the Atlas Mountains by Berber tribes and presented to the Sultan as loyalty pledges. ~90 individuals, effective population size only 14.
+                Every Barbary lion alive today descends from the Moroccan royal collection — lions originally captured in the <Link href="/data/atlas-mountains" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Atlas Mountains</Link> by <Link href="/data/amazigh-identity" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Berber</Link> tribes and presented to the Sultan as loyalty pledges. ~90 individuals, effective population size only 14.
               </p>
               {ZOO_SITES.map((z, i) => (
                 <div key={i} style={{ padding: '16px 0', borderBottom: `1px solid ${C.border}`, cursor: 'pointer' }}
@@ -342,7 +343,7 @@ export default function TheLastLions() {
 
           {mapLayer === 'range' && (
             <p style={{ fontFamily: F.mono, fontSize: 13, color: C.mid, lineHeight: 1.7 }}>
-              The Barbary lion's historic range: Morocco to Egypt, along the Atlas Mountains and the Mediterranean coast. They lived in forests, mountains, and scrubland north of the Sahara — a cold-adapted population unlike any lion alive today. Fossils near Essaouira date to 100,000 years ago.
+              The Barbary lion's historic range: Morocco to Egypt, along the Atlas Mountains and the Mediterranean coast. They lived in forests, mountains, and scrubland north of the Sahara — a cold-adapted population unlike any lion alive today. Fossils near <Link href="/data/atlantic-coast" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Essaouira</Link> date to 100,000 years ago.
             </p>
           )}
         </div>
