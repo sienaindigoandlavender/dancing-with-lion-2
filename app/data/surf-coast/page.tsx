@@ -110,7 +110,7 @@ export default function SurfCoastPage() {
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
             Anchor Point, Killer Point, The Bay at Imsouane, Sidi Kaouki, Safi.
-            Fifteen breaks mapped from Safi to Essaouira — swell direction, tide windows,
+            Fifteen breaks mapped from Safi to <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Essaouira</Link> — swell direction, tide windows,
             ride length, and the economics of a 50,000-guest-per-year surf boom.
           </p>
 

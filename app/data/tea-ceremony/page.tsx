@@ -306,9 +306,9 @@ export default function TeaCeremonyPage() {
         </div>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
           Moroccans drink tea 20 to 30 times a day. The country imports 82,000 tonnes of
-          Chinese gunpowder green tea annually — 25% of China&apos;s total green tea exports.
+          Chinese <Link href="/data/the-tea-road" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">gunpowder green</Link> tea annually — 25% of China&apos;s total green tea exports.
           Per capita consumption: 1.22 kg per year. But the numbers miss the point.
-          Moroccan tea is not a beverage. It is an architecture of time, sweetness, and attention.
+          <Link href="/data/moroccan-tea" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Moroccan tea</Link> is not a beverage. It is an architecture of time, sweetness, and attention.
           The ceremony has six steps, three glasses, and one proverb: <em>&ldquo;The first glass is
           as gentle as life, the second as strong as love, the third as bitter as death.&rdquo;</em>
         </p>

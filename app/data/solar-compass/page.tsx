@@ -323,7 +323,7 @@ export default function SolarCompassPage() {
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
           In the Saharan foothills south of Ouarzazate — the same landscape where Lawrence
           of Arabia and Game of Thrones were filmed — Morocco built a solar plant the size
-          of 3,500 football fields. Noor-Ouarzazate is not photovoltaic panels. It is mirrors —
+          of 3,500 football fields. <Link href="/data/solar-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Noor</Link>-Ouarzazate is not photovoltaic panels. It is mirrors —
           500,000 parabolic troughs and 7,400 heliostats that concentrate sunlight onto
           receivers filled with molten salt heated to 565°C. The salt stores energy for
           seven hours after sunset. Morocco produces electricity in the dark, from the sun.

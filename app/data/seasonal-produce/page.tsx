@@ -249,7 +249,7 @@ export default function SeasonalProducePage() {
         </h1>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mb-8" style={{ color: EARTH.body }}>
           A seasonal calendar of Moroccan fruits and vegetables. Thirty-two crops
-          mapped across twelve months — with the Darija name you&apos;ll hear in the souk,
+          mapped across twelve months — with the <Link href="/data/languages-of-morocco" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Darija</Link> name you&apos;ll hear in the <Link href="/data/souk-decoded" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">souk</Link>,
           the region where it grows, and when it tastes best.
         </p>
         <div className="flex flex-wrap gap-8">

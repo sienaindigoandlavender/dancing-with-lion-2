@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 
 // ══════════════════════════════════════════════
 // MODULE 133 — THE EYE OF AFRICA
@@ -602,8 +603,8 @@ export default function EyeOfAfricaPage() {
         <FadeIn delay={0.15}>
           <p style={{ fontSize: 15, color: '#262626', lineHeight: 1.8, marginBottom: 24 }}>
             The Acheulean tools along the outer wadis are hundreds of thousands of years old. 
-            During the Green Sahara, the Eye held water, grew vegetation, attracted elephants. 
-            Horsemen left petroglyphs. Libyco-Berber speakers carved inscriptions. Thousands of 
+            During the <Link href="/data/the-green-sahara" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Green Sahara</Link>, the Eye held water, grew vegetation, attracted elephants. 
+            Horsemen left <Link href="/data/the-memory-in-the-stone" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>petroglyphs</Link>. Libyco-Berber speakers carved inscriptions. Thousands of 
             stone burial mounds line the dikes — and nobody has excavated them yet.
           </p>
         </FadeIn>

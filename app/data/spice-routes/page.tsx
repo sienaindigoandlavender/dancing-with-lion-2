@@ -254,10 +254,10 @@ export default function SpiceRoutesPage() {
           </p>
         </div>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
-          Every tagine is a trade route. Cumin from Alnif, saffron from Taliouine,
+          Every <Link href="/data/tagine-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">tagine</Link> is a trade route. Cumin from Alnif, saffron from Taliouine,
           black pepper from Vietnam via the Indian Ocean, cinnamon from Sri Lanka
           via the same Arab maritime networks that brought it a thousand years ago.
-          The souk is where these routes converge — and where a $4/kg spice at origin
+          The <Link href="/data/souk-decoded" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">souk</Link> is where these routes converge — and where a $4/kg spice at origin
           becomes $25 in Paris. This is the supply chain behind every Moroccan meal.
         </p>
 

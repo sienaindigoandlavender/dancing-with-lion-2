@@ -205,8 +205,8 @@ export default function TheBuildPage() {
           27 years of transformation. One country deciding to become something else.
         </p>
         <p className="text-[13px] max-w-[640px] leading-[1.7] mt-4 mb-8" style={{ color: C.body }}>
-          From Mohammed VI&apos;s early reign to the 2030 World Cup. Highway kilometres,
-          railway lines, airport capacity, hotel rooms, tourist arrivals — and the economic
+          From Mohammed VI&apos;s early reign to the <Link href="/data/world-cup-2030" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">2030 World Cup</Link>. Highway kilometres,
+          railway lines, airport capacity, hotel rooms, <Link href="/data/tourism-flow" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">tourist arrivals</Link> — and the economic
           engine underneath: GDP tripling, FDI surging, 10,000 MW of renewable energy,
           a country urbanising in real time. Press play. Watch the bars accumulate.
           Then watch what happens when a country decides to host the World Cup.

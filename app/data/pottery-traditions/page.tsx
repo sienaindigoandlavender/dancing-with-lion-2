@@ -157,8 +157,8 @@ export default function PotteryTraditionsPage() {
           </h1>
 
           <p className="text-[16px] md:text-[18px] max-w-[560px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(255,255,255,0.45)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
-            Six regional ceramic traditions mapped. Fes blue, Safi polychrome, Tamegroute green,
-            Rif Berber, Salé contemporary, Meknes zellige — each one a different clay, a different glaze,
+            Six regional ceramic traditions mapped. Fes blue, Safi polychrome, <Link href="/data/colour-index" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Tamegroute green</Link>,
+            Rif Berber, Salé contemporary, Meknes <Link href="/data/geometry-of-zellige" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">zellige</Link> — each one a different clay, a different glaze,
             a different history.
           </p>
 

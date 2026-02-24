@@ -476,7 +476,7 @@ export default function ScentAtlasPage() {
           </p>
           <p className="text-[15px] leading-[1.8] max-w-[600px]" style={{ color: C.text }}>
             Every place in Morocco has a smell. The Dades Valley in May: Damask rose. Fes in any month:
-            leather tannery and orange blossom water. Essaouira: salt air and thuya wood shavings.
+            leather <Link href="/data/tanneries" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">tannery</Link> and orange blossom water. <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Essaouira</Link>: salt air and thuya wood shavings.
             Marrakech at dusk: jasmine climbing out of riad courtyards. Ifrane: Atlas cedar, cold and clean.
             This module maps 16 scents to their source, their chemistry, their season, and the places
             where they live. Each one gets a radial bloom — a polar chart showing intensity across 12 months.
@@ -571,7 +571,7 @@ export default function ScentAtlasPage() {
           <div>
             <p className="font-serif text-[18px] mb-2">The Pilgrims&apos; Rose</p>
             <p className="text-[13px] leading-relaxed" style={{ color: C.text }}>
-              Oral tradition says Rosa damascena arrived in the 10th century with Berber pilgrims returning
+              Oral tradition says Rosa damascena arrived in the 10th century with <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Berber</Link> pilgrims returning
               from Mecca, seeds falling along the path home. The Dades Valley blooms because someone carried
               a flower 4,000 kilometres.
             </p>

@@ -289,7 +289,7 @@ export default function PulseOfMedinaPage() {
           Marrakech breathes. Watch it.
         </p>
         <p className="text-[13px] max-w-[640px] leading-[1.7] mt-4" style={{ color: '#8B7D6B' }}>
-          A medina is not a place. It is a rhythm. At 5am the adhan sounds from
+          A <Link href="/data/medina-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">medina</Link> is not a place. It is a rhythm. At 5am the adhan sounds from
           186 minarets and the bakers light their ovens. By 10am the coppersmiths are
           hammering in polyrhythm and the spice merchants are measuring saffron on
           brass scales. By 2pm the heat empties the alleys. By 9pm Jemaa el-Fna is a

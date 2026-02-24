@@ -274,7 +274,7 @@ export default function StorksEyeViewPage() {
         </div>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
           White storks nest on the minarets of Chellah, the crumbling walls of El Badi Palace,
-          and the Roman columns of Volubilis. In Moroccan folklore, they are sacred — believed
+          and the Roman columns of <Link href="/data/rome-north-africa" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Volubilis</Link>. In Moroccan folklore, they are sacred — believed
           to carry human souls, to bring good fortune, to be humans transformed. Harming a stork
           is taboo. Morocco hosts approximately 2,931 breeding pairs and thousands more
           wintering birds. They choose ruins over new buildings. The higher the pour of history,

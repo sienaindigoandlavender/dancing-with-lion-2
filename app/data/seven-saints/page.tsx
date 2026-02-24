@@ -385,10 +385,10 @@ export default function SevenSaintsPage() {
           Marrakech is called the City of Seven Men. Not seven saints — Islam doesn&apos;t
           have saints. Seven <em>awliya</em>: people God blessed with a significance the
           living can still feel. Their tombs form a pilgrimage circuit that spirals
-          counterclockwise through the medina — southeast to southwest, Tuesday to Monday —
+          counterclockwise through the <Link href="/data/medina-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">medina</Link> — southeast to southwest, Tuesday to Monday —
           mirroring the circumambulation of the Kaaba in Mecca. The tradition was invented
           by Sultan Moulay Ismail in the late 17th century, but the men themselves span
-          four centuries, from a blind Andalusi scholar to a silk merchant called The Alchemist.
+          four centuries, from a blind <Link href="/data/al-andalus" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Andalusi</Link> scholar to a silk merchant called The Alchemist.
         </p>
 
         {/* Live day indicator */}

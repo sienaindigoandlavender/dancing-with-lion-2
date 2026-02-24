@@ -350,12 +350,12 @@ export default function EmptyQuarterPage() {
             and one of its most misunderstood ecosystems.</p>
         </div>
         <p className="text-[13px] max-w-[600px] leading-[1.7] mt-6" style={{ color: C.text }}>
-          The Sahara is not sand. It is mostly stone — rocky hamada plateaus scoured by wind
+          The Sahara is not sand. It is mostly stone — rocky <Link href="/data/not-all-desert-is-sand" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">hamada</Link> plateaus scoured by wind
           over millions of years. Sand dunes cover only 25% of its surface. The rest is gravel
           plain, volcanic mountain, dry riverbed, and salt flat. It is the world&apos;s third-largest
           desert overall (after Antarctica and the Arctic) and the largest hot desert — stretching
           5,600 kilometres from the Atlantic to the Red Sea. Its name comes from the Arabic
-          ṣaḥrāʾ, meaning simply &quot;desert.&quot; The Berber word for mountain — adrar — is
+          ṣaḥrāʾ, meaning simply &quot;desert.&quot; The <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Berber</Link> word for mountain — adrar — is
           believed to be a cognate of &quot;Atlas.&quot; Between the two words lies the entire
           geography of North Africa.
         </p>

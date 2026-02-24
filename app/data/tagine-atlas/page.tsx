@@ -141,7 +141,7 @@ export default function TagineAtlasPage() {
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
             Not every tagine tastes the same — and that&rsquo;s the whole point.
-            Lamb with prunes in Marrakech. Chicken with olives in Fes. Fish with
+            Lamb with prunes in Marrakech. Chicken with olives in <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Fes</Link>. Fish with
             chermoula on the coast. What goes into the pot depends on what grows nearby.
             This is how Morocco&rsquo;s most iconic dish maps to its land.
           </p>

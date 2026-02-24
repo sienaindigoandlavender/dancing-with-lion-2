@@ -125,7 +125,7 @@ export default function TheConservationDeficit() {
       <section className="border-t border-[#e5e5e5] bg-[#fafafa]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">002 · The Asset</p>
         <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-4">Six species. Six trajectories. One pattern.</h2>
-        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">Elephants down 77%. Lions down 88%. Rhinos down 93% then partially recovered. Pangolins &mdash; nobody even knows the baseline. Only the mountain gorilla is increasing, and only because one country decided to build an economy around keeping them alive. The bar shows what remains. The empty space is what&rsquo;s gone.</p>
+        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">Elephants down 77%. Lions down 88%. Rhinos down 93% then partially recovered. Pangolins &mdash; nobody even knows the baseline. Only the <Link href="/data/the-gorilla-dividend" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">mountain gorilla</Link> is increasing, and only because one country decided to build an economy around keeping them alive. The bar shows what remains. The empty space is what&rsquo;s gone.</p>
         <SpeciesCollapse />
       </div></section>
 
@@ -141,7 +141,7 @@ export default function TheConservationDeficit() {
       <section className="border-t border-[#e5e5e5] bg-[#fafafa]"><div className="max-w-[1000px] mx-auto px-6 md:px-10 py-16 md:py-24">
         <p className="text-[10px] uppercase tracking-[0.12em] text-[#737373] mb-3">004 · Dead vs Alive</p>
         <h2 className="font-serif text-[28px] md:text-[36px] italic text-[#0a0a0a] leading-[1.05] mb-4">Every species is worth more alive. The market doesn&rsquo;t care.</h2>
-        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">An elephant generates $1.6 million in lifetime tourism revenue. Dead, its ivory fetches $21,000. A rhino horn sells for $300,000 on the black market, but the living animal generates $1.6 million over its lifetime. The ratios range from 5:1 to infinity. The gorilla has no dead value at all &mdash; nobody trades in gorilla parts. That&rsquo;s why it&rsquo;s the only one increasing.</p>
+        <p className="text-[14px] text-[#525252] leading-relaxed max-w-[560px] mb-10">An elephant generates $1.6 million in lifetime tourism revenue. Dead, its ivory fetches $21,000. A <Link href="/data/the-rhino-underground" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">rhino horn</Link> sells for $300,000 on the black market, but the living animal generates $1.6 million over its lifetime. The ratios range from 5:1 to infinity. The gorilla has no dead value at all &mdash; nobody trades in gorilla parts. That&rsquo;s why it&rsquo;s the only one increasing.</p>
         <DeadVsAlive />
       </div></section>
 

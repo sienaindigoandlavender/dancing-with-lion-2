@@ -246,7 +246,7 @@ export default function TheBloodGold() {
           <p className="text-[14px] text-[#525252] max-w-[560px] leading-relaxed mb-10">
             ACLED data shows Wagner targets civilians at higher rates than either allied state forces 
             or the insurgent groups they were deployed to fight. In Mali, civilian targeting accounted 
-            for 71% of Wagner political violence events — ISIS-Sahel nearly doubled its territorial 
+            for 71% of Wagner political violence events — ISIS-<Link href="/data/the-sahel-war" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Sahel</Link> nearly doubled its territorial 
             control during the same period.
           </p>
           <div className="overflow-x-auto">

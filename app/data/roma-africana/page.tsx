@@ -286,12 +286,12 @@ export default function RomaAfricanaPage() {
         </div>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
           Rome&apos;s presence in Africa lasted longer than any European colonial project by a factor
-          of ten. From the destruction of Carthage in 146 BCE to the Arab conquest of 698 CE,
+          of ten. From the destruction of <Link href="/data/carthage" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Carthage</Link> in 146 BCE to the Arab conquest of 698 CE,
           Roman rule shaped the entire North African coast. At its peak, the region had over 3
           million inhabitants in 500+ cities, produced a million tonnes of grain annually, and
           gave Rome an emperor (Septimius Severus), its greatest theologian (Augustine), and its
           only surviving complete novel (Apuleius&apos; <em>Golden Ass</em>). The provinces stretched
-          from the Atlantic coast of Morocco to the Greek cities of eastern Libya — a distance
+          from the <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Atlantic coast</Link> of Morocco to the Greek cities of eastern Libya — a distance
           roughly equal to London to Baghdad.
         </p>
         <div ref={numsR.ref} className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">

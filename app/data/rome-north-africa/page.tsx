@@ -188,7 +188,7 @@ export default function RomeNorthAfricaPage() {
             Five provinces. Eight centuries. The empire's breadbasket.
           </p>
           <p className="text-[15px] leading-[1.8] max-w-[620px]" style={{ color: C.text }}>
-            Rome's North African provinces — stretching from Morocco's Atlantic coast to Libya's
+            Rome's North African provinces — stretching from Morocco's <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Atlantic coast</Link> to Libya's
             Gulf of Sidra — were among the wealthiest territories in the empire. They produced a million
             tons of grain a year. They built 180 cities in Tunisia alone. They gave Rome an emperor
             (Septimius Severus, born in Leptis Magna), a theologian who shaped Western thought for
@@ -196,7 +196,7 @@ export default function RomeNorthAfricaPage() {
             <em> Golden Ass</em>, also from Algeria). The military presence was astonishingly thin — a single
             legion and 28,000 auxiliaries controlled a territory the size of Western Europe. This was
             not occupation by force. It was integration through infrastructure: roads, aqueducts, forums,
-            baths, and the promise that a Berber farmer's grandson could become a Roman citizen, and
+            baths, and the promise that a <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Berber</Link> farmer's grandson could become a Roman citizen, and
             his great-grandson an emperor.
           </p>
         </div>
@@ -356,7 +356,7 @@ export default function RomeNorthAfricaPage() {
             <p className="text-[13px] leading-relaxed" style={{ color: C.text }}>
               When Rome withdrew from Morocco around 285 CE, Volubilis didn't die. Latin
               inscriptions continue into the 6th century. The city was still inhabited when
-              Idris I — founder of the first Moroccan dynasty — arrived in 788 CE. He made
+              Idris I — founder of the first <Link href="/data/dynasty-timeline" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Moroccan dynasty</Link> — arrived in 788 CE. He made
               nearby Moulay Idriss his capital, but Volubilis remained occupied. The mosaics of
               Orpheus and the Labours of Hercules are still in their original villa floors —
               one of the rarest survivals anywhere in the Roman world. Rome left Morocco, but

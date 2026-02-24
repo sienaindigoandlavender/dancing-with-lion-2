@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 
 /* ═══════════════════════════════════════════════════
    THE APOTHECARY
@@ -243,7 +244,7 @@ export default function TheApothecaryPage() {
             The Apothecary
           </h1>
           <p style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontSize: 'clamp(1.2rem, 2.5vw, 1.6rem)', fontStyle: 'italic', lineHeight: 1.5, color: C.text, maxWidth: 640, marginBottom: 48 }}>
-            Morocco has 7,000 plant species. 800 are medicinal. The attar in the souk still prescribes what Ibn al-Baytar catalogued walking from Málaga to Damascus in the 13th century.
+            Morocco has 7,000 plant species. 800 are medicinal. The attar in the <Link href="/data/souk-decoded" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>souk</Link> still prescribes what Ibn al-Baytar catalogued walking from Málaga to Damascus in the 13th century.
           </p>
           <div style={{ width: 48, height: 1, background: C.herb }} />
         </div>
@@ -467,7 +468,7 @@ export default function TheApothecaryPage() {
             In Moroccan Arabic, the herbalist is <strong>l'attar</strong>. The word comes from the Arabic root <em>'itr</em> — fragrance, essence, the volatile thing inside the plant that makes it work. The attar does not sell herbs. He prescribes. You walk in with a symptom. He gives you a formula. Sometimes it is a single plant. Sometimes it is a blend ground on the spot.
           </p>
           <p style={{ fontSize: 17, lineHeight: 2, color: C.text, marginTop: 24 }}>
-            The word <strong>laaroug</strong> (لعروق) — "roots" — is the Darija term for all underground plant parts used in traditional medicine. Roots, bulbs, tubers, rhizomes. One third of the entire Moroccan pharmacopoeia is derived from what grows beneath the soil. Most are sold dried, which makes identification difficult and substitution common. Herbalists in Marrakech identified 67 medicinal roots by vernacular name alone.
+            The word <strong>laaroug</strong> (لعروق) — "roots" — is the <Link href="/data/languages-of-morocco" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Darija</Link> term for all underground plant parts used in traditional medicine. Roots, bulbs, tubers, rhizomes. One third of the entire Moroccan pharmacopoeia is derived from what grows beneath the soil. Most are sold dried, which makes identification difficult and substitution common. Herbalists in Marrakech identified 67 medicinal roots by vernacular name alone.
           </p>
           <p style={{ fontSize: 17, lineHeight: 2, color: C.text, marginTop: 24 }}>
             The knowledge transmission is fragile. Women still prepare remedies at home — drying, blending, stocking. 54% of herbalists learned from other herbalists, not from family. And the younger generation is not always continuing the chain. When an attar closes, a library closes.

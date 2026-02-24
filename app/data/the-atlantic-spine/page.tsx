@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import {
+import Link from 'next/link'
   ROUTE_COUNTRIES, LANDLOCKED_COUNTRIES, PIPELINE_ROUTE_COORDS, TSGP_ROUTE_COORDS,
   PIPELINE_COMPARISON, TIMELINE, SOURCES, GEOPOLITICS,
 } from './data'
@@ -75,9 +76,9 @@ export default function TheAtlanticSpine() {
           The Atlantic Spine
         </h1>
         <p className="mt-6 text-[16px] md:text-[18px] leading-relaxed text-[#525252] max-w-[640px]">
-          The Nigeria-Morocco Gas Pipeline — 5,660 km along the Atlantic coast, 
+          The Nigeria-Morocco Gas Pipeline — 5,660 km along the <Link href="/data/atlantic-coast" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Atlantic coast</Link>, 
           13 countries, $25 billion. The largest energy infrastructure project in 
-          African history. And it is racing against Algeria&rsquo;s Trans-Saharan rival 
+          African history. And it is racing against Algeria&rsquo;s <Link href="/data/trans-saharan-trade" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Trans-Saharan</Link> rival 
           for the same Nigerian gas and the same European market.
         </p>
         {/* Key numbers — inline */}

@@ -171,7 +171,7 @@ export default function TGVRailPage() {
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
             Africa&rsquo;s only high-speed rail. 55 million passengers a year. 
             A $9.5 billion investment plan that will connect 43 cities by 2040.
-            And a feasibility study for a tunnel under the Strait of Gibraltar.
+            And a feasibility study for a tunnel under the <Link href="/data/the-14-kilometres" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Strait of Gibraltar</Link>.
           </p>
 
           <div className="flex flex-wrap gap-10 md:gap-16 mt-12 opacity-0" style={{ animation: 'fadeUp 1s ease 0.9s forwards' }}>

@@ -610,7 +610,7 @@ export default function FreePeoplePage() {
           <section className="px-8 md:px-[8%] lg:px-[12%] py-24 md:py-40">
             <p className="micro-label mb-3">Moroccan Confederations, Tribes & Language Groups</p>
             <p className="text-[15px] text-dwl-gray mb-10 max-w-[580px]">
-              Morocco&apos;s Amazigh world is not one people — it is a constellation of confederations,
+              Morocco&apos;s <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Amazigh</Link> world is not one people — it is a constellation of confederations,
               each with its own territory, dialect, governance, and centuries of internal politics.
               Three medieval super-confederations (Masmuda, Sanhaja, Zenata) gave rise to modern tribal groupings
               and three distinct language communities.
@@ -712,7 +712,7 @@ export default function FreePeoplePage() {
             <div className="mt-16">
               <p className="micro-label mb-6">The Three Medieval Super-Confederations</p>
               <p className="text-[14px] text-dwl-gray mb-8 max-w-[560px]">
-                Ibn Khaldun divided all Berber tribes into Baranis (sedentary) and Butr (nomadic),
+                Ibn Khaldun divided all Berber tribes into Baranis (sedentary) and Butr (<Link href="/data/the-last-nomads" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">nomadic</Link>),
                 and classified them under three great confederations. Every modern Amazigh group in Morocco
                 traces its lineage — real or mythical — to one of these three.
               </p>
@@ -846,7 +846,7 @@ export default function FreePeoplePage() {
               <div style={{ opacity: reading.vis ? 1 : 0, transition: 'opacity 0.6s' }}>
                 <h3 className="font-serif text-[22px] text-dwl-black">The Census Wars</h3>
                 <p className="text-[15px] text-dwl-gray leading-relaxed mt-3">
-                  Morocco&apos;s 2024 census recorded 24.8% Tamazight speakers. Amazigh associations claim 85%.
+                  Morocco&apos;s 2024 census recorded 24.8% <Link href="/data/languages-of-morocco" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Tamazight</Link> speakers. Amazigh associations claim 85%.
                   Both numbers are political. The census methodology — random samples, no geographical weighting for
                   Amazigh-majority rural regions — has been called &ldquo;unscientific&rdquo; by AMREC and other organizations.
                   Even accepting the decline from ~45% in 1994 to 24.8% in 2024, the gap confirms what activists

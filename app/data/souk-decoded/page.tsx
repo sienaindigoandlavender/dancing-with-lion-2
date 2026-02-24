@@ -126,7 +126,7 @@ export default function SoukDecodedPage() {
         <div className="px-8 md:px-[8%] lg:px-[12%] py-24 md:py-40">
           <p className="micro-label mb-4">003 — The Guild System</p>
           <h2 className="font-serif text-[32px] md:text-[44px] italic text-dwl-black leading-[1.05] mb-4">Five Ranks, One Trade</h2>
-          <p className="text-body text-dwl-body max-w-[560px] mb-12">Every souk trade is organized into a guild (hanta). Each guild elects an Amine to lead it. The hierarchy runs from apprentice to master — and the system still functions today in Marrakech and Fes.</p>
+          <p className="text-body text-dwl-body max-w-[560px] mb-12">Every souk trade is organized into a guild (hanta). Each guild elects an Amine to lead it. The hierarchy runs from apprentice to master — and the system still functions today in Marrakech and <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Fes</Link>.</p>
 
           <div className="space-y-0">
             {GUILD_SYSTEM.map((g, i) => {

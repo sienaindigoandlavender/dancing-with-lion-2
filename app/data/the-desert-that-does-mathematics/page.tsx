@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 
 // ══════════════════════════════════════════════════
 // MODULE 135 — THE DESERT THAT DOES MATHEMATICS

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 
 const C = {
   bg: '#fafafa', white: '#ffffff', black: '#0a0a0a', ink: '#1a1a1a',
@@ -208,7 +209,7 @@ export default function SardineCurrent() {
       <section style={{ padding: '80px 24px', maxWidth: 680, margin: '0 auto' }}>
         <p style={{ fontSize: 16, lineHeight: 2, color: C.ink }}>The Canary Current is one of four major eastern boundary upwelling systems on earth. It begins at 43{"\u00b0"}N off the coast of Galicia and Portugal, flows southward along Morocco, Western Sahara, and Mauritania, and dissipates near Senegal and Guinea-Bissau at roughly 10{"\u00b0"}N. Scientists formally call it the Canary/Iberia Current Upwelling System. It covers 1.1 million square kilometres.</p>
         <p style={{ fontSize: 16, lineHeight: 2, color: C.ink, marginTop: 24 }}>The mechanism is elegant. Trade winds blow parallel to the coast. The Coriolis effect pushes surface water offshore. Cold, nutrient-rich water from the deep rises to replace it. Phytoplankton bloom in the sunlit nutrients. Sardines eat the plankton. Everything above eats the sardines. The entire food chain hangs on wind direction and water temperature.</p>
-        <p style={{ fontSize: 16, lineHeight: 2, color: C.ink, marginTop: 24 }}>These upwelling zones occupy 5% of the ocean but produce over 20% of the world{"\u2019"}s fish catch. The Canary Current alone sustains the fishing economies of Portugal, Spain, Morocco, Western Sahara, Mauritania, Senegal, the Gambia, and Guinea-Bissau. The same cold water that cools Essaouira{"\u2019"}s summer air feeds Dakar{"\u2019"}s protein supply.</p>
+        <p style={{ fontSize: 16, lineHeight: 2, color: C.ink, marginTop: 24 }}>These upwelling zones occupy 5% of the ocean but produce over 20% of the world{"\u2019"}s fish catch. The Canary Current alone sustains the fishing economies of Portugal, Spain, Morocco, Western Sahara, Mauritania, Senegal, the Gambia, and Guinea-Bissau. The same cold water that cools <Link href="/data/atlantic-coast" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Essaouira</Link>{"\u2019"}s summer air feeds Dakar{"\u2019"}s protein supply.</p>
       </section>
 
       <section style={{ padding: '60px 24px 80px', background: C.oceanDark }}>

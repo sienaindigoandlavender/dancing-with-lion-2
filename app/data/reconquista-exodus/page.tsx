@@ -378,7 +378,7 @@ export default function ReconquistaPage() {
           The Jews went first. The Muslims followed, in waves, over the next 122 years.
           By 1614, Spain had emptied itself of the communities that had built its libraries,
           its palaces, its irrigation systems, and its economy. They scattered across the
-          Mediterranean — to Morocco, Algeria, Tunisia, the Ottoman Empire, Amsterdam,
+          Mediterranean — to Morocco, Algeria, Tunisia, the <Link href="/data/ottoman-north-africa" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Ottoman</Link> Empire, Amsterdam,
           Livorno. They carried with them the DNA of al-Andalus. This module maps where
           they went, and what they brought.
         </p>
