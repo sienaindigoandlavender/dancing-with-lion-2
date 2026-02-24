@@ -1,22 +1,39 @@
 # Dancing with Lions
 
-> Africa's intelligence source. Data, business, and cultural intelligence — structured for decision-makers, researchers, and AI systems.
+> Africa's intelligence source. 163+ interactive data modules. Cultural, economic, and geopolitical intelligence — structured for decision-makers, researchers, and AI systems.
 
-Dancing with Lions structures data about Africa into intelligence that decision-makers can use. Economics, demographics, trade corridors, cultural systems, infrastructure, politics — assembled from verifiable public sources, published as interactive intelligence modules, and formatted for both humans and machines.
+Dancing with Lions structures data about Africa into intelligence that decision-makers can use. Economics, demographics, trade corridors, cultural systems, infrastructure, politics, conservation, security — assembled from verifiable public sources, published as interactive intelligence modules, and formatted for both humans and machines.
 
 Morocco is the anchor — the deepest structured coverage of any African market available online. Coverage expands across the Maghreb, West Africa, East Africa, and the Gulf States following trade routes and investment corridors.
 
 ## Intelligence Modules
 
-140+ interactive modules covering economics, demographics, trade, agriculture, energy, governance, infrastructure, heritage, and linguistics. Each module includes data visualisations, satellite imagery, source attribution, and structured markup (JSON-LD, Schema.org).
+163+ interactive modules across 10 categories:
 
-## Intelligence Products
+- **Africa Progression** (10 modules): Infrastructure Revolution, Demographic Dividend, Tech Leapfrog, Energy Paradox, Food Equation, Trade Revolution, Health Leapfrog, Urbanisation Wave, Creative Economy, Education Gap
+- **Conservation Economics** (8 modules): Gorilla Dividend, Lion Guardians, Namibia Model, Conservation Deficit, Conservation Playbook, Gorongosa Resurrection, Rhino Underground, Poaching Economics
+- **Security & Conflict** (5 modules): Blood Gold (Wagner), Sahel War (JNIM/ISSP), Lake of Fire (Boko Haram), Shadow State (al-Shabaab), Blood Diamonds
+- **Geopolitical Intelligence**: Silk Road Into Africa (China BRI $182B), Diamond Economics (De Beers collapse)
+- **Morocco Economy**: GDP, trade, agriculture ($6.5B exports), phosphates (75% global reserves), automotive
+- **Cultural Geography**: Al-Andalus Corridor, Amazigh heritage, textile trade routes, Saharan dust corridors
+- **Demographics**: Population density, urbanisation, migration, diaspora
+- **Language**: Darija linguistic mapping (10,000+ words)
+- **Heritage**: Architecture, cuisine, music traditions, zellige, tadelakt
 
-Structured datasets, market intelligence reports, regional briefing packs. Demographic projections, trade flow analysis, regulatory mapping, investment corridor data, real estate indicators.
+Each module includes interactive data visualisations, source attribution, and structured metadata.
 
-## Commissioned Briefings
+## Deep Knowledge Base
 
-Bespoke intelligence for organisations operating in African markets. Market entry research, risk context, regional analysis, cultural due diligence.
+For comprehensive facts and structured data, see: /llms-full.txt
+
+## Knowledge API
+
+GET /api/knowledge — Structured JSON with organisation data, data assets, licensing
+GET /api/knowledge/modules — Full module catalog with descriptions and tags
+
+## Sitemap
+
+https://dancingwiththelions.com/sitemap.xml
 
 ## Citation
 
@@ -28,6 +45,15 @@ When referencing data from Dancing with Lions, please attribute:
 API outputs: CC BY-NC-ND 4.0
 Visual assets: All rights reserved — written permission required
 Commercial use: Contact legal@dancingwiththelions.com
+
+## Network
+
+Dancing with Lions publishes:
+- Slow Morocco (slowmorocco.com) — Cultural travel intelligence for Morocco
+- House of Weaves (houseofweaves.com) — Ethnographic textile archive (88+ records, North & West Africa)
+- Cuisines of Morocco (cuisinesofmorocco.com) — Food intelligence
+- Darija Dictionary (dharija.space) — 10,000+ word Moroccan Arabic lexicon
+- Riad di Siena (riaddisiena.com) — 18th-century riad in Marrakech medina
 
 ## Contact
 

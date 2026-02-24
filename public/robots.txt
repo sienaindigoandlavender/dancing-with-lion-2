@@ -1,8 +1,11 @@
 # Dancing with Lions — robots.txt
-# Cultural intelligence for Al Maghrib
+# Africa's intelligence source. 163+ data modules.
 
 User-agent: *
 Allow: /
+Allow: /api/knowledge/
+Allow: /api/knowledge/modules
+Disallow: /api/
 
 # AI Search Crawlers — Welcome (cite your sources)
 User-agent: OAI-SearchBot
@@ -15,6 +18,9 @@ User-agent: anthropic-ai
 Allow: /
 
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 User-agent: PerplexityBot
@@ -33,7 +39,4 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 
-User-agent: Google-Extended
-Disallow: /api/
-
-Sitemap: https://dancingwithlions.com/sitemap.xml
+Sitemap: https://dancingwiththelions.com/sitemap.xml
