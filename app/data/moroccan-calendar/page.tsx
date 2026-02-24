@@ -108,7 +108,7 @@ export default function MoroccanCalendarPage() {
         </div>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
           Morocco operates on four overlapping calendars simultaneously: Gregorian (state, business),
-          Islamic lunar (religion, Ramadan, Eid), Amazigh agricultural (planting, harvest, solstice),
+          Islamic lunar (religion, <Link href="/data/ramadan-moon" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Ramadan</Link>, Eid), <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Amazigh</Link> agricultural (planting, harvest, solstice),
           and French school (rentrée, vacances). A Moroccan family tracks all four — and each year
           the Islamic calendar drifts 11 days earlier through the Gregorian, creating a 33-year cycle
           of shifting overlaps.

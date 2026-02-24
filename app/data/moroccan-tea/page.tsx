@@ -97,7 +97,7 @@ export default function MoroccanTeaPage() {
           <h2 className="font-serif text-[32px] md:text-[44px] italic text-dwl-black leading-[1.05] mb-4">Three Things</h2>
           <p className="text-[14px] text-dwl-body max-w-[520px] leading-relaxed mb-10">
             Atay requires three ingredients: tea from China, mint from the garden, sugar from
-            the souk. Water and fire do the rest. The proportions vary by household, by region,
+            the <Link href="/data/souk-decoded" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">souk</Link>. Water and fire do the rest. The proportions vary by household, by region,
             by season. The structure does not.
           </p>
 

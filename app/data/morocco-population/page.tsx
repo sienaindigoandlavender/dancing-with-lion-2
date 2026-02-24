@@ -637,7 +637,7 @@ function BigFact() {
             transition: 'opacity 0.8s ease 0.8s',
           }}
         >
-          Casablanca-Settat, Rabat-Salé-Kénitra, Marrakech-Safi, Fès-Meknès, Tanger-Tétouan-Al Hoceima
+          Casablanca-Settat, Rabat-Salé-Kénitra, Marrakech-Safi, Fès-<Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Meknès</Link>, Tanger-Tétouan-Al Hoceima
         </p>
       </div>
     </section>

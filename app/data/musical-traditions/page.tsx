@@ -81,8 +81,8 @@ export default function MusicalTraditionsPage() {
             Morocco&rsquo;s Musical<br />Traditions
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
-            Five musical lineages. Sub-Saharan trance, Andalusian courtly suites,
-            Amazigh village drums, urban protest pop, and Algerian rebellion.
+            Five musical lineages. Sub-Saharan trance, <Link href="/data/al-andalus" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Andalusian</Link> courtly suites,
+            <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Amazigh</Link> village drums, urban protest pop, and Algerian rebellion.
             Each carried across centuries by oral tradition, and each
             still alive in tonight&rsquo;s Moroccan streets.
           </p>

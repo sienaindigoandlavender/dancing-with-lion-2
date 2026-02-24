@@ -90,7 +90,7 @@ export default function OliveOilEconomyPage() {
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
             1.2 million hectares. Half a million families. One dominant cultivar.
-            From Phoenician roots to US tariff advantage — Morocco&rsquo;s green gold
+            From <Link href="/data/carthage" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Phoenician</Link> roots to US tariff advantage — Morocco&rsquo;s green gold
             mapped across six regions, four varieties, and the
             arithmetic of drought and recovery.
           </p>

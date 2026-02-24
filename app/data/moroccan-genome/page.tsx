@@ -284,7 +284,7 @@ export default function MoroccanGenomePage() {
             plus 11% European, 11% Middle Eastern, and 7% West African. The most common paternal
             lineage, E-M81, is only 2,000–3,000 years old — one of the most rapid genetic expansions
             ever documented. And the single most important finding: there is almost no genetic difference
-            between Berber-speaking and Arab-speaking Moroccans. Arabisation was a language shift,
+            between <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Berber</Link>-speaking and Arab-speaking Moroccans. Arabisation was a language shift,
             not a population replacement.
           </p>
         </div>
@@ -634,14 +634,14 @@ export default function MoroccanGenomePage() {
               Libya. Yet its most recent common ancestor lived only 2,000–3,000 years ago. This
               is extraordinarily young for a lineage at such high frequency. It implies a
               massive, rapid demographic expansion — possibly linked to the development of
-              oasis agriculture, Berber confederations, or trans-Saharan trade networks that
+              oasis agriculture, Berber confederations, or <Link href="/data/trans-saharan-trade" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">trans-Saharan</Link> trade networks that
               gave certain lineages an outsized reproductive advantage.
             </p>
           </div>
           <div>
             <p className="font-serif text-[18px] mb-2">The Sahrawi Question</p>
             <p className="text-[13px] leading-relaxed" style={{ color: C.text }}>
-              Sahrawis — Hassaniya-speaking tribes of mixed Arab-Amazigh descent — represent
+              Sahrawis — <Link href="/data/languages-of-morocco" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Hassaniya</Link>-speaking tribes of mixed Arab-Amazigh descent — represent
               roughly 3.6% of Morocco's population. They are genetically similar to southern
               Moroccans and Mauritanians, with E-M81 at ~76% in Sahrawi men. The Western Sahara
               sovereignty dispute makes their demographic counting politically charged: Morocco

@@ -529,7 +529,7 @@ export default function MarriageEconomyPage() {
           <div>
             <p className="font-serif text-[18px] mb-2">Silver vs Gold</p>
             <p className="text-[13px] leading-relaxed" style={{ color: C.text }}>
-              Amazigh brides wear silver. Urban Arab brides wear gold. The divide is religious (some
+              <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Amazigh</Link> brides wear silver. Urban Arab brides wear gold. The divide is religious (some
               interpret the Quran as forbidding gold for adornment), economic (silver was mined locally in
               Tiznit since the 1st century AD), and cultural. For centuries, Jewish silversmiths in Tiznit
               made Amazigh bridal jewellery. After the 1950s emigration, Amazigh artisans inherited the craft.

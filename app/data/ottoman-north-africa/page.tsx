@@ -238,7 +238,7 @@ export default function OttomanNorthAfricaPage() {
           semi-autonomous corsair states that elected their own rulers, raided European
           shipping, and conducted independent diplomacy. Istanbul collected tribute and
           provided legitimacy. The corsairs provided everything else. Morocco — protected
-          by the Atlas Mountains, the Saadian dynasty&apos;s gunpowder army, and the religious
+          by the <Link href="/data/atlas-mountains" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Atlas Mountains</Link>, the <Link href="/data/dynasty-timeline" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Saadian</Link> dynasty&apos;s gunpowder army, and the religious
           authority of its sharifian sultans — remained the only North African state the
           Ottomans never conquered. The empire held its African territories for three
           centuries until European powers stripped them away: France took Algiers (1830),

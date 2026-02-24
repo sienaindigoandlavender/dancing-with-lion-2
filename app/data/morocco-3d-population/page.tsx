@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef, useMemo } from "react"
+import Link from 'next/link'
 
 // Simple hex color darkening (no Three.js dependency needed)
 function darkenHex(hex: string, factor: number): string {
@@ -438,7 +439,7 @@ export default function Morocco3DPopulation() {
               <p style={{ fontSize: 12, color: EARTH.body, lineHeight: 1.6 }}>
                 The strip from Tangier to Agadir along the Atlantic coast holds roughly 70% of
                 Morocco&apos;s population in less than 15% of its territory. This is where the
-                highways, the TGV, the industry, and the money concentrate. Casablanca alone
+                highways, the <Link href="/data/tgv-rail-network" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>TGV</Link>, the industry, and the money concentrate. Casablanca alone
                 accounts for nearly 12% of the national population.
               </p>
             </div>

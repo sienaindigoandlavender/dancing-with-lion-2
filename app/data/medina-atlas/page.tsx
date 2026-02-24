@@ -139,7 +139,7 @@ export default function MedinaAtlasPage() {
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
           The medina of Marrakech is a walled city within a city — 16 km of ramparts enclosing
           a labyrinth of 400+ dead-end lanes, 16 quarters, 18 souks, 12 gates, and thousands of
-          courtyard houses. Founded by the Almoravids around 1070, expanded by the Almohads,
+          <Link href="/data/anatomy-of-a-riad" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">courtyard house</Link>s. Founded by the <Link href="/data/dynasty-timeline" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Almoravid</Link>s around 1070, expanded by the Almohads,
           embellished by the Saadians, it is a UNESCO World Heritage Site and the most visited
           medina in Morocco.
         </p>

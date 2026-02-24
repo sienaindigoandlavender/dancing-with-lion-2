@@ -248,7 +248,7 @@ export default function PhosphateKingdomPage() {
           <p className="font-serif italic leading-[1.2]" style={{ fontSize: 'clamp(1.5rem, 4.5vw, 3rem)', color: '#0a0a0a' }}>
             China produces more phosphate. But China&rsquo;s reserves are 3.7 billion tonnes.
             Morocco&rsquo;s are 50 billion. The short game belongs to Beijing.
-            The long game belongs to Rabat.
+            The long game belongs to <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Rabat</Link>.
           </p>
         </div>
       </section>

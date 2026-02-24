@@ -449,7 +449,7 @@ export default function MoroccoEconomyPage() {
             <div>
               <p className="text-[10px] uppercase tracking-[0.1em] text-dwl-muted mb-1">The 2030 Vision</p>
               <p className="text-[14px] text-dwl-body leading-relaxed">
-                Co-hosting FIFA World Cup with Spain and Portugal. New stadiums, high-speed rail extension, 200,000+ hotel rooms target.
+                Co-hosting FIFA World Cup with Spain and Portugal. New stadiums, <Link href="/data/tgv-rail-network" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">high-speed rail</Link> extension, 200,000+ hotel rooms target.
               </p>
             </div>
             <div>
@@ -461,7 +461,7 @@ export default function MoroccoEconomyPage() {
             <div>
               <p className="text-[10px] uppercase tracking-[0.1em] text-dwl-muted mb-1">Green Transition</p>
               <p className="text-[14px] text-dwl-body leading-relaxed">
-                Noor-Ouarzazate solar complex. 52% renewable energy target by 2030. Green hydrogen and EV battery manufacturing emerging.
+                Noor-<Link href="/data/solar-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Ouarzazate solar</Link> complex. 52% renewable energy target by 2030. Green hydrogen and EV battery manufacturing emerging.
               </p>
             </div>
           </div>

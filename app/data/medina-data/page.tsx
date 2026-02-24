@@ -75,7 +75,7 @@ export default function MedinaDataPage() {
           </p>
         </div>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
-          A Moroccan medina is not random. It is organised in concentric rings radiating
+          A Moroccan <Link href="/data/medina-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">medina</Link> is not random. It is organised in concentric rings radiating
           from the Friday mosque: sacred space nearest the centre, then commerce, then
           residential, then industry (pushed to the edge for noise and smell), then
           defensive walls, then the cemeteries beyond. This is the spatial grammar of
