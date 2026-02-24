@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { dataModules } from '@/lib/search-index'
+import { SEARCH_INDEX } from '@/lib/search-index'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://dancingwiththelions.com'
@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
   ]
 
-  const modulePages: MetadataRoute.Sitemap = dataModules.map(m => ({
+  const modulePages: MetadataRoute.Sitemap = SEARCH_INDEX.map(m => ({
     url: `${base}${m.href}`,
     lastModified: now,
     changeFrequency: 'monthly' as const,
