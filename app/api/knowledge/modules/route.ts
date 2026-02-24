@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server'
-import { dataModules } from '@/lib/search-index'
+import { SEARCH_INDEX } from '@/lib/search-index'
 
 export async function GET() {
-  const modules = dataModules.map(m => ({
+  const modules = SEARCH_INDEX.map(m => ({
     number: m.number,
     title: m.title,
     category: m.category,
