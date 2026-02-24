@@ -516,7 +516,7 @@ export default function IslamicSpainPage() {
             781 Years, <em>One Peninsula</em>
           </h2>
           <p className="text-body text-dwl-body max-w-[600px] mb-16">
-            From the Berber crossing in 711 to the final surrender in 1492.
+            From the <Link href="/data/amazigh-identity" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Berber</Link> crossing in 711 to the final surrender in 1492.
             Every major event, every turning point, every date a fund manager in London should know.
           </p>
 

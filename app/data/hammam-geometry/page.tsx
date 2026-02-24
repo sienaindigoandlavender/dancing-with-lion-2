@@ -457,12 +457,12 @@ export default function HammamGeometryPage() {
             Architecture as thermal machine — the geometry of water, fire, and stone
           </p>
           <p className="text-[15px] leading-[1.8] max-w-[600px]" style={{ color: C.text }}>
-            A traditional Moroccan hammam is a Roman hypocaust that never stopped working.
+            A traditional Moroccan <Link href="/data/hammam-culture" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">hammam</Link> is a Roman hypocaust that never stopped working.
             Three rooms arranged on a single axis — cool, warm, hot — each one degree closer
             to the furnace behind the wall. Hot air flows under the floor through pillared channels.
             Water is heated in a brass cauldron and carried by gravity to the bathing rooms.
             Steam rises through domed ceilings pierced by star-shaped oculi.
-            The geometry is 2,000 years old. The Saffarin Hammam in Fes, built in the 14th century,
+            The geometry is 2,000 years old. The Saffarin Hammam in <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Fes</Link>, built in the 14th century,
             is still operating. This module is the blueprint.
           </p>
         </div>
@@ -633,7 +633,7 @@ export default function HammamGeometryPage() {
             <p className="text-[13px] leading-relaxed" style={{ color: C.text }}>
               Hammams are always built near mosques. Ritual purification (ghusl)
               requires full-body washing. Before indoor plumbing, the hammam was the only
-              place this was possible. The Almohads (12th century) made it policy:
+              place this was possible. The <Link href="/data/almohad-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Almohads</Link> (12th century) made it policy:
               every new mosque required a neighbouring hammam. The pair became the
               civic infrastructure of the Islamic city.
             </p>

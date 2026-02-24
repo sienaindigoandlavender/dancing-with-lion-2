@@ -341,7 +341,7 @@ export default function HarvestCalendarPage() {
           </div>
           <div style={{ opacity: notes.vis ? 1 : 0, transition: 'opacity 0.6s 0.2s' }}>
             <h3 className="font-serif text-[22px] text-dwl-black">The Souss Valley Machine</h3>
-            <p className="text-[15px] text-dwl-gray leading-relaxed mt-3">The Souss-Massa region around Agadir produces the majority of Morocco's vegetable exports. Industrial greenhouses stretch for kilometres, growing tomatoes, peppers, and courgettes year-round for European supermarkets. This calendar shows natural outdoor seasons — when crops taste best and cost least at the local souk. The greenhouse versions are available always, but they're not the same thing.</p>
+            <p className="text-[15px] text-dwl-gray leading-relaxed mt-3">The Souss-Massa region around Agadir produces the majority of Morocco's vegetable exports. Industrial greenhouses stretch for kilometres, growing tomatoes, peppers, and courgettes year-round for European supermarkets. This calendar shows natural outdoor seasons — when crops taste best and cost least at the local <Link href="/data/souk-decoded" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">souk</Link>. The greenhouse versions are available always, but they're not the same thing.</p>
           </div>
           <div style={{ opacity: notes.vis ? 1 : 0, transition: 'opacity 0.6s 0.4s' }}>
             <h3 className="font-serif text-[22px] text-dwl-black">Khobiza — The Invisible Staple</h3>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import { ROUTE, ROUTE_COORDS, ATTRITION, BATTLES, ELEPHANTS, TIMELINE, BIBLIOGRAPHY } from './data'
 
 /* ═══════════════════════════════════════════════════
@@ -203,7 +204,7 @@ export default function HannibalsMarch() {
         <div style={{ padding: '48px 24px 24px', maxWidth: 800, margin: '0 auto' }}>
           <Fade>
             <Micro>The Route</Micro>
-            <SectionTitle>Carthage to Cannae</SectionTitle>
+            <SectionTitle><Link href="/data/carthage" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Carthage</Link> to Cannae</SectionTitle>
           </Fade>
         </div>
 

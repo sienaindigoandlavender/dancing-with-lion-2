@@ -112,7 +112,7 @@ export default function LanguagesPage() {
         </div>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
           A Moroccan in Casablanca might speak Darija at home, French at work, Modern Standard
-          Arabic for news, and English on Instagram — in a single day. In the Rif, add Tarifit.
+          Arabic for news, and English on Instagram — in a single day. In the <Link href="/data/cannabis-rif" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Rif</Link>, add Tarifit.
           In the Souss, Tashelhit. In the Sahara, Hassaniya. Morocco is not bilingual — it is a
           permanent negotiation between at least five languages, each carrying different power,
           prestige, and identity.

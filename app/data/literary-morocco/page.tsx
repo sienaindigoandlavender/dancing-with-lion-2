@@ -75,7 +75,7 @@ export default function LiteraryMoroccoPage() {
           <p className="text-[16px] md:text-[18px] max-w-[580px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
             Tangier was an International Zone — lawless, multilingual, free.
             It drew Bowles, Burroughs, Genet, Capote, Ginsberg. But Morocco&rsquo;s
-            literary story begins with Ibn Battuta in 1325 and continues
+            literary story begins with <Link href="/data/who-is-the-goat" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Ibn Battuta</Link> in 1325 and continues
             through Choukri, Mrabet, and Ben Jelloun. This is the map.
           </p>
 

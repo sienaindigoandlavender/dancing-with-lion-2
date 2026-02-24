@@ -93,7 +93,7 @@ export default function JewishHeritagePage() {
             Jewish Heritage<br />in Morocco
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[560px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
-            Mellahs, synagogues, cemeteries. The 250,000 who left.
+            <Link href="/data/jewish-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Mellah</Link>s, synagogues, cemeteries. The 250,000 who left.
             The legacy that stayed. Two thousand years compressed
             into three decades of departure.
           </p>
@@ -116,8 +116,8 @@ export default function JewishHeritagePage() {
           <h2 className="font-serif text-[32px] md:text-[44px] italic leading-[1.05] mb-4" style={{ color: '#ffffff' }}>Six Cities</h2>
           <p className="text-[13px] max-w-[540px] leading-relaxed mb-6" style={{ color: 'rgba(0,0,0,0.4)' }}>
             The mellah — walled Jewish quarter, typically beside the royal palace.
-            The word comes from Arabic for salt. The first was Fez, 1438.
-            The windows face outward — Andalusian style. The Muslim houses
+            The word comes from Arabic for salt. The first was <Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Fez</Link>, 1438.
+            The windows face outward — <Link href="/data/al-andalus" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Andalusian</Link> style. The Muslim houses
             face inward.
           </p>
           <div ref={mapContainer} className="w-full rounded-sm overflow-hidden" style={{ height: '420px', border: '1px solid #1a1a1a' }} />

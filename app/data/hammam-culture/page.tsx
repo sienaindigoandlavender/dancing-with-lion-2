@@ -56,7 +56,7 @@ export default function HammamCulturePage() {
           </h1>
           <p className="text-[16px] md:text-[18px] max-w-[520px] leading-relaxed mt-8 opacity-0" style={{ color: 'rgba(0,0,0,0.4)', animation: 'fadeUp 1s ease 0.7s forwards' }}>
             Three rooms of ascending heat. Six ritual steps. One of five elements that
-            define every neighbourhood in the medina. The hammam is not a spa.
+            define every neighbourhood in the <Link href="/data/medina-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">medina</Link>. The hammam is not a spa.
             It is social infrastructure.
           </p>
 
@@ -186,7 +186,7 @@ export default function HammamCulturePage() {
           <h2 className="font-serif text-[32px] md:text-[44px] italic text-dwl-black leading-[1.05] mb-4">Six Ingredients</h2>
           <p className="text-[14px] text-dwl-body max-w-[480px] leading-relaxed mb-10">
             Every product comes from somewhere. Olive groves. Atlas mines.
-            Argan forests. Rose valleys. Each one earned its place in the ritual.
+            <Link href="/data/argan-triangle" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Argan</Link> forests. Rose valleys. Each one earned its place in the ritual.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px" style={{ background: '#e5e5e5' }}>

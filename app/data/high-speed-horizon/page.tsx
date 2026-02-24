@@ -257,11 +257,11 @@ export default function HighSpeedHorizonPage() {
         </div>
         <p className="text-[13px] max-w-[560px] leading-[1.7] mt-6" style={{ color: C.text }}>
           In 1920, Tangier to Marrakech took 18 hours by colonial rail — if the train ran at all.
-          By 2029, Al Boraq will do it in 2 hours 40 minutes. Casablanca and Rabat, once a
+          By 2029, <Link href="/data/tgv-rail-network" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Al Boraq</Link> will do it in 2 hours 40 minutes. Casablanca and Rabat, once a
           three-hour journey, are now 25-minute commuter twins. Morocco is not building a train.
           It is collapsing distance. The 430 km Kenitra–Marrakech extension, launched in April 2025
           at $5.3 billion, will create a 630 km high-speed spine from Tangier to Marrakech —
-          Africa&apos;s longest — operational before the 2030 World Cup.
+          Africa&apos;s longest — operational before the <Link href="/data/world-cup-2030" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">2030 World Cup</Link>.
         </p>
 
         <div ref={numsR.ref} className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
