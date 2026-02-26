@@ -309,7 +309,7 @@ export default function TheChurchesThatSwallowedTheMountain() {
               { href: '/data/the-lions-road', title: 'The Lion\'s Road', sub: 'The Asiatic lion and the symbol that crowned Ethiopian kings.' },
             ].map(l => (
               <Link key={l.href} href={l.href} style={{ display: 'block', padding: '16px 20px', background: C.alt, borderRadius: 2, textDecoration: 'none', transition: 'background 0.2s' }}>
-                <p style={{ fontFamily: F.serif, fontSize: 16, fontStyle: 'italic', color: C.text, marginBottom: 4, lineHeight: 1.3 }}>{l.title}</p>
+                <p style={{ fontFamily: F.serif, fontSize: 16, fontStyle: 'italic', color: C.ink, marginBottom: 4, lineHeight: 1.3 }}>{l.title}</p>
                 <p style={{ fontFamily: F.mono, fontSize: 10, color: C.muted, lineHeight: 1.5 }}>{l.sub}</p>
               </Link>
             ))}
