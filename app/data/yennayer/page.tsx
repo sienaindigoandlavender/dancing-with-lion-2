@@ -310,7 +310,7 @@ export default function Yennayer() {
         <Fade delay={100}>
           <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap', marginBottom: 40 }}>
             {[
-              { key: 'all', label: 'All' }, { key: 'sheshonq', label: '<Link href="/data/from-the-land-of-the-setting-sun" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Sheshonq</Link>' },
+              { key: 'all', label: 'All' }, { key: 'sheshonq', label: 'Sheshonq' },
               { key: 'calendar', label: 'Calendar' }, { key: 'recognition', label: 'Recognition' },
             ].map(f => (
               <button key={f.key} onClick={() => setTimeFilter(f.key)} style={{

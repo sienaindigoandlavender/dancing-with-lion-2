@@ -283,12 +283,12 @@ function FertilityChart() {
 
 const DEMOGRAPHIC_ATLAS_MAP_POINTS = [
   { name: 'Casablanca-Settat', lat: 33.57, lng: -7.59, pop: '7.4M', density: 'Highest', color: '#2D3A6E' },
-  { name: '<Link href="/data/imperial-cities" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Rabat</Link>-Salé-Kénitra', lat: 34.02, lng: -6.84, pop: '4.9M', density: 'High', color: '#3B5998' },
+  { name: 'Rabat-Salé-Kénitra', lat: 34.02, lng: -6.84, pop: '4.9M', density: 'High', color: '#3B5998' },
   { name: 'Marrakech-Safi', lat: 31.63, lng: -8.01, pop: '4.7M', density: 'Medium', color: '#4A7C8B' },
   { name: 'Fès-Meknès', lat: 34.03, lng: -5.00, pop: '4.4M', density: 'Medium', color: '#4A7C8B' },
   { name: 'Tanger-Tétouan-Al Hoceïma', lat: 35.76, lng: -5.83, pop: '3.8M', density: 'Medium', color: '#4A7C8B' },
   { name: 'Souss-Massa', lat: 30.43, lng: -9.60, pop: '2.9M', density: 'Medium', color: '#6B8BA4' },
-  { name: '<Link href="/data/date-palm-oases" style={{ textDecoration: 'underline', textUnderlineOffset: '3px' }}>Drâa</Link>-Tafilalet', lat: 31.93, lng: -5.53, pop: '1.7M', density: 'Low', color: '#8B7355' },
+  { name: 'Drâa-Tafilalet', lat: 31.93, lng: -5.53, pop: '1.7M', density: 'Low', color: '#8B7355' },
   { name: 'Dakhla-Oued Ed-Dahab', lat: 23.68, lng: -15.96, pop: '0.2M', density: 'Lowest', color: '#C17F28' },
 ]
 const MAPBOX_TOKEN_DEMOGRAPHIC_ATLAS = process.env.NEXT_PUBLIC_MAPBOX_TOKEN

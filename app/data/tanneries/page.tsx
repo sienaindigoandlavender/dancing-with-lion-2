@@ -213,7 +213,7 @@ export default function TanneriesPage() {
           <p className="text-[11px] uppercase tracking-[0.12em] mb-4" style={{ color: ACCENT }}>003 — The Three Survivors</p>
           <h2 className="font-serif text-[32px] md:text-[44px] italic leading-[1.05] mb-4" style={{ color: '#ffffff' }}>86 Became 3</h2>
           <p className="text-[13px] max-w-[520px] leading-relaxed mb-6" style={{ color: 'rgba(0,0,0,0.4)' }}>
-            The <Link href="/data/dynasty-timeline" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Almohad</Link>ref="/data/almohad-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Almohads</Link> counted 86 tanning workshops. The Marinids counted 100.
+            The <Link href="/data/almohad-atlas" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Almohads</Link> counted 86 tanning workshops. The Marinids counted 100.
             Today three survive, operating as cooperatives.
           </p>
           <div ref={mapContainer} className="w-full rounded-sm overflow-hidden" style={{ height: '380px', border: '1px solid #1a1a1a' }} />

@@ -355,7 +355,7 @@ export default function ChameleonCountryPage() {
               </p>
             </div>
             <div className="flex gap-2 flex-wrap">
-              {[null, 'Ouarzazate', 'Tangier', 'Essaouira', 'Marrakech', '<Link href="/data/imperial-cities" className="underline underline-offset-2 hover:text-[#0a0a0a] transition-colors">Rabat</Link>'].map(loc => (
+              {[null, 'Ouarzazate', 'Tangier', 'Essaouira', 'Marrakech', 'Rabat'].map(loc => (
                 <button key={loc || 'all'}
                   className="font-mono text-[10px] px-2 py-1 rounded-full border transition-all duration-200"
                   style={{
