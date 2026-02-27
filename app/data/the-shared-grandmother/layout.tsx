@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Amazigh & Sámi. Sahara & Arctic. One mitochondrial DNA branch. 9,000 years.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/the-shared-grandmother' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

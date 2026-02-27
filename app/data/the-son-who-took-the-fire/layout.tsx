@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Menelik I, the Ark of the Covenant, and 704 years of Solomonic dynasty.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/the-son-who-took-the-fire' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

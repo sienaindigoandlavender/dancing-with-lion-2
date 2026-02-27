@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'The Berber pharaoh. The 3,000-year calendar. The oldest New Year still celebrated.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/yennayer' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

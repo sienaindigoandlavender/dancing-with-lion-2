@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Salt south, gold north. The desert economy that funded dynasties and spread Islam across Africa.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/trans-saharan-trade' },
 }
 
 export default function TransSaharanTradeLayout({ children }: { children: React.ReactNode }) {

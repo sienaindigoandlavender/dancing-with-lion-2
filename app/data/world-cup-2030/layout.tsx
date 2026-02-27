@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '20 stadiums across 17 cities. $41B in Moroccan infrastructure. The complete picture of the first World Cup across two continents.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/world-cup-2030' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

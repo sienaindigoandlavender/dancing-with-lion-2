@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Nine peoples, five continents, one political architecture. Why the peoples who refuse empires keep inventing the same governance structure.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/the-ungovernable-pattern' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

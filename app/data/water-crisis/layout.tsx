@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'From 28% to 70.7% — Morocco\'s dam recovery in 12 months. But the water crisis isn\'t over.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/water-crisis' },
 }
 
 export default function WaterCrisisLayout({ children }: { children: React.ReactNode }) {

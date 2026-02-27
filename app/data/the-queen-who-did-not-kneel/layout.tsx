@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Bilqis, the Incense Road, and the geopolitics behind the visit to Solomon.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/the-queen-who-did-not-kneel' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

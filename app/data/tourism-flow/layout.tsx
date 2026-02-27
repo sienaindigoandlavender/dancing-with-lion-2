@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Follow the flow of 17.4 million visitors through Morocco. From Paris and Madrid to Marrakech and Agadir. From landing to spending.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/tourism-flow' },
 }
 
 export default function TourismFlowLayout({ children }: { children: React.ReactNode }) {

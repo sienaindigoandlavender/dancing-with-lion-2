@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description: '75,000 years. 50,000+ sites. 2 million images. The longest documentation project in human history.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/the-memory-in-the-stone' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

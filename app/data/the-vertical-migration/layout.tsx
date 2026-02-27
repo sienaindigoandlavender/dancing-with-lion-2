@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '4,500 years of vertical migration in the Atlas Mountains. 6 named agdals, 3,000+ rock engravings, and a 97% collapse in one generation.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/the-vertical-migration' },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

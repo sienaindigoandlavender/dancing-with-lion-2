@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: 'The Vanilla Orchid',
     description: 'Madagascar produces 80% of the world\'s vanilla. A 12-year-old boy discovered the technique that made it possible. Prices: $20 to $600/kg.',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/the-vanilla-orchid' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

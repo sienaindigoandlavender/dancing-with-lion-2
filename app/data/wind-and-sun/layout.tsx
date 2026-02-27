@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '3,000 hours of sun. 60% wind capacity factor. 14 installations mapped as radial blooms. The shape IS the energy.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/wind-and-sun' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

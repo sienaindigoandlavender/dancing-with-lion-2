@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '12 sacred smoke traditions. 6 continents. The same instinct, everywhere.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/the-sacred-smoke' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

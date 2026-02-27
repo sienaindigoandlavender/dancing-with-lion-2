@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'How an animal that never lived in China became the guardian of its civilisation.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/the-lions-road' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

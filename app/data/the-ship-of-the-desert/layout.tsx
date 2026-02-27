@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: 'The Ship of the Desert — Dancing with Lions',
     description: 'Three camel species. Two trade routes. 40 million animals. 950 wild survivors.',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/the-ship-of-the-desert' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

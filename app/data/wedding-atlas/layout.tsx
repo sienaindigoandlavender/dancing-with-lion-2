@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'A multi-day ceremony mapped: henna night to dawn feast. 7 bridal outfits, 6 regional traditions, the negafa, the amariya, and what it all costs.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/wedding-atlas' },
 }
 
 export default function WeddingAtlasLayout({ children }: { children: React.ReactNode }) {

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'From Roman thermae to Islamic hammam. 15 archaeological sites, 6 civilizations, 2,600 years. The three-room sequence never changed.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/waters-of-empire' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

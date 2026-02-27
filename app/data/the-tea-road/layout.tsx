@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: 'The Tea Road',
     description: 'Morocco is China\'s #1 tea export destination: 81,000 metric tons (2024). More than all of North America combined.',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/the-tea-road' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
