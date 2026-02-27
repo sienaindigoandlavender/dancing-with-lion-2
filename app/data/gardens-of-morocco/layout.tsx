@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Four gardens, nine centuries. Water as sacred element. Geometry as divine order. The garden as earthly paradise.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/gardens-of-morocco' },
 }
 
 export default function GardensOfMoroccoLayout({ children }: { children: React.ReactNode }) {

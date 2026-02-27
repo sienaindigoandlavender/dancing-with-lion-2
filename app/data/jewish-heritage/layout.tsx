@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'The 250,000 who left. The legacy that stayed. 110 synagogues restored.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/jewish-heritage' },
 }
 
 export default function JewishHeritageLayout({ children }: { children: React.ReactNode }) {

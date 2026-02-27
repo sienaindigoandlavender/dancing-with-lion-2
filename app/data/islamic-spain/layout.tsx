@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Interactive timeline and Mapbox map: trace the conquest, golden age, and fall of Al-Andalus across 781 years of history.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/islamic-spain' },
 }
 
 export default function IslamicSpainLayout({ children }: { children: React.ReactNode }) {

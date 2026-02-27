@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '37 elephants. 1,600 km. One of the greatest military gambits in history.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/hannibals-march' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

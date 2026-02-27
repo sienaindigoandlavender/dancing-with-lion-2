@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '5 star families, 4 symmetry types, 17 wallpaper groups. How Islamic geometry becomes Moroccan tilework.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/geometry-of-zellige' },
 }
 
 export default function GeometryZelligeLayout({ children }: { children: React.ReactNode }) {

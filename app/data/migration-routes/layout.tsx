@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '13 kilometres between continents. 40,000 deaths since 2014. The human geography of crossing.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/migration-routes' },
 }
 
 export default function MigrationRoutesLayout({ children }: { children: React.ReactNode }) {

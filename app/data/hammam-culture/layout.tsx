@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'The social architecture of the Moroccan bathhouse. Design, ritual, products, neighbourhood role.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/hammam-culture' },
 }
 
 export default function HammamCultureLayout({ children }: { children: React.ReactNode }) {

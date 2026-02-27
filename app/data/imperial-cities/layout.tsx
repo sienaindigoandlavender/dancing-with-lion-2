@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Fez, Marrakech, Meknès, Rabat. Each dynasty chose its capital. The power map of Morocco.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/imperial-cities' },
 }
 
 export default function ImperialCitiesLayout({ children }: { children: React.ReactNode }) {

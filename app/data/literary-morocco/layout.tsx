@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Bowles, Burroughs, Choukri, Canetti, Mrabet, Genet, Eberhardt, Ben Jelloun. Morocco\'s literary geography.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/literary-morocco' },
 }
 
 export default function LiteraryMoroccoLayout({ children }: { children: React.ReactNode }) {
