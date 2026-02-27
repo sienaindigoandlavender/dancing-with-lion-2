@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://dancingwiththelions.com/about' },
   title: 'About — Dancing with Lions',
   description: 'Dancing with Lions structures the intelligence that African decision-makers need. Data, context, and pattern recognition for investors, researchers, governments, and AI systems.',
   openGraph: {
