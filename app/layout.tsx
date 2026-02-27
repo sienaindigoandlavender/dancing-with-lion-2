@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     title: 'Dancing with Lions',
     description: 'We structure the data that explains Africa.',
   },
+  alternates: { canonical: 'https://dancingwiththelions.com' },
   robots: {
     index: true,
     follow: true,
