@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'From 35 suppliers in 2000 to 270+ in 2025. $17B in exports. 1M+ vehicle capacity. The data behind Africa\'s automotive powerhouse.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/automotive-industry' },
 }
 
 export default function AutomotiveLayout({ children }: { children: React.ReactNode }) {

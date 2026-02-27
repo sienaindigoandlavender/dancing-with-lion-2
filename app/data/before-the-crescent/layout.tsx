@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '315,000 years. Six civilizations. Each one left a layer. The Amazigh outlasted them all.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/before-the-crescent' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

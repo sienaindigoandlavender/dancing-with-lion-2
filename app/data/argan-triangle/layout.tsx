@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'UNESCO biosphere reserve. 20 million trees. 688 women\'s cooperatives. Morocco\'s liquid gold economy.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/argan-triangle' },
 }
 
 export default function ArganTriangleLayout({ children }: { children: React.ReactNode }) {

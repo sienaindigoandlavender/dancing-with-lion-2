@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'The land between Atlas and sand. NDVI data 1984–2025, 6 threatened oases, 6 green projects, and a $2.1 billion annual cost.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/before-the-sahara' },
 }
 
 export default function BeforeTheSaharaLayout({ children }: { children: React.ReactNode }) {

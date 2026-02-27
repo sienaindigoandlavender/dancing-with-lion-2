@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Khobz means bread. Khobz means livelihood. Khobz means life.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/bread-of-morocco' },
 }
 
 export default function BreadOfMoroccoLayout({ children }: { children: React.ReactNode }) {

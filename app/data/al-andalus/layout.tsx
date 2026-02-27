@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Interactive cultural DNA map: trace the horseshoe arch, the Andalusi nuba, the Arabic loanwords, and the shared cuisine from Seville to Fes.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/al-andalus' },
 }
 
 export default function AlAndalusLayout({ children }: { children: React.ReactNode }) {

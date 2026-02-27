@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '14km of water. 5.3× GDP per capita gap. 18 metrics. The inequality between two World Cup co-hosts, visualized.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/14km-gap' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Tangier to Dakhla. Fishing ports, wind farms, surf breaks, and Morocco\'s gateway to West Africa.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/atlantic-coast' },
 }
 
 export default function AtlanticCoastLayout({ children }: { children: React.ReactNode }) {

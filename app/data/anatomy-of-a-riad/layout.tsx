@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '12 elements, 6 passive climate systems, 0 street-facing windows. The architecture of privacy, paradise, and thermal engineering.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/anatomy-of-a-riad' },
 }
 
 export default function AnatomyOfARiadLayout({ children }: { children: React.ReactNode }) {
