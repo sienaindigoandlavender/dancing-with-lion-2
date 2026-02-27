@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Atlas Studios, Ouarzazate. Game of Thrones, Gladiator, Kingdom of Heaven. 30% cash rebate. The Hollywood of Africa.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/cinema-morocco' },
 }
 
 export default function CinemaMoroccoLayout({ children }: { children: React.ReactNode }) {

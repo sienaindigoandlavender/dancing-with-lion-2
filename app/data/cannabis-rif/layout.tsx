@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'From Sultan Hassan I\'s 1890 tribal privileges to Law 13-21. The economics, history, and politics of Morocco\'s most controversial crop.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/cannabis-rif' },
 }
 
 export default function CannabisRifLayout({ children }: { children: React.ReactNode }) {

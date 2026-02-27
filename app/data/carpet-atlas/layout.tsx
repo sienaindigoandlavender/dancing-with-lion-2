@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Every diamond is a womb. Every zigzag is water. Every rug is a diary. The complete map of Moroccan weaving traditions.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/carpet-atlas' },
 }
 
 export default function CarpetAtlasLayout({ children }: { children: React.ReactNode }) {

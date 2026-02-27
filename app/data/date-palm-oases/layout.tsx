@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Draa Valley, Ziz Valley, Tafilalet. The ecology, the threat, the resistance.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/date-palm-oases' },
 }
 
 export default function DatePalmOasesLayout({ children }: { children: React.ReactNode }) {

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '1912–1956. How France built the villes nouvelles, how Morocco won them back.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/french-protectorate' },
 }
 
 export default function FrenchProtectorateLayout({ children }: { children: React.ReactNode }) {

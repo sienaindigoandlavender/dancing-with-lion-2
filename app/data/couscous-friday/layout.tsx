@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'The sacred Friday meal. Regional variations, three-steam technique, and the social contract around a shared dish.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/couscous-friday' },
 }
 
 export default function CouscousFridayLayout({ children }: { children: React.ReactNode }) {

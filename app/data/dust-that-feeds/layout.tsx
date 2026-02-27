@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: "The Dust That Feeds — How the Sahara Keeps the Amazon Alive",
     description: "182 million tons. 5,000 km. 22,000 tons of phosphorus. The Sahara and the Amazon are connected by an invisible river of dust.",
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/dust-that-feeds' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

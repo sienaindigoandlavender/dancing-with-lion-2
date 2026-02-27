@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'The Amazigh in the Bible. Warriors, theologians, popes. The story nobody has assembled.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/from-the-land-of-the-setting-sun' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
