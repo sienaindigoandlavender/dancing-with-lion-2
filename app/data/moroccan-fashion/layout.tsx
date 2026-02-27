@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'The garments that dressed dynasties. Caftan to couture. Tradition to runway.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/moroccan-fashion' },
 }
 
 export default function MoroccanFashionLayout({ children }: { children: React.ReactNode }) {

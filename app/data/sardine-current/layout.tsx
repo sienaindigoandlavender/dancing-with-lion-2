@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: "The Sardine Current — One Upwelling Feeds Eight Nations",
     description: "5,000km of cold, nutrient-rich water. Four upwelling systems on earth. This is the one that feeds West Africa and Europe.",
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/sardine-current' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

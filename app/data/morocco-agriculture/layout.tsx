@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Illustrated chart: $6.5B in agri-food and seafood exports. Tomatoes, berries, citrus, olives, argan, avocados, sardines. The #1 non-EU supplier to Europe.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/morocco-agriculture' },
 }
 
 export default function MoroccoAgricultureLayout({ children }: { children: React.ReactNode }) {

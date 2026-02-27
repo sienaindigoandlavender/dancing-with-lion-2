@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'The souk calendar. 32 Moroccan fruits and vegetables by season with Darija names and growing regions.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/seasonal-produce' },
 }
 
 export default function SeasonalProduceLayout({ children }: { children: React.ReactNode }) {

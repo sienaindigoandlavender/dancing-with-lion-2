@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Erg, reg, hammada, oued. The four desert types. Only 25% of the Sahara is sand.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/not-all-desert-is-sand' },
 }
 
 export default function NotAllDesertIsSandLayout({ children }: { children: React.ReactNode }) {

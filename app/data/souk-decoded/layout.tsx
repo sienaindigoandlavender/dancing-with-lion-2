@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '18 souks, 5 guild ranks, 7 negotiation steps, 6 spatial rules. The operating system of a Moroccan market.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/souk-decoded' },
 }
 
 export default function SoukDecodedLayout({ children }: { children: React.ReactNode }) {

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'The Islamic calendar is purely lunar. Ramadan drifts backward through the seasons, completing a full rotation every 33 years.',
     type: 'article',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/ramadan-moon' },
 }
 
 export default function RamadanMoonLayout({

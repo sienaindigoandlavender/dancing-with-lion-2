@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Every grid cell of Morocco extruded by population density. The Atlantic corridor vs. the empty south.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/morocco-3d-population' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

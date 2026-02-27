@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'The architecture that rises from the earth it stands on. Rammed earth, Amazigh geometry, Glaoui power, Hollywood\'s desert.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/route-thousand-kasbahs' },
 }
 
 export default function RouteThousandKasbahsLayout({ children }: { children: React.ReactNode }) {

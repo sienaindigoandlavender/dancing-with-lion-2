@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Six regional pottery traditions of Morocco mapped and documented. From 6,000-year-old Berber ceramics to the zellige masters of Meknes.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/pottery-traditions' },
 }
 
 export default function PotteryLayout({ children }: { children: React.ReactNode }) {

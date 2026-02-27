@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Al-Qarawiyyin. 859 CE. Founded by a woman. 229 years before Bologna, 237 before Oxford.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/oldest-universities' },
 }
 
 export default function OldestUniversitiesLayout({ children }: { children: React.ReactNode }) {

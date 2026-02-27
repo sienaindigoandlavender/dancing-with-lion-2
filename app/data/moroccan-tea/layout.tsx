@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Three ingredients from three continents. How a diplomatic gift became a national ritual.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/moroccan-tea' },
 }
 
 export default function MoroccanTeaLayout({ children }: { children: React.ReactNode }) {

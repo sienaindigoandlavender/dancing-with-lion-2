@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'The essential economic snapshot every journalist grabs. GDP $183B, automotive exports #1, 17.4M tourists, $12.4B tourism revenue, $11.9B diaspora remittances.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/morocco-economy' },
 }
 
 export default function MoroccoEconomyLayout({ children }: { children: React.ReactNode }) {

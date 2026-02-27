@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'From Volubilis to global markets. Six olive regions, four cultivars, and the data behind Morocco\'s green gold.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/olive-oil-economy' },
 }
 
 export default function OliveOilEconomyLayout({ children }: { children: React.ReactNode }) {

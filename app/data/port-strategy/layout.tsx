@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'Tanger Med, Nador West Med, Dakhla Atlantique, Casablanca, Jorf Lasfar. Container throughput and trade routes.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/port-strategy' },
 }
 
 export default function PortStrategyLayout({ children }: { children: React.ReactNode }) {

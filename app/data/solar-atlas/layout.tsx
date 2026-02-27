@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '580 MW at Noor Ouarzazate. 2,500+ kWh/m²/yr DNI. The data behind Morocco\'s solar revolution.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/solar-atlas' },
 }
 
 export default function SolarAtlasLayout({ children }: { children: React.ReactNode }) {

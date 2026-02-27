@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: '5 mines, 2 processing hubs, 50 billion tonnes of reserves. How Morocco controls the mineral that feeds the world.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/phosphate-kingdom' },
 }
 
 export default function PhosphateKingdomLayout({ children }: { children: React.ReactNode }) {

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     description: 'From the guembri of Essaouira to the oud of Fez to the bendir of the Atlas. The complete sound map.',
     siteName: 'Dancing with Lions',
   },
+    alternates: { canonical: 'https://dancingwiththelions.com/data/musical-traditions' },
 }
 
 export default function MusicalTraditionsLayout({ children }: { children: React.ReactNode }) {
