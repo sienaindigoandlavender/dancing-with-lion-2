@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/geometry-of-culture',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['geometry', 'Islamic art', 'star', 'pattern', 'mathematics', 'zellige', 'arabesque', 'construction'],
+    ["geometry", "Islamic art", "star", "pattern", "mathematics", "zellige", "arabesque", "construction"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

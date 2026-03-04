@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/hammam-geometry',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['hammam', 'architecture', 'geometry', 'hypocaust', 'dome', 'bath', 'floor plan', 'engineering'],
+    ["hammam", "architecture", "geometry", "hypocaust", "dome", "bath", "floor plan", "engineering"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

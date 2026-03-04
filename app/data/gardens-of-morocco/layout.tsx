@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/gardens-of-morocco',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['garden', 'Majorelle', 'Agdal', 'Menara', 'Jnan Sbil', 'Marrakech', 'Fez', 'Islamic garden'],
+    ["garden", "Majorelle", "Agdal", "Menara", "Jnan Sbil", "Marrakech", "Fez", "Islamic garden"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

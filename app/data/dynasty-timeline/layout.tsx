@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/dynasty-timeline',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['dynasty', 'history', 'idrisids', 'almoravids', 'almohads', 'marinids', 'saadians', 'alaouites'],
+    ["dynasty", "history", "idrisids", "almoravids", "almohads", "marinids", "saadians", "alaouites"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

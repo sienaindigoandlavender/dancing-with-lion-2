@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/carpet-atlas',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['carpet', 'rug', 'beni ourain', 'azilal', 'boucherouite', 'kilim', 'weaving', 'craft'],
+    ["carpet", "rug", "beni ourain", "azilal", "boucherouite", "kilim", "weaving", "craft"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }
