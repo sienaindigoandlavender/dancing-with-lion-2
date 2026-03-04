@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/who-is-the-goat',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['Ibn Battuta', 'Marco Polo', 'travel', 'explorer', 'comparison', 'GOAT', 'journey', 'distance'],
+    ["Ibn Battuta", "Marco Polo", "travel", "explorer", "comparison", "GOAT", "journey", "distance"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

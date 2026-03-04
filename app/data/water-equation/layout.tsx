@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/water-equation',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['water', 'dam', 'aquifer', 'depletion', 'drought', 'river', 'storage', 'desalination'],
+    ["water", "dam", "aquifer", "depletion", "drought", "river", "storage", "desalination"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

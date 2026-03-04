@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/weather-portraits',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['weather', 'temperature', 'climate', 'satellite', 'nasa', 'live', 'marrakech', 'casablanca'],
+    ["weather", "temperature", "climate", "satellite", "nasa", "live", "marrakech", "casablanca"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

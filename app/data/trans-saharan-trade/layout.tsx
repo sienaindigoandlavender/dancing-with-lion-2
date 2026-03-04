@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/trans-saharan-trade',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['sahara', 'trade', 'gold', 'salt', 'timbuktu', 'caravan', 'desert', 'trans-saharan'],
+    ["sahara", "trade", "gold", "salt", "timbuktu", "caravan", "desert", "trans-saharan"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

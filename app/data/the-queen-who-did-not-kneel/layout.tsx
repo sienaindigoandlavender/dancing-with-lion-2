@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-queen-who-did-not-kneel',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['Bilqis', 'Queen of Sheba', 'Sheba', 'Solomon', 'Ethiopia', 'Yemen', 'Saba', 'Marib'],
+    ["Bilqis", "Queen of Sheba", "Sheba", "Solomon", "Ethiopia", "Yemen", "Saba", "Marib"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

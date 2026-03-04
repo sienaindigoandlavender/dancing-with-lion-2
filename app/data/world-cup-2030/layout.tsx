@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/world-cup-2030',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['world cup', '2030', 'fifa', 'stadium', 'casablanca', 'rabat', 'marrakech', 'infrastructure'],
+    ["world cup", "2030", "fifa", "stadium", "casablanca", "rabat", "marrakech", "infrastructure"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

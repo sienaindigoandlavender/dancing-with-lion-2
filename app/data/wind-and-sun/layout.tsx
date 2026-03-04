@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/wind-and-sun',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['renewable', 'solar', 'wind', 'energy', 'Noor', 'Ouarzazate', 'Tarfaya', 'hydro'],
+    ["renewable", "solar", "wind", "energy", "Noor", "Ouarzazate", "Tarfaya", "hydro"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }
