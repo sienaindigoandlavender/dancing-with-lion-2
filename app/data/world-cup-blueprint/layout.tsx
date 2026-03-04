@@ -11,11 +11,6 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://dancingwiththelions.com/data/world-cup-blueprint' },
 }
 
-export default function WorldCupBlueprintLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
-}
-
-
 export default function Layout({ children }: { children: React.ReactNode }) {
   const articleSchema = {
     '@context': 'https://schema.org',
