@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/before-the-sahara',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['desert', 'sahara', 'desertification', 'oasis', 'ndvi', 'vegetation', 'climate', 'drought'],
+    ["desert", "sahara", "desertification", "oasis", "ndvi", "vegetation", "climate", "drought"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

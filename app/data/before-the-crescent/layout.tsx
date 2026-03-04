@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/before-the-crescent',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['pre-Islamic', 'Jebel Irhoud', 'Homo sapiens', 'Amazigh', 'Berber', 'Phoenician', 'Carthage', 'Rome'],
+    ["pre-Islamic", "Jebel Irhoud", "Homo sapiens", "Amazigh", "Berber", "Phoenician", "Carthage", "Rome"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

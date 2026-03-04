@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/blood-diamonds',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['blood diamond', 'conflict diamond', 'Kimberley Process', 'KP', 'Sierra Leone', 'RUF', 'Angola', 'UNITA'],
+    ["blood diamond", "conflict diamond", "Kimberley Process", "KP", "Sierra Leone", "RUF", "Angola", "UNITA"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/anatomy-of-a-riad',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['riad', 'architecture', 'courtyard', 'zellige', 'tadelakt', 'moucharabieh', 'cedar', 'medina'],
+    ["riad", "architecture", "courtyard", "zellige", "tadelakt", "moucharabieh", "cedar", "medina"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

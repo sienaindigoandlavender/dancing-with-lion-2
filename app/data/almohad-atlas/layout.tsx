@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/almohad-atlas',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['Almohad', 'empire', 'caliphate', 'Koutoubia', 'Giralda', 'Hassan Tower', 'Marrakech', 'Seville'],
+    ["Almohad", "empire", "caliphate", "Koutoubia", "Giralda", "Hassan Tower", "Marrakech", "Seville"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }
