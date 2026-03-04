@@ -11,11 +11,6 @@ export const metadata: Metadata = {
     alternates: { canonical: 'https://dancingwiththelions.com/data/musical-traditions' },
 }
 
-export default function MusicalTraditionsLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
-}
-
-
 export default function Layout({ children }: { children: React.ReactNode }) {
   const articleSchema = {
     '@context': 'https://schema.org',

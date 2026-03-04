@@ -11,11 +11,6 @@ export const metadata: Metadata = {
     alternates: { canonical: 'https://dancingwiththelions.com/data/olive-oil-economy' },
 }
 
-export default function OliveOilEconomyLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
-}
-
-
 export default function Layout({ children }: { children: React.ReactNode }) {
   const articleSchema = {
     '@context': 'https://schema.org',

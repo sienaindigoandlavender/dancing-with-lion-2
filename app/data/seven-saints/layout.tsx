@@ -11,11 +11,6 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://dancingwiththelions.com/data/seven-saints' },
 }
 
-export default function SevenSaintsLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
-}
-
-
 export default function Layout({ children }: { children: React.ReactNode }) {
   const articleSchema = {
     '@context': 'https://schema.org',
