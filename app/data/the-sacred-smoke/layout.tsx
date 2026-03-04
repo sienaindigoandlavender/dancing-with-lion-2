@@ -14,3 +14,24 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>
 }
+
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'The Sacred Smoke — Data Module | Dancing with Lions',
+    description: 'Every civilisation burned something precious and called it prayer. 12 traditions across 6 continents, at least 5 with no shared origin. Starting from Morocco\\',
+    url: 'https://dancingwiththelions.com/data/the-sacred-smoke',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {children}
+    </>
+  )
+}

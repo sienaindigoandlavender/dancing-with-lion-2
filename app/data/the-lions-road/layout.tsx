@@ -14,3 +14,24 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>
 }
+
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'The Lion\\',
+    description: 'The Asiatic lion once ranged from Greece to India. It never reached China. But through the Silk Road, Buddhism, and 2,000 years of reimagining, China built the most prolific lion culture on earth — from an animal it had never seen. A data story.',
+    url: 'https://dancingwiththelions.com/data/the-lions-road',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {children}
+    </>
+  )
+}
