@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     url: 'https://dancingwiththelions.com/data/the-atlantic-spine',
     siteName: 'Dancing with Lions',
   },
-  ["Nigeria Morocco gas pipeline", "NMGP", "African Atlantic Gas Pipeline", "AAGP", "NNPCL", "ONHYM", "ECOWAS", "Trans-Saharan gas pipeline", "TSGP", "Algeria", "pipeline", "gas", "energy", "Africa", "West Africa", "Maghreb", "Europe", "Tangier", "Lagos", "Dakhla", "Mauritania", "Senegal", "green hydrogen", "LNG", "geopolitics"],
+  keywords: [["Nigeria Morocco gas pipeline", "NMGP", "African Atlantic Gas Pipeline", "AAGP", "NNPCL", "ONHYM", "ECOWAS", "Trans-Saharan gas pipeline", "TSGP", "Algeria", "pipeline", "gas", "energy", "Africa", "West Africa", "Maghreb", "Europe", "Tangier", "Lagos", "Dakhla", "Mauritania", "Senegal", "green hydrogen", "LNG", "geopolitics"]],
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

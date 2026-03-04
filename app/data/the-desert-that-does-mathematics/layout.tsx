@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: 'https://dancingwithlions.com/data/the-desert-that-does-mathematics',
   },
-  ["fairy circles", "Namibia", "Namib Desert", "NamibRand", "Stipagrostis", "Turing pattern", "Alan Turing", "morphogenesis", "reaction-diffusion", "self-organization", "vegetation patterns", "hexagonal", "termites", "Psammotermes", "sand termites", "Getzin", "Jürgens", "Bonachela", "water stress", "ecohydrology", "Himba", "Pilbara", "Australia", "swarm intelligence", "ecosystem engineering", "arid grasslands"],
+  keywords: [["fairy circles", "Namibia", "Namib Desert", "NamibRand", "Stipagrostis", "Turing pattern", "Alan Turing", "morphogenesis", "reaction-diffusion", "self-organization", "vegetation patterns", "hexagonal", "termites", "Psammotermes", "sand termites", "Getzin", "Jürgens", "Bonachela", "water stress", "ecohydrology", "Himba", "Pilbara", "Australia", "swarm intelligence", "ecosystem engineering", "arid grasslands"]],
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

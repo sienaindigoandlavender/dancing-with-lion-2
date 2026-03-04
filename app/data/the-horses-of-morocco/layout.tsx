@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: 'https://dancingwithlions.com/data/the-horses-of-morocco',
   },
-  ["Barb horse", "Barbary horse", "Morocco horses", "Berber horse", "Arab-Barb", "Numidian cavalry", "Thoroughbred foundation", "Godolphin Arabian", "Godolphin Barb", "Andalusian", "Lusitano", "Mustang", "Quarter Horse", "Appaloosa", "Criollo", "SOREC", "Tbourida", "Fantasia", "UNESCO", "Meknes stud", "El Jadida horse show", "Moulay Ismail", "Hannibal", "Cannae", "Masinissa", "Maghreb", "equestrian", "horse breeds", "North Africa", "cavalry", "bareback"],
+  keywords: [["Barb horse", "Barbary horse", "Morocco horses", "Berber horse", "Arab-Barb", "Numidian cavalry", "Thoroughbred foundation", "Godolphin Arabian", "Godolphin Barb", "Andalusian", "Lusitano", "Mustang", "Quarter Horse", "Appaloosa", "Criollo", "SOREC", "Tbourida", "Fantasia", "UNESCO", "Meknes stud", "El Jadida horse show", "Moulay Ismail", "Hannibal", "Cannae", "Masinissa", "Maghreb", "equestrian", "horse breeds", "North Africa", "cavalry", "bareback"]],
 }
 
 
