@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'The Tagine Atlas — Regional Variations Mapped | Dancing with Lions',
-  description: 'Marrakech lamb-prune, Fes chicken-olive, coastal fish chermoula, Berber mountain, kefta mkaouara. 10 regional tagine styles, 8 essential spices, the vessel, the rules.',
+  title: 'The Tea Ceremony — Moroccan Mint Tea Ritual | Dancing with Lions',
+  description: 'Three pours, three glasses, one ritual. The cultural mechanics of Moroccan mint tea: green gunpowder tea from China, fresh mint, sugar, and a ceremony of hospitality.',
   openGraph: {
-    title: 'The Tagine Atlas | Dancing with Lions',
-    description: '10 regional tagine styles mapped across Morocco. Spice pantry, vessel science, cultural rules of the communal pot.',
+    title: 'The Tea Ceremony — Moroccan Mint Tea Ritual | Dancing with Lions',
+    description: 'Three pours, three glasses, one ritual. The cultural mechanics of Moroccan mint tea: green gunpowder tea from China, fresh mint, sugar, and a ceremony of hospitality.',
     siteName: 'Dancing with Lions',
   },
+  alternates: { canonical: 'https://dancingwiththelions.com/data/tea-ceremony' },
 }
 
 
@@ -15,25 +16,25 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'The Tagine Atlas',
-    description: 'Regional tagine variations mapped. Marrakech lamb-prune, Fes chicken-olive, coastal fish chermoula, Berber mountain.',
-    url: 'https://dancingwiththelions.com/data/tagine-atlas',
+    headline: 'The Tea Ceremony Topology',
+    description: 'The six steps of Moroccan tea. Gunpowder green, fresh mint, sugar. A topology of the ceremony that runs the country.',
+    url: 'https://dancingwiththelions.com/data/tea-ceremony',
     author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     articleSection: 'Food & Agriculture',
-    keywords: 'tagine, food, cooking, lamb, chicken, fish, spice, saffron',
+    keywords: 'tea, ceremony, mint, gunpowder, sugar, atay, ritual, hospitality',
     isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
     inLanguage: 'en',
   }
   const datasetSchema = {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
-    name: 'Module 043 — The Tagine Atlas',
-    description: 'Regional tagine variations mapped. Marrakech lamb-prune, Fes chicken-olive, coastal fish chermoula, Berber mountain.',
-    url: 'https://dancingwiththelions.com/data/tagine-atlas',
+    name: 'Module 099 — The Tea Ceremony Topology',
+    description: 'The six steps of Moroccan tea. Gunpowder green, fresh mint, sugar. A topology of the ceremony that runs the country.',
+    url: 'https://dancingwiththelions.com/data/tea-ceremony',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['tagine', 'food', 'cooking', 'lamb', 'chicken', 'fish', 'spice', 'saffron'],
+    keywords: ['tea', 'ceremony', 'mint', 'gunpowder', 'sugar', 'atay', 'ritual', 'hospitality'],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

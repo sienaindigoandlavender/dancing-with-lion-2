@@ -9,6 +9,38 @@ export const metadata: Metadata = {
   },
 }
 
+
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'The Gnawa Road',
+    description: 'From West Africa to Morocco to the world. Trans-Saharan slave routes. Guembri. Seven spirit colours. Lila ceremony. Maalem lineages. Source kingdoms. The diaspora: Stambali, Bori, Vodou, Candomblé, Santería — one root, many branches.',
+    url: 'https://dancingwiththelions.com/data/the-gnawa-road',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    articleSection: 'Sacred & Spiritual',
+    keywords: 'Gnawa, Gnaoua, maalem, guembri, sintir, qraqeb, lila, derdeba',
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  const datasetSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Module 120 — The Gnawa Road',
+    description: 'From West Africa to Morocco to the world. Trans-Saharan slave routes. Guembri. Seven spirit colours. Lila ceremony. Maalem lineages. Source kingdoms. The diaspora: Stambali, Bori, Vodou, Candomblé, Santería — one root, many branches.',
+    url: 'https://dancingwiththelions.com/data/the-gnawa-road',
+    creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
+    keywords: ['Gnawa', 'Gnaoua', 'maalem', 'guembri', 'sintir', 'qraqeb', 'lila', 'derdeba'],
+    isAccessibleForFree: true,
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }} />
+      {children}
+    </>
+  )
 }

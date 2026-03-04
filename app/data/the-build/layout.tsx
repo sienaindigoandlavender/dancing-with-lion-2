@@ -10,6 +10,38 @@ export const metadata: Metadata = {
   },
 }
 
+
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'The Build',
+    description: 'Watch Morocco construct itself. 27 years of infrastructure: highways, rail, airports, hotels, tourist arrivals. Animated timeline from 2004–2030.',
+    url: 'https://dancingwiththelions.com/data/the-build',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    articleSection: 'Infrastructure',
+    keywords: 'infrastructure, highways, TGV, airports, hotels, construction, timeline, development',
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  const datasetSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Module 072 — The Build',
+    description: 'Watch Morocco construct itself. 27 years of infrastructure: highways, rail, airports, hotels, tourist arrivals. Animated timeline from 2004–2030.',
+    url: 'https://dancingwiththelions.com/data/the-build',
+    creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
+    keywords: ['infrastructure', 'highways', 'TGV', 'airports', 'hotels', 'construction', 'timeline', 'development'],
+    isAccessibleForFree: true,
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }} />
+      {children}
+    </>
+  )
 }

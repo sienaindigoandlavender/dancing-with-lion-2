@@ -1,22 +1,34 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'The Eye of Africa — The Richat Structure | Dancing with Lions',
-  description: 'The Richat Structure is a 40-kilometre geological dome in the Mauritanian Sahara, 100 million years old. Satellite imagery, geological anatomy, Atlantis hypothesis examined, and timeline. IUGS Geological Heritage Site.',
+  title: 'The Eye of Africa — Richat Structure, Mauritania | Dancing with Lions',
+  description: 'The Richat Structure: 40 kilometres wide, 100 million years old, and still unexplained. Geological data, formation hypotheses, and the African Humid Period connection.',
   openGraph: {
-    title: 'The Eye of Africa — The Richat Structure',
-    description: '100 million years. 40 kilometres. One question. The Richat Structure mapped, measured, and examined.',
-    type: 'article',
-    url: 'https://dancingwithlions.com/data/the-eye-of-africa',
+    title: 'The Eye of Africa — Richat Structure | Dancing with Lions',
+    description: 'Module 133: The Richat Structure, Mauritania. 40km diameter, 100Ma age, zero confirmed craters. The largest geological mystery in the Sahara.',
+    siteName: 'Dancing with Lions',
   },
-  keywords: [
-    'Richat Structure', 'Eye of Africa', 'Eye of Sahara', 'Mauritania', 'Atlantis',
-    'geological dome', 'Cretaceous', 'satellite', 'concentric rings', 'carbonatite',
-    'kimberlite', 'gabbro', 'quartzite', 'IUGS', 'Geological Heritage Site',
-    'Plato', 'Green Sahara', 'Acheulean', 'NASA', 'Adrar Plateau',
-  ],
+  alternates: { canonical: 'https://dancingwiththelions.com/data/the-eye-of-africa' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'The Eye of Africa — Richat Structure, Mauritania',
+    description: 'The Richat Structure: 40 kilometres wide, 100 million years old. Geological data, ring dike formations, carbonatite intrusions, and formation hypotheses.',
+    url: 'https://dancingwiththelions.com/data/the-eye-of-africa',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    articleSection: 'Geological Intelligence',
+    keywords: 'Richat Structure, Eye of Africa, Mauritania, Sahara, geology, impact crater',
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {children}
+    </>
+  )
 }
