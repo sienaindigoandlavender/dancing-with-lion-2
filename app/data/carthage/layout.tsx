@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/carthage',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["Carthage", "Punic", "Hannibal", "Rome", "Tunisia", "trade", "Mediterranean", "war"],
+    keywords: "Carthage, Punic, Hannibal, Rome, Tunisia, trade, Mediterranean, war",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

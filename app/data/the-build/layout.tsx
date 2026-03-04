@@ -33,7 +33,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-build',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["infrastructure", "highways", "TGV", "airports", "hotels", "construction", "timeline", "development"],
+    keywords: "infrastructure, highways, TGV, airports, hotels, construction, timeline, development",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

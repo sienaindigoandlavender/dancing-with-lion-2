@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/carpet-code',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["carpet", "rug", "textile", "weaving", "tribal", "motif", "Beni Ourain", "Azilal"],
+    keywords: "carpet, rug, textile, weaving, tribal, motif, Beni Ourain, Azilal",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

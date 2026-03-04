@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/hammam-culture',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["hammam", "bathhouse", "savon beldi", "black soap", "kessa", "ghassoul", "argan oil", "ritual"],
+    keywords: "hammam, bathhouse, savon beldi, black soap, kessa, ghassoul, argan oil, ritual",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

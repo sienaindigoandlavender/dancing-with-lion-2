@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/digital-zellige',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["zellige", "tile", "geometry", "pattern", "Islamic", "design", "mosaic", "Fez"],
+    keywords: "zellige, tile, geometry, pattern, Islamic, design, mosaic, Fez",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

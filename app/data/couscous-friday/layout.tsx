@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/couscous-friday',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["couscous", "Friday", "seksu", "tfaya", "seffa", "UNESCO", "Amazigh", "communal"],
+    keywords: "couscous, Friday, seksu, tfaya, seffa, UNESCO, Amazigh, communal",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

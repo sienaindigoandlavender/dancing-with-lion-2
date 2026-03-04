@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-free-people',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["Amazigh", "Berber", "free people", "language", "territory", "identity", "map", "indigenous"],
+    keywords: "Amazigh, Berber, free people, language, territory, identity, map, indigenous",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

@@ -33,7 +33,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/dust-that-feeds',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["Sahara", "Amazon", "dust", "phosphorus", "Bodele", "Chad", "CALIPSO", "NASA"],
+    keywords: "Sahara, Amazon, dust, phosphorus, Bodele, Chad, CALIPSO, NASA",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

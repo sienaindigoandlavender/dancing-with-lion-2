@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/yennayer',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["Yennayer", "Amazigh", "Berber", "New Year", "Sheshonq", "Shishak", "pharaoh", "22nd Dynasty"],
+    keywords: "Yennayer, Amazigh, Berber, New Year, Sheshonq, Shishak, pharaoh, 22nd Dynasty",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

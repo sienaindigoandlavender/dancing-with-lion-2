@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/africa-rising',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["Africa", "ranking", "competitiveness", "GDP", "tourism", "infrastructure", "investment", "continent"],
+    keywords: "Africa, ranking, competitiveness, GDP, tourism, infrastructure, investment, continent",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

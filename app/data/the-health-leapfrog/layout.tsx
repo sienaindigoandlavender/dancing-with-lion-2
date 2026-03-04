@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-health-leapfrog',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["health", "healthcare", "disease", "malaria", "HIV", "AIDS", "TB", "tuberculosis"],
+    keywords: "health, healthcare, disease, malaria, HIV, AIDS, TB, tuberculosis",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

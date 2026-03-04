@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/zaouia-map',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["zaouia", "Sufi", "brotherhood", "Tijani", "Qadiri", "Boutchichi", "spiritual", "sacred"],
+    keywords: "zaouia, Sufi, brotherhood, Tijani, Qadiri, Boutchichi, spiritual, sacred",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

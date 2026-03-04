@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/marriage-economy',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["marriage", "wedding", "mahr", "dowry", "economy", "cost", "ceremony", "social"],
+    keywords: "marriage, wedding, mahr, dowry, economy, cost, ceremony, social",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

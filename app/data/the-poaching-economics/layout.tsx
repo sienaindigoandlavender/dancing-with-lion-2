@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-poaching-economics',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["poaching", "economics", "ranger", "salary", "poverty", "inequality", "rhino horn", "ivory"],
+    keywords: "poaching, economics, ranger, salary, poverty, inequality, rhino horn, ivory",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

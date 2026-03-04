@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/waters-of-empire',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["hammam", "Roman", "thermae", "bath", "bathing", "hypocaust", "Volubilis", "Carthage"],
+    keywords: "hammam, Roman, thermae, bath, bathing, hypocaust, Volubilis, Carthage",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

@@ -35,7 +35,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-horses-of-morocco',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["Barb", "horse", "Morocco", "Numidian", "cavalry", "Tbourida", "Fantasia", "Godolphin"],
+    keywords: "Barb, horse, Morocco, Numidian, cavalry, Tbourida, Fantasia, Godolphin",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

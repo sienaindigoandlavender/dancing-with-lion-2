@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/marriage-equation',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["marriage", "divorce", "family", "statistics", "trends", "Moudawana", "women", "social"],
+    keywords: "marriage, divorce, family, statistics, trends, Moudawana, women, social",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

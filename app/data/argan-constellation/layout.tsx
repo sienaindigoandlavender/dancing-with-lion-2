@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/argan-constellation',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["argan", "oil", "cooperative", "women", "labour", "Souss", "sustainability", "extraction"],
+    keywords: "argan, oil, cooperative, women, labour, Souss, sustainability, extraction",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

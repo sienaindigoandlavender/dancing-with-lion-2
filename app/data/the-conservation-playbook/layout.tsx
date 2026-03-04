@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-conservation-playbook',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["conservation", "playbook", "model", "mechanism", "Rwanda", "Namibia", "Lion Guardians", "Gorongosa"],
+    keywords: "conservation, playbook, model, mechanism, Rwanda, Namibia, Lion Guardians, Gorongosa",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

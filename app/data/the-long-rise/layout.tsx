@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-long-rise',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["tourism", "arrivals", "revenue", "growth", "chart", "visitors", "history", "trend"],
+    keywords: "tourism, arrivals, revenue, growth, chart, visitors, history, trend",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

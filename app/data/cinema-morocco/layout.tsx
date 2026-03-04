@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/cinema-morocco',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["cinema", "film", "ouarzazate", "gladiator", "game of thrones", "hollywood", "studio", "atlas"],
+    keywords: "cinema, film, ouarzazate, gladiator, game of thrones, hollywood, studio, atlas",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

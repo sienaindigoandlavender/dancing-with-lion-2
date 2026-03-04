@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-nomad-pulse',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["nomad", "digital", "remote work", "co-living", "visa", "Marrakech", "Essaouira", "Tangier"],
+    keywords: "nomad, digital, remote work, co-living, visa, Marrakech, Essaouira, Tangier",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

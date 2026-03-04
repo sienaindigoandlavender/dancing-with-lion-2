@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/gates-of-marrakech',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ["gates", "bab", "Marrakech", "medina", "walls", "ramparts", "Almohad", "urban"],
+    keywords: "gates, bab, Marrakech, medina, walls, ramparts, Almohad, urban",
     isAccessibleForFree: true,
     inLanguage: 'en',
   }
