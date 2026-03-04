@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/tea-ceremony',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["tea", "ceremony", "mint", "gunpowder", "sugar", "atay", "ritual", "hospitality"],
+    keywords: ["tea", "ceremony", "mint", "gunpowder", "sugar", "atay", "ritual", "hospitality"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

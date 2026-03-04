@@ -33,7 +33,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-vanilla-orchid',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["vanilla", "Madagascar", "Mauritius", "Réunion", "Edmond Albius", "hand-pollination", "orchid", "SAVA"],
+    keywords: ["vanilla", "Madagascar", "Mauritius", "Réunion", "Edmond Albius", "hand-pollination", "orchid", "SAVA"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

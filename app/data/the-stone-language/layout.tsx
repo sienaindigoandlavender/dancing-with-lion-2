@@ -29,7 +29,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-stone-language',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["cairn", "stone", "inukshuk", "Inuit", "apacheta", "Andes", "ovoo", "Mongolia"],
+    keywords: ["cairn", "stone", "inukshuk", "Inuit", "apacheta", "Andes", "ovoo", "Mongolia"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/pulse-medina',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["medina", "pulse", "activity", "foot traffic", "commerce", "rhythm", "urban", "daily life"],
+    keywords: ["medina", "pulse", "activity", "foot traffic", "commerce", "rhythm", "urban", "daily life"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

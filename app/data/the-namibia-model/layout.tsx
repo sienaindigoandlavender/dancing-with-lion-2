@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-namibia-model',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["Namibia", "conservancy", "communal conservancy", "CBNRM", "NACSO", "MEFT", "Torra", "Khoadi-Hoas"],
+    keywords: ["Namibia", "conservancy", "communal conservancy", "CBNRM", "NACSO", "MEFT", "Torra", "Khoadi-Hoas"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

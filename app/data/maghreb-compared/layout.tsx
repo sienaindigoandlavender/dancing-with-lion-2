@@ -29,7 +29,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/maghreb-compared',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["morocco", "tunisia", "algeria", "gdp", "population", "comparison", "north africa", "maghreb"],
+    keywords: ["morocco", "tunisia", "algeria", "gdp", "population", "comparison", "north africa", "maghreb"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

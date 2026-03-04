@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/pottery-traditions',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["pottery", "ceramics", "fes", "safi", "tamegroute", "craft", "blue", "green"],
+    keywords: ["pottery", "ceramics", "fes", "safi", "tamegroute", "craft", "blue", "green"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

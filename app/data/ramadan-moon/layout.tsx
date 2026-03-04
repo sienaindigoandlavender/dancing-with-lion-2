@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/ramadan-moon',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["ramadan", "islam", "prayer", "fasting", "ftour", "mosque", "calendar", "hijri"],
+    keywords: ["ramadan", "islam", "prayer", "fasting", "ftour", "mosque", "calendar", "hijri"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

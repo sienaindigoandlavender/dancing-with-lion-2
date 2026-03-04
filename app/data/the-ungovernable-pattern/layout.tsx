@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-ungovernable-pattern',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["governance", "assembly", "jemaa", "jirga", "kurultai", "Grand Council", "siida", "Kris"],
+    keywords: ["governance", "assembly", "jemaa", "jirga", "kurultai", "Grand Council", "siida", "Kris"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

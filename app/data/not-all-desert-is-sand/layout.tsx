@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/not-all-desert-is-sand',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["desert", "Sahara", "erg", "reg", "hammada", "oued", "wadi", "sand"],
+    keywords: ["desert", "Sahara", "erg", "reg", "hammada", "oued", "wadi", "sand"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

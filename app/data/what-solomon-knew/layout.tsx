@@ -29,7 +29,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/what-solomon-knew',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["Solomon", "wisdom", "knowledge", "Temple", "Jerusalem", "Phoenicia", "Hiram", "cedar"],
+    keywords: ["Solomon", "wisdom", "knowledge", "Temple", "Jerusalem", "Phoenicia", "Hiram", "cedar"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

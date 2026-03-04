@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/phosphate-kingdom',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["phosphate", "ocp", "mining", "khouribga", "fertilizer", "jorf lasfar", "industry", "export"],
+    keywords: ["phosphate", "ocp", "mining", "khouribga", "fertilizer", "jorf lasfar", "industry", "export"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/date-palm-oases',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["date palm", "oasis", "Draa", "Ziz", "Tafilalet", "Mejhoul", "Medjool", "Bayoud"],
+    keywords: ["date palm", "oasis", "Draa", "Ziz", "Tafilalet", "Mejhoul", "Medjool", "Bayoud"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

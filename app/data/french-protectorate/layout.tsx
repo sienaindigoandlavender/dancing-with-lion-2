@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/french-protectorate',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["protectorate", "France", "Lyautey", "Prost", "ville nouvelle", "colonialism", "independence", "Istiqlal"],
+    keywords: ["protectorate", "France", "Lyautey", "Prost", "ville nouvelle", "colonialism", "independence", "Istiqlal"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

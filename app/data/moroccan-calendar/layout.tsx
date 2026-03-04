@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/moroccan-calendar',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["calendar", "Hijri", "Amazigh", "Gregorian", "festivals", "Ramadan", "Yennayer", "Eid"],
+    keywords: ["calendar", "Hijri", "Amazigh", "Gregorian", "festivals", "Ramadan", "Yennayer", "Eid"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

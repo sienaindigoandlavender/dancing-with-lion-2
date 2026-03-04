@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/argan-triangle',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["argan", "oil", "souss", "essaouira", "cooperatives", "women", "unesco", "cosmetics"],
+    keywords: ["argan", "oil", "souss", "essaouira", "cooperatives", "women", "unesco", "cosmetics"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

@@ -32,7 +32,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-gnawa-road',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["Gnawa", "Gnaoua", "maalem", "guembri", "sintir", "qraqeb", "lila", "derdeba"],
+    keywords: ["Gnawa", "Gnaoua", "maalem", "guembri", "sintir", "qraqeb", "lila", "derdeba"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

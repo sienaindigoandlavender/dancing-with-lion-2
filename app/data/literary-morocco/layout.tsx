@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/literary-morocco',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["literature", "writers", "Bowles", "Burroughs", "Choukri", "Canetti", "Mrabet", "Tangier"],
+    keywords: ["literature", "writers", "Bowles", "Burroughs", "Choukri", "Canetti", "Mrabet", "Tangier"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

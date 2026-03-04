@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-gorongosa-resurrection',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["Gorongosa", "Mozambique", "Greg Carr", "Carr Foundation", "civil war", "wildlife recovery", "lion", "elephant"],
+    keywords: ["Gorongosa", "Mozambique", "Greg Carr", "Carr Foundation", "civil war", "wildlife recovery", "lion", "elephant"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

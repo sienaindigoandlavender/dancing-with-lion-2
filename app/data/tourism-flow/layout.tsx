@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/tourism-flow',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["tourism", "flow", "visitors", "airports", "destinations", "spending", "revenue", "Marrakech"],
+    keywords: ["tourism", "flow", "visitors", "airports", "destinations", "spending", "revenue", "Marrakech"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

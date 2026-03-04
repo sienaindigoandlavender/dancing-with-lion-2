@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/medina-data',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["medina", "data", "infrastructure", "rings", "mosque", "souk", "craft", "density"],
+    keywords: ["medina", "data", "infrastructure", "rings", "mosque", "souk", "craft", "density"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

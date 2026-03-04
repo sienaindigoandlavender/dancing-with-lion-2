@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/shadow-moucharabieh',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["moucharabieh", "mashrabiya", "screen", "shadow", "cooling", "ventilation", "architecture", "light"],
+    keywords: ["moucharabieh", "mashrabiya", "screen", "shadow", "cooling", "ventilation", "architecture", "light"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

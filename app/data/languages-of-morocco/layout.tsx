@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/languages-of-morocco',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["language", "Darija", "Arabic", "Amazigh", "French", "Spanish", "Tashelhit", "Tamazight"],
+    keywords: ["language", "Darija", "Arabic", "Amazigh", "French", "Spanish", "Tashelhit", "Tamazight"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

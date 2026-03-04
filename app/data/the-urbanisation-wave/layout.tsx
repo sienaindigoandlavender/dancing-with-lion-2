@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-urbanisation-wave',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["urbanisation", "urbanization", "cities", "megacity", "Lagos", "Kinshasa", "Cairo", "Dar es Salaam"],
+    keywords: ["urbanisation", "urbanization", "cities", "megacity", "Lagos", "Kinshasa", "Cairo", "Dar es Salaam"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-shared-grandmother',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["Amazigh", "Berber", "Sámi", "Sami", "Lapland", "Sápmi", "DNA", "mitochondrial"],
+    keywords: ["Amazigh", "Berber", "Sámi", "Sami", "Lapland", "Sápmi", "DNA", "mitochondrial"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

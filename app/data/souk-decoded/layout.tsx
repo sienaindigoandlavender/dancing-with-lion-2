@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/souk-decoded',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["souk", "market", "medina", "trade", "guild", "craft", "negotiation", "commerce"],
+    keywords: ["souk", "market", "medina", "trade", "guild", "craft", "negotiation", "commerce"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

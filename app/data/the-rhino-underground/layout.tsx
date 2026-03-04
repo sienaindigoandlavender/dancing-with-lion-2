@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-rhino-underground',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["rhino", "white rhino", "Rhino Rewild", "African Parks", "John Hume", "Platinum Rhino", "poaching", "trafficking"],
+    keywords: ["rhino", "white rhino", "Rhino Rewild", "African Parks", "John Hume", "Platinum Rhino", "poaching", "trafficking"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

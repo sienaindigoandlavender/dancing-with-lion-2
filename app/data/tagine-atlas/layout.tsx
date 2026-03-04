@@ -33,7 +33,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/tagine-atlas',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    ["tagine", "food", "cooking", "lamb", "chicken", "fish", "spice", "saffron"],
+    keywords: ["tagine", "food", "cooking", "lamb", "chicken", "fish", "spice", "saffron"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }
