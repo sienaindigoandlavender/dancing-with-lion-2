@@ -11,6 +11,38 @@ export const metadata: Metadata = {
     alternates: { canonical: 'https://dancingwiththelions.com/data/world-cup-2030' },
 }
 
+
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '2030 World Cup Infrastructure',
+    description: 'Stadium builds, transport upgrades, hotel capacity, host city readiness for FIFA 2030.',
+    url: 'https://dancingwiththelions.com/data/world-cup-2030',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    articleSection: 'Tourism',
+    keywords: 'world cup, 2030, fifa, stadium, casablanca, rabat, marrakech, infrastructure',
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  const datasetSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Module 014 — 2030 World Cup Infrastructure',
+    description: 'Stadium builds, transport upgrades, hotel capacity, host city readiness for FIFA 2030.',
+    url: 'https://dancingwiththelions.com/data/world-cup-2030',
+    creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
+    keywords: ['world cup', '2030', 'fifa', 'stadium', 'casablanca', 'rabat', 'marrakech', 'infrastructure'],
+    isAccessibleForFree: true,
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }} />
+      {children}
+    </>
+  )
 }

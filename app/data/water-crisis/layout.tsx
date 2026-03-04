@@ -14,3 +14,24 @@ export const metadata: Metadata = {
 export default function WaterCrisisLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>
 }
+
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Morocco\\',
+    description: 'Seven years of drought (2018–2025), then the rains came. Dam fill rates, basin-by-basin recovery, desalination mega-projects, and the structural crisis that remains.',
+    url: 'https://dancingwiththelions.com/data/water-crisis',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {children}
+    </>
+  )
+}

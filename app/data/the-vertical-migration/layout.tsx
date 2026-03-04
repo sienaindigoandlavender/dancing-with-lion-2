@@ -14,3 +14,24 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return children;
 }
+
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'The Vertical Migration — Transhumance in the Atlas | Dancing with Lions',
+    description: 'The agdal is a 4,500-year-old ecological governance system. Close the mountain in spring. Open it in summer. Repeat for millennia. At Igourdane, 500 families made the journey in the 1980s. In 2018, 17 did.',
+    url: 'https://dancingwiththelions.com/data/the-vertical-migration',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {children}
+    </>
+  )
+}
