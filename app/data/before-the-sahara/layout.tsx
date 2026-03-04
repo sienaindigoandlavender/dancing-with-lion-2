@@ -11,6 +11,38 @@ export const metadata: Metadata = {
     alternates: { canonical: 'https://dancingwiththelions.com/data/before-the-sahara' },
 }
 
-export default function BeforeTheSaharaLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Before the Sahara',
+    description: 'Desertification, NDVI vegetation data, oasis collapse, green belt projects. The land between Atlas and sand.',
+    url: 'https://dancingwiththelions.com/data/before-the-sahara',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    articleSection: 'Geography & Environment',
+    keywords: 'desert, sahara, desertification, oasis, ndvi, vegetation, climate, drought',
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  const datasetSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Module 052 — Before the Sahara',
+    description: 'Desertification, NDVI vegetation data, oasis collapse, green belt projects. The land between Atlas and sand.',
+    url: 'https://dancingwiththelions.com/data/before-the-sahara',
+    creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
+    keywords: ['desert', 'sahara', 'desertification', 'oasis', 'ndvi', 'vegetation', 'climate', 'drought'],
+    isAccessibleForFree: true,
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }} />
+      {children}
+    </>
+  )
 }
