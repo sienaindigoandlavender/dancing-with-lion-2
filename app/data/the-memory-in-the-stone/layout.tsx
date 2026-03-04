@@ -21,11 +21,6 @@ export const metadata: Metadata = {
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children
-}
-
-
-export default function Layout({ children }: { children: React.ReactNode }) {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
