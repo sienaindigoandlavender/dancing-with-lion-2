@@ -11,6 +11,38 @@ export const metadata: Metadata = {
     alternates: { canonical: 'https://dancingwiththelions.com/data/morocco-economy' },
 }
 
-export default function MoroccoEconomyLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Morocco Economy in One Page',
+    description: 'GDP, exports, FDI, tourism, remittances, key sectors. The essential economic snapshot.',
+    url: 'https://dancingwiththelions.com/data/morocco-economy',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    articleSection: 'Economy & Trade',
+    keywords: 'gdp, economy, exports, fdi, tourism revenue, remittances, phosphate, automotive',
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  const datasetSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Module 004 — Morocco Economy in One Page',
+    description: 'GDP, exports, FDI, tourism, remittances, key sectors. The essential economic snapshot.',
+    url: 'https://dancingwiththelions.com/data/morocco-economy',
+    creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
+    keywords: ['gdp', 'economy', 'exports', 'fdi', 'tourism revenue', 'remittances', 'phosphate', 'automotive'],
+    isAccessibleForFree: true,
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }} />
+      {children}
+    </>
+  )
 }

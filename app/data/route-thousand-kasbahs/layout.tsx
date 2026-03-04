@@ -11,6 +11,38 @@ export const metadata: Metadata = {
     alternates: { canonical: 'https://dancingwiththelions.com/data/route-thousand-kasbahs' },
 }
 
-export default function RouteThousandKasbahsLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'The Route of a Thousand Kasbahs',
+    description: 'Aït Benhaddou to Skoura. Fortified mud-brick architecture of the Drâa-Tafilalet. 4,000+ earthen settlements. Glaoui dynasty.',
+    url: 'https://dancingwiththelions.com/data/route-thousand-kasbahs',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    articleSection: 'Architecture & Design',
+    keywords: 'kasbah, ksar, Ait Benhaddou, Telouet, Taourirt, Skoura, Ouarzazate, Glaoui',
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  const datasetSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Module 039 — The Route of a Thousand Kasbahs',
+    description: 'Aït Benhaddou to Skoura. Fortified mud-brick architecture of the Drâa-Tafilalet. 4,000+ earthen settlements. Glaoui dynasty.',
+    url: 'https://dancingwiththelions.com/data/route-thousand-kasbahs',
+    creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
+    keywords: ['kasbah', 'ksar', 'Ait Benhaddou', 'Telouet', 'Taourirt', 'Skoura', 'Ouarzazate', 'Glaoui'],
+    isAccessibleForFree: true,
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }} />
+      {children}
+    </>
+  )
 }

@@ -14,3 +14,24 @@ export const metadata: Metadata = {
 export default function MusicalTraditionsLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>
 }
+
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Morocco\\',
+    description: 'Five traditions mapped by region and lineage. Gnawa trance, Andalusi nuba, Amazigh ahwash, Chaabi protest, Raï rebellion. Instruments, artists, rituals.',
+    url: 'https://dancingwiththelions.com/data/musical-traditions',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {children}
+    </>
+  )
+}

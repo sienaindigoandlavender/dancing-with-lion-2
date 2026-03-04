@@ -11,6 +11,38 @@ export const metadata: Metadata = {
     alternates: { canonical: 'https://dancingwiththelions.com/data/not-all-desert-is-sand' },
 }
 
-export default function NotAllDesertIsSandLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Not All Desert Is Sand',
+    description: 'Erg, reg, hammada, oued. Four desert types. Only 25% of the Sahara is sand. Erg Chebbi 150m dunes.',
+    url: 'https://dancingwiththelions.com/data/not-all-desert-is-sand',
+    author: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    publisher: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    articleSection: 'Geography & Environment',
+    keywords: 'desert, Sahara, erg, reg, hammada, oued, wadi, sand',
+    isPartOf: { '@type': 'CreativeWorkSeries', name: 'Dancing with Lions Intelligence Modules', url: 'https://dancingwiththelions.com/data' },
+    inLanguage: 'en',
+  }
+  const datasetSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Module 047 — Not All Desert Is Sand',
+    description: 'Erg, reg, hammada, oued. Four desert types. Only 25% of the Sahara is sand. Erg Chebbi 150m dunes.',
+    url: 'https://dancingwiththelions.com/data/not-all-desert-is-sand',
+    creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
+    license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
+    keywords: ['desert', 'Sahara', 'erg', 'reg', 'hammada', 'oued', 'wadi', 'sand'],
+    isAccessibleForFree: true,
+    inLanguage: 'en',
+  }
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }} />
+      {children}
+    </>
+  )
 }
