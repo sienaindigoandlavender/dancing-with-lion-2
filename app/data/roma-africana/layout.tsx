@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/roma-africana',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['Rome', 'Africa', 'province', 'grain', 'trade', 'Leptis', 'Carthage', 'Mediterranean'],
+    ["Rome", "Africa", "province", "grain", "trade", "Leptis", "Carthage", "Mediterranean"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

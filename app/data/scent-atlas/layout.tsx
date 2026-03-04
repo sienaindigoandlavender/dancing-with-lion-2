@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/scent-atlas',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['scent', 'perfume', 'rose', 'orange blossom', 'cedar', 'argan', 'oud', 'attar'],
+    ["scent", "perfume", "rose", "orange blossom", "cedar", "argan", "oud", "attar"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

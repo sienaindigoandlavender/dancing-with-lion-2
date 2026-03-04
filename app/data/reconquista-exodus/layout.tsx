@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/reconquista-exodus',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['Reconquista', 'exodus', 'Spain', 'al-Andalus', 'Moriscos', 'Jews', 'Sephardic', 'expulsion'],
+    ["Reconquista", "exodus", "Spain", "al-Andalus", "Moriscos", "Jews", "Sephardic", "expulsion"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }
