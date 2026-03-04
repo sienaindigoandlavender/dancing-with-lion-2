@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/moroccan-genome',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['genome', 'DNA', 'genetics', 'E-M81', 'haplogroup', 'Amazigh', 'ancestry', 'admixture'],
+    ["genome", "DNA", "genetics", "E-M81", "haplogroup", "Amazigh", "ancestry", "admixture"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

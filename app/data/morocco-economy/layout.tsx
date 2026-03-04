@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/morocco-economy',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['gdp', 'economy', 'exports', 'fdi', 'tourism revenue', 'remittances', 'phosphate', 'automotive'],
+    ["gdp", "economy", "exports", "fdi", "tourism revenue", "remittances", "phosphate", "automotive"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

@@ -34,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/migration-routes',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['migration', 'migrants', 'refugees', 'asylum', 'sub-Saharan', 'Africa', 'Spain', 'Ceuta'],
+    ["migration", "migrants", "refugees", "asylum", "sub-Saharan", "Africa", "Spain", "Ceuta"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }
