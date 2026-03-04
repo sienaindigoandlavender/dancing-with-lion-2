@@ -9,14 +9,7 @@ export const metadata: Metadata = {
     type: 'article',
     url: 'https://dancingwithlions.com/data/the-horses-of-morocco',
   },
-  keywords: [
-    'Barb horse', 'Barbary horse', 'Morocco horses', 'Berber horse', 'Arab-Barb',
-    'Numidian cavalry', 'Thoroughbred foundation', 'Godolphin Arabian', 'Godolphin Barb',
-    'Andalusian', 'Lusitano', 'Mustang', 'Quarter Horse', 'Appaloosa', 'Criollo',
-    'SOREC', 'Tbourida', 'Fantasia', 'UNESCO', 'Meknes stud', 'El Jadida horse show',
-    'Moulay Ismail', 'Hannibal', 'Cannae', 'Masinissa', 'Maghreb',
-    'equestrian', 'horse breeds', 'North Africa', 'cavalry', 'bareback',
-  ],
+  ["Barb horse", "Barbary horse", "Morocco horses", "Berber horse", "Arab-Barb", "Numidian cavalry", "Thoroughbred foundation", "Godolphin Arabian", "Godolphin Barb", "Andalusian", "Lusitano", "Mustang", "Quarter Horse", "Appaloosa", "Criollo", "SOREC", "Tbourida", "Fantasia", "UNESCO", "Meknes stud", "El Jadida horse show", "Moulay Ismail", "Hannibal", "Cannae", "Masinissa", "Maghreb", "equestrian", "horse breeds", "North Africa", "cavalry", "bareback"],
 }
 
 
@@ -42,7 +35,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-horses-of-morocco',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['Barb', 'horse', 'Morocco', 'Numidian', 'cavalry', 'Tbourida', 'Fantasia', 'Godolphin'],
+    ["Barb", "horse", "Morocco", "Numidian", "cavalry", "Tbourida", "Fantasia", "Godolphin"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-education-gap',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['education', 'school', 'literacy', 'learning poverty', 'teacher', 'university', 'coding', 'academy'],
+    ["education", "school", "literacy", "learning poverty", "teacher", "university", "coding", "academy"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

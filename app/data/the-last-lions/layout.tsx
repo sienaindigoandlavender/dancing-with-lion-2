@@ -33,7 +33,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-last-lions',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['Barbary lion', 'Atlas lion', 'extinction', 'Morocco', 'Rabat Zoo', 'royal lion', 'conservation', 'breeding'],
+    ["Barbary lion", "Atlas lion", "extinction", "Morocco", "Rabat Zoo", "royal lion", "conservation", "breeding"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

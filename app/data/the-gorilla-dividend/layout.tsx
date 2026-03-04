@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-gorilla-dividend',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['Rwanda', 'gorilla', 'mountain gorilla', 'Gorilla beringei beringei', 'Volcanoes National Park', 'Virunga', 'permit', '$1,500'],
+    ["Rwanda", "gorilla", "mountain gorilla", "Gorilla beringei beringei", "Volcanoes National Park", "Virunga", "permit", "$1,500"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }

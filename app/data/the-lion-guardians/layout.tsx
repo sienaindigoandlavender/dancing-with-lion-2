@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     url: 'https://dancingwiththelions.com/data/the-lion-guardians',
     creator: { '@type': 'Organization', name: 'Dancing with Lions', url: 'https://dancingwiththelions.com' },
     license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/',
-    keywords: ['Lion Guardians', 'Leela Hazzah', 'Stephanie Dolrenry', 'Maasai', 'Amboseli', 'Tsavo', 'Kenya', 'Tanzania'],
+    ["Lion Guardians", "Leela Hazzah", "Stephanie Dolrenry", "Maasai", "Amboseli", "Tsavo", "Kenya", "Tanzania"],
     isAccessibleForFree: true,
     inLanguage: 'en',
   }
