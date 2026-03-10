@@ -1,16 +1,8 @@
-/**
- * Nexus — Shared configuration hub
- * 
- * All legal pages, footer links, site config, and copyright
- * come from the Nexus Supabase instance (primary) or
- * Nexus Google Sheet (fallback).
- * 
- * This is the single source of truth for all ecosystem sites.
- */
-
-const NEXUS_SUPABASE_URL = process.env.NEXUS_SUPABASE_URL || ''
-const NEXUS_SUPABASE_ANON_KEY = process.env.NEXUS_SUPABASE_ANON_KEY || ''
-const SITE_ID = 'dancingwithlions'
+// ============================================
+// Formerly Nexus — now self-contained
+// All content hardcoded with DWL values
+// No external Supabase dependency
+// ============================================
 
 // ─────────────────────────────────────────────────
 // Types
@@ -41,118 +33,74 @@ export interface FooterLink {
   link_type: string
 }
 
-export interface PoweredBy {
-  text: string
-  url: string
+// ─────────────────────────────────────────────────
+// Hardcoded config
+// ─────────────────────────────────────────────────
+
+const SITE_CONFIG: SiteConfig = {
+  site_id: "dancingwithlions",
+  site_name: "Dancing with Lions",
+  site_type: "content",
+  site_url: "https://dancingwiththelions.com",
+  legal_entity: "Dancing with Lions",
+  contact_email: "legal@dancingwiththelions.com",
 }
 
-// ─────────────────────────────────────────────────
-// Supabase fetch helper
-// ─────────────────────────────────────────────────
-
-async function nexusFetch<T>(table: string, query: string = ''): Promise<T[]> {
-  if (!NEXUS_SUPABASE_URL || !NEXUS_SUPABASE_ANON_KEY) {
-    console.warn(`[Nexus] Missing Supabase credentials — returning empty for ${table}`)
-    return []
-  }
-
-  try {
-    const url = `${NEXUS_SUPABASE_URL}/rest/v1/${table}?${query}`
-    const res = await fetch(url, {
-      headers: {
-        'apikey': NEXUS_SUPABASE_ANON_KEY,
-        'Authorization': `Bearer ${NEXUS_SUPABASE_ANON_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      next: { revalidate: 3600 }, // Cache for 1 hour
-    })
-
-    if (!res.ok) {
-      console.error(`[Nexus] Failed to fetch ${table}: ${res.status}`)
-      return []
-    }
-
-    return await res.json()
-  } catch (error) {
-    console.error(`[Nexus] Error fetching ${table}:`, error)
-    return []
-  }
+const LEGAL_CONTENT: Record<string, LegalPage[]> = {
+  privacy: [
+    { page_id: "privacy", section_order: 1, section_title: "Introduction", section_content: "Dancing with Lions (\"we\", \"us\", or \"our\") respects your privacy and is committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information when you visit https://dancingwiththelions.com." },
+    { page_id: "privacy", section_order: 2, section_title: "Information We Collect", section_content: "Information you provide: contact information (name, email) and communications you send us. Information collected automatically: device information, usage data, and cookies." },
+    { page_id: "privacy", section_order: 3, section_title: "How We Use Your Information", section_content: "To communicate with you about inquiries, improve our website and services, and send occasional updates if you have opted in." },
+    { page_id: "privacy", section_order: 4, section_title: "Your Rights", section_content: "You have the right to access, correct, or delete your personal data. To exercise these rights, contact us at legal@dancingwiththelions.com." },
+    { page_id: "privacy", section_order: 5, section_title: "Data Security", section_content: "We implement appropriate security measures including SSL/TLS encryption." },
+    { page_id: "privacy", section_order: 6, section_title: "Contact", section_content: "Dancing with Lions. Email: legal@dancingwiththelions.com" },
+  ],
+  terms: [
+    { page_id: "terms", section_order: 1, section_title: "Agreement", section_content: "By accessing or using https://dancingwiththelions.com, operated by Dancing with Lions, you agree to be bound by these Terms of Use. If you do not agree, please do not use our services." },
+    { page_id: "terms", section_order: 2, section_title: "Services", section_content: "Dancing with Lions provides data-driven research, analysis, and cultural intelligence as described on our website. All content, features, and functionality are owned by Dancing with Lions and are protected by international copyright, trademark, and other intellectual property laws." },
+    { page_id: "terms", section_order: 3, section_title: "User Responsibilities", section_content: "You agree to provide accurate and complete information, comply with all applicable laws, and not misuse or attempt to disrupt our services." },
+    { page_id: "terms", section_order: 4, section_title: "Intellectual Property", section_content: "All content on this site, including text, data visualizations, maps, charts, infographics, research documents, and original datasets, is the property of Dancing with Lions and is protected by copyright laws." },
+    { page_id: "terms", section_order: 5, section_title: "Limitation of Liability", section_content: "To the maximum extent permitted by law, Dancing with Lions shall not be liable for indirect, incidental, or consequential damages arising from use of our services." },
+    { page_id: "terms", section_order: 6, section_title: "Governing Law", section_content: "These terms are governed by the laws of Morocco. Any disputes shall be resolved in the courts of Marrakech." },
+    { page_id: "terms", section_order: 7, section_title: "Contact", section_content: "Dancing with Lions. Email: legal@dancingwiththelions.com" },
+  ],
+  disclaimer: [
+    { page_id: "disclaimer", section_order: 1, section_title: "General", section_content: "The information provided on https://dancingwiththelions.com by Dancing with Lions is for general informational and research purposes only. This content does not constitute professional, financial, or legal advice." },
+    { page_id: "disclaimer", section_order: 2, section_title: "Accuracy", section_content: "While we make every effort to ensure data and analysis are accurate and up-to-date, we cannot guarantee completeness. Data sources include government agencies, international organizations, and field research. Conditions change frequently." },
+    { page_id: "disclaimer", section_order: 3, section_title: "Limitation of Liability", section_content: "Dancing with Lions shall not be liable for any damages arising from use or inability to use this site, reliance on information provided, or errors or omissions in content." },
+    { page_id: "disclaimer", section_order: 4, section_title: "Contact", section_content: "Dancing with Lions. Email: legal@dancingwiththelions.com" },
+  ],
+  "intellectual-property": [],
 }
 
 // ─────────────────────────────────────────────────
 // Public API
 // ─────────────────────────────────────────────────
 
-/**
- * Get legal page content (Privacy, Terms, Disclaimer, IP)
- * From: nexus_legal_pages table
- */
 export async function getLegalPage(pageId: string): Promise<LegalPage[]> {
-  return nexusFetch<LegalPage>(
-    'nexus_legal_pages',
-    `page_id=eq.${pageId}&order=section_order.asc`
-  )
+  return LEGAL_CONTENT[pageId] || []
 }
 
-/**
- * Get site configuration for this brand
- * From: nexus_sites table
- */
-export async function getSiteConfig(): Promise<SiteConfig | null> {
-  const results = await nexusFetch<SiteConfig>(
-    'nexus_sites',
-    `site_id=eq.${SITE_ID}`
-  )
-  return results[0] || null
+export async function getSiteConfig(): Promise<SiteConfig> {
+  return SITE_CONFIG
 }
 
-/**
- * Get all sites in the network (for footer)
- * From: nexus_sites table
- */
 export async function getNetworkSites(): Promise<SiteConfig[]> {
-  return nexusFetch<SiteConfig>(
-    'nexus_sites',
-    'order=site_name.asc'
-  )
+  return [SITE_CONFIG]
 }
 
-/**
- * Get footer links for this brand
- * From: nexus_footer_links table
- */
 export async function getFooterLinks(): Promise<FooterLink[]> {
-  return nexusFetch<FooterLink>(
-    'nexus_footer_links',
-    `site_id=eq.${SITE_ID}&order=column_number.asc,link_order.asc`
-  )
+  return []
 }
 
-/**
- * Get legal page slugs available from Nexus
- */
 export async function getLegalPageSlugs(): Promise<string[]> {
-  const results = await nexusFetch<{ page_id: string }>(
-    'nexus_legal_pages',
-    'select=page_id'
-  )
-  const uniqueSlugs = Array.from(new Set(results.map(r => r.page_id)))
-  return uniqueSlugs
+  return ['privacy', 'terms', 'disclaimer', 'intellectual-property']
 }
 
-/**
- * Resolve {{variables}} in legal page content
- * Replaces placeholders like {{site_name}}, {{contact_email}}, etc.
- */
+// No-op — variables already resolved in hardcoded content
 export function resolveLegalVariables(
   content: string,
-  siteConfig: SiteConfig | null
+  _siteConfig: SiteConfig | null
 ): string {
-  if (!siteConfig) return content
-
   return content
-    .replace(/\{\{site_name\}\}/g, siteConfig.site_name || 'Dancing with Lions')
-    .replace(/\{\{site_url\}\}/g, siteConfig.site_url || 'https://dancingwiththelions.com')
-    .replace(/\{\{legal_entity\}\}/g, siteConfig.legal_entity || 'Dancing with Lions')
-    .replace(/\{\{contact_email\}\}/g, siteConfig.contact_email || 'legal@dancingwiththelions.com')
 }
